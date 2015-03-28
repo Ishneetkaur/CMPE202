@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nifty xmlns="http://nifty-gui.sourceforge.net/nifty-1.3.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://nifty-gui.sourceforge.net/nifty-1.3.xsd http://nifty-gui.sourceforge.net/nifty-1.3.xsd">
+    <!-- +++++++++++++++++++++++++++++++++++++++ -->
+    <!-- start screen -->
+    <!-- +++++++++++++++++++++++++++++++++++++++ -->
+    <useStyles filename="nifty-default-styles.xml"/>
+    <useControls filename="nifty-default-controls.xml"/>
+    
+    
+    <screen id="start" controller="mygame.Menu">
+        
+        <layer id="background" backgroundColor="#000f" childLayout="horizontal">
+            <image filename="Interface/marioBackground.png" width="100%" height="100%"></image>
+            
+        </layer>
+        
+        <layer id="foreground" childLayout="vertical">
+            
+            <panel id="panel_top" height="25%" width="75%" align="center" childLayout="center" >
+              
+            </panel>
+            
+            <panel id="panel_mid" height="50%" width="75%" align="center" childLayout="center" >
+              
+            </panel>
+            
+          
+            
+            <panel id="panel_bottom" height="25%" width="75%" align="right" childLayout="horizontal" >
+               
+                <panel id="panel_left1" height="50%" width="25%" align="left" childLayout="center" >
+
+                </panel>
+                <panel id="panel_bottom_left" height="50%" width="50%" align="center" childLayout="vertical" >
+                              
+        
+                 
+                    <image filename="Interface/startButton.png" width="45%" height="50%">
+                      
+                        <interact onClick="startGame()"></interact>
+                      
+                    </image>        
+   
+   
+                    <image filename="Interface/exit.png" width="45%" height="50%">
+                      
+                        <interact onClick="exitGame()"></interact>
+                      
+                    </image>    
+  
+                </panel>    
+            
+ 
+                <panel id="panel_bottom_right" height="50%" width="50%" align="center" childLayout="vertical" >
+                              
+                
+
+                    <image filename="Interface/creditButton.png" width="40%" height="50%">
+                      
+                        <interact onClick="gameCredits()"></interact>
+                      
+                    </image> 
+                  
+                  
+                    <image filename="Interface/optionsButton.png" width="40%" height="50%">
+                      
+                        <interact onClick="gameOptions()"></interact>
+                      
+                    </image> 
+            
+ 
+                </panel>    
+            </panel>
+        </layer>            
+      
+    </screen>
+</nifty>

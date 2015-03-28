@@ -1,0 +1,1276 @@
+<scene exported_by="Ishneet" formatVersion="1.0.1" previous_export_time="1417048520.933" export_time="1417049072.735" >
+	<nodes >
+		<node name="Lamp.001" >
+			<position y="47.556335" x="85.502525" z="101.512794" />
+			<rotation qy="0.764543" qx="0.490645" qz="0.183961" qw="0.375367" />
+			<scale y="1.000000" x="1.000000" z="1.000000" />
+			<game >
+				<sensors />
+				<actuators />
+			</game>
+		</node>
+		<node name="mario_control" >
+			<position y="-0.000000" x="0.000000" z="-0.000000" />
+			<rotation qy="-0.000000" qx="0.000000" qz="-0.000000" qw="1.000000" />
+			<scale y="1.238692" x="1.238692" z="1.238692" />
+			<game >
+				<sensors >
+					<sensor type="ALWAYS" name="always_pulse" />
+					<sensor type="ALWAYS" name="iterator1" />
+					<sensor type="PROPERTY" name="footprint_cycle" />
+					<sensor type="PROPERTY" name="triple_jump_set" />
+					<sensor type="RAY" name="ray_ground" >
+						<component type="str" name="ray_type" value="PROPERTY" />
+						<component type="str" name="property" value="ground" />
+						<component type="str" name="material" value="" />
+						<component type="str" name="axis" value="NEGZAXIS" />
+						<component type="float" name="range" value="2.0" />
+						<component type="bool" name="use_x_ray" value="True" />
+					</sensor>
+					<sensor type="KEYBOARD" name="motion_forward" />
+					<sensor type="KEYBOARD" name="motion_left" />
+					<sensor type="KEYBOARD" name="motion_right" />
+					<sensor type="KEYBOARD" name="action_stomp" />
+					<sensor type="PROPERTY" name="initiate" />
+					<sensor type="PROPERTY" name="wall_hold" />
+					<sensor type="KEYBOARD" name="wall_jump" />
+					<sensor type="RAY" name="wall_jmp_ray" >
+						<component type="str" name="ray_type" value="PROPERTY" />
+						<component type="str" name="property" value="wall" />
+						<component type="str" name="material" value="" />
+						<component type="str" name="axis" value="YAXIS" />
+						<component type="float" name="range" value="2.0" />
+						<component type="bool" name="use_x_ray" value="False" />
+					</sensor>
+					<sensor type="PROPERTY" name="sensor1" />
+					<sensor type="ALWAYS" name="initiate_stomp" />
+					<sensor type="DELAY" name="delay" />
+					<sensor type="KEYBOARD" name="action_jump" />
+					<sensor type="RAY" name="jump_set" >
+						<component type="str" name="ray_type" value="PROPERTY" />
+						<component type="str" name="property" value="ground" />
+						<component type="str" name="material" value="" />
+						<component type="str" name="axis" value="NEGZAXIS" />
+						<component type="float" name="range" value="2.0" />
+						<component type="bool" name="use_x_ray" value="False" />
+					</sensor>
+					<sensor type="KEYBOARD" name="shoot_fire" />
+					<sensor type="KEYBOARD" name="motion_back" />
+					<sensor type="COLLISION" name="path_trigger_on" >
+						<component type="str" name="property" value="path_trigger_on" />
+					</sensor>
+					<sensor type="COLLISION" name="path_trigger_off" >
+						<component type="str" name="property" value="path_trigger_off" />
+					</sensor>
+					<sensor type="COLLISION" name="fire_flower" >
+						<component type="str" name="property" value="fire_flower" />
+					</sensor>
+					<sensor type="COLLISION" name="raccoon" >
+						<component type="str" name="property" value="raccoon_mario" />
+					</sensor>
+					<sensor type="COLLISION" name="star_mario" >
+						<component type="str" name="property" value="star_mario" />
+					</sensor>
+					<sensor type="COLLISION" name="mount_yoshi" >
+						<component type="str" name="property" value="yoshi" />
+					</sensor>
+					<sensor type="ALWAYS" name="saddle_up" />
+					<sensor type="KEYBOARD" name="off" />
+					<sensor type="PROPERTY" name="jump_time" />
+					<sensor type="ALWAYS" name="foot_toggle" />
+					<sensor type="ALWAYS" name="del_prop" />
+					<sensor type="MESSAGE" name="hit_coin" >
+						<component type="str" name="subject" value="coin" />
+					</sensor>
+					<sensor type="COLLISION" name="hit_goldstar" >
+						<component type="str" name="property" value="goldstar" />
+					</sensor>
+					<sensor type="COLLISION" name="hit_starbit" >
+						<component type="str" name="property" value="starbit" />
+					</sensor>
+					<sensor type="COLLISION" name="hit_1UP" >
+						<component type="str" name="property" value="1UP" />
+					</sensor>
+					<sensor type="COLLISION" name="hit_enemy" >
+						<component type="str" name="property" value="enemy" />
+					</sensor>
+					<sensor type="RAY" name="ray_ground2" >
+						<component type="str" name="ray_type" value="PROPERTY" />
+						<component type="str" name="property" value="ground" />
+						<component type="str" name="material" value="" />
+						<component type="str" name="axis" value="NEGZAXIS" />
+						<component type="float" name="range" value="50.0" />
+						<component type="bool" name="use_x_ray" value="True" />
+					</sensor>
+					<sensor type="ALWAYS" name="sensor" />
+					<sensor type="KEYBOARD" name="bank_left" />
+					<sensor type="KEYBOARD" name="bank_right" />
+					<sensor type="KEYBOARD" name="up" />
+					<sensor type="KEYBOARD" name="down" />
+					<sensor type="ALWAYS" name="initiate_flycam" />
+					<sensor type="ALWAYS" name="flycam_orient" />
+					<sensor type="COLLISION" name="ground" >
+						<component type="str" name="property" value="ground" />
+					</sensor>
+					<sensor type="KEYBOARD" name="key_to_main" />
+					<sensor type="PROPERTY" name="stabilize_flight" />
+					<sensor type="ALWAYS" name="sensor10" />
+					<sensor type="DELAY" name="sensor11" />
+					<sensor type="ALWAYS" name="sensor" />
+					<sensor type="COLLISION" name="mount_ball" >
+						<component type="str" name="property" value="ball_init" />
+					</sensor>
+					<sensor type="ALWAYS" name="ball_mount" />
+					<sensor type="KEYBOARD" name="off_ball" />
+					<sensor type="ALWAYS" name="sensor" />
+					<sensor type="PROPERTY" name="stabilize2" />
+					<sensor type="ALWAYS" name="sub" />
+					<sensor type="KEYBOARD" name="fwd" />
+					<sensor type="KEYBOARD" name="swim_left" />
+					<sensor type="KEYBOARD" name="swim_right" />
+					<sensor type="KEYBOARD" name="swim_up1" />
+					<sensor type="KEYBOARD" name="swim_dwn1" />
+					<sensor type="ALWAYS" name="initiate_swim" />
+					<sensor type="COLLISION" name="water" >
+						<component type="str" name="property" value="water" />
+					</sensor>
+					<sensor type="KEYBOARD" name="w" />
+					<sensor type="KEYBOARD" name="s" />
+					<sensor type="ALWAYS" name="init_const" />
+					<sensor type="COLLISION" name="end_2d" >
+						<component type="str" name="property" value="2d_off" />
+					</sensor>
+					<sensor type="ALWAYS" name="initiate_2d" />
+					<sensor type="RAY" name="launcher_ray" >
+						<component type="str" name="ray_type" value="PROPERTY" />
+						<component type="str" name="property" value="star_launcher" />
+						<component type="str" name="material" value="" />
+						<component type="str" name="axis" value="NEGZAXIS" />
+						<component type="float" name="range" value="3.0" />
+						<component type="bool" name="use_x_ray" value="False" />
+					</sensor>
+					<sensor type="ALWAYS" name="tics" />
+					<sensor type="ALWAYS" name="init" />
+					<sensor type="PROPERTY" name="fire_active" />
+					<sensor type="NEAR" name="sensor9" >
+						<component type="str" name="property" value="tounge" />
+						<component type="float" name="distance" value="1.0" />
+						<component type="float" name="reset_distance" value="2.0" />
+					</sensor>
+					<sensor type="ALWAYS" name="sensor12" />
+					<sensor type="COLLISION" name="sensor13" >
+						<component type="str" name="property" value="player" />
+					</sensor>
+					<sensor type="PROPERTY" name="end1" />
+					<sensor type="RAY" name="flip_z" >
+						<component type="str" name="ray_type" value="PROPERTY" />
+						<component type="str" name="property" value="" />
+						<component type="str" name="material" value="" />
+						<component type="str" name="axis" value="ZAXIS" />
+						<component type="float" name="range" value="1.2999999523162842" />
+						<component type="bool" name="use_x_ray" value="False" />
+					</sensor>
+					<sensor type="MESSAGE" name="power_up" >
+						<component type="str" name="subject" value="power_up" />
+					</sensor>
+					<sensor type="ALWAYS" name="sensor14" />
+					<sensor type="DELAY" name="sensor15" />
+					<sensor type="COLLISION" name="2d_on" >
+						<component type="str" name="property" value="2d_on" />
+					</sensor>
+					<sensor type="RAY" name="sensor5" >
+						<component type="str" name="ray_type" value="PROPERTY" />
+						<component type="str" name="property" value="" />
+						<component type="str" name="material" value="" />
+						<component type="str" name="axis" value="NEGZAXIS" />
+						<component type="float" name="range" value="2.009999990463257" />
+						<component type="bool" name="use_x_ray" value="False" />
+					</sensor>
+					<sensor type="PROPERTY" name="align_to" />
+					<sensor type="RAY" name="ray_ledge" >
+						<component type="str" name="ray_type" value="PROPERTY" />
+						<component type="str" name="property" value="ledge" />
+						<component type="str" name="material" value="" />
+						<component type="str" name="axis" value="YAXIS" />
+						<component type="float" name="range" value="3.0" />
+						<component type="bool" name="use_x_ray" value="True" />
+					</sensor>
+					<sensor type="KEYBOARD" name="climb_up" />
+					<sensor type="KEYBOARD" name="shimmy_left" />
+					<sensor type="KEYBOARD" name="shimmy_right" />
+					<sensor type="KEYBOARD" name="let_go" />
+					<sensor type="RAY" name="ray_ledge1" >
+						<component type="str" name="ray_type" value="PROPERTY" />
+						<component type="str" name="property" value="ledge" />
+						<component type="str" name="material" value="" />
+						<component type="str" name="axis" value="YAXIS" />
+						<component type="float" name="range" value="1.5" />
+						<component type="bool" name="use_x_ray" value="True" />
+					</sensor>
+					<sensor type="ALWAYS" name="sensor6" />
+					<sensor type="DELAY" name="sensor7" />
+					<sensor type="ALWAYS" name="sensor16" />
+					<sensor type="KEYBOARD" name="fwd1" />
+					<sensor type="ALWAYS" name="iterator" />
+					<sensor type="ALWAYS" name="init" />
+					<sensor type="RAY" name="ray_g" >
+						<component type="str" name="ray_type" value="PROPERTY" />
+						<component type="str" name="property" value="ground" />
+						<component type="str" name="material" value="" />
+						<component type="str" name="axis" value="NEGZAXIS" />
+						<component type="float" name="range" value="2.0" />
+						<component type="bool" name="use_x_ray" value="True" />
+					</sensor>
+					<sensor type="RAY" name="ray1" >
+						<component type="str" name="ray_type" value="PROPERTY" />
+						<component type="str" name="property" value="star_launcher" />
+						<component type="str" name="material" value="" />
+						<component type="str" name="axis" value="NEGZAXIS" />
+						<component type="float" name="range" value="3.0" />
+						<component type="bool" name="use_x_ray" value="True" />
+					</sensor>
+					<sensor type="PROPERTY" name="launch" />
+					<sensor type="PROPERTY" name="end" />
+					<sensor type="KEYBOARD" name="dive" />
+					<sensor type="ALWAYS" name="sensor8" />
+					<sensor type="MESSAGE" name="sensor18" >
+						<component type="str" name="subject" value="launch" />
+					</sensor>
+					<sensor type="MESSAGE" name="sensor19" >
+						<component type="str" name="subject" value="end_launch" />
+					</sensor>
+					<sensor type="COLLISION" name="water" >
+						<component type="str" name="property" value="water_collision" />
+					</sensor>
+					<sensor type="PROPERTY" name="stomp_land" />
+					<sensor type="PROPERTY" name="haze_tap" />
+					<sensor type="PROPERTY" name="g_contact" />
+					<sensor type="DELAY" name="sensor2" />
+					<sensor type="ALWAYS" name="sensor3" />
+					<sensor type="COLLISION" name="g_collision" >
+						<component type="str" name="property" value="ground" />
+					</sensor>
+					<sensor type="PROPERTY" name="align_trigger" />
+					<sensor type="PROPERTY" name="dive_trigger" />
+					<sensor type="COLLISION" name="plant_collision" >
+						<component type="str" name="property" value="shrub" />
+					</sensor>
+					<sensor type="MESSAGE" name="sensor4" >
+						<component type="str" name="subject" value="arms_out" />
+					</sensor>
+					<sensor type="RAY" name="z_collision" >
+						<component type="str" name="ray_type" value="PROPERTY" />
+						<component type="str" name="property" value="" />
+						<component type="str" name="material" value="" />
+						<component type="str" name="axis" value="NEGZAXIS" />
+						<component type="float" name="range" value="2.0" />
+						<component type="bool" name="use_x_ray" value="False" />
+					</sensor>
+				</sensors>
+				<actuators >
+					<actuator type="CONSTRAINT" name="planet_contstraint" >
+						<component type="str" name="mode" value="DIST" />
+						<component type="str" name="limit" value="NONE" />
+						<component type="float" name="limit_min" value="0.0" />
+						<component type="float" name="limit_max" value="0.0" />
+						<component type="int" name="damping" value="0" />
+					</actuator>
+					<actuator type="PROPERTY" name="jump_prop" />
+					<actuator type="CONSTRAINT" name="w_const" >
+						<component type="str" name="mode" value="DIST" />
+						<component type="str" name="limit" value="NONE" />
+						<component type="float" name="limit_min" value="0.0" />
+						<component type="float" name="limit_max" value="0.0" />
+						<component type="int" name="damping" value="1" />
+					</actuator>
+					<actuator type="EDIT_OBJECT" name="add_d" >
+						<component type="str" name="dynamic_operation" value="RESTOREDYN" />
+						<component type="Vector" name="linear_velocity" value="0.0 0.0 0.0" />
+						<component type="float" name="mass" value="0.0" />
+						<component type="POINTER" name="mesh" value="" />
+						<component type="str" name="mode" value="DYNAMICS" />
+						<component type="POINTER" name="object" value="" />
+						<component type="int" name="time" value="0" />
+						<component type="POINTER" name="track_object" value="" />
+						<component type="bool" name="use_3d_tracking" value="False" />
+						<component type="bool" name="use_local_angular_velocity" value="False" />
+						<component type="bool" name="use_local_linear_velocity" value="False" />
+						<component type="bool" name="use_replace_display_mesh" value="True" />
+						<component type="bool" name="use_replace_physics_mesh" value="False" />
+					</actuator>
+					<actuator type="EDIT_OBJECT" name="sub_d" >
+						<component type="str" name="dynamic_operation" value="SUSPENDDYN" />
+						<component type="Vector" name="linear_velocity" value="0.0 0.0 0.0" />
+						<component type="float" name="mass" value="0.0" />
+						<component type="POINTER" name="mesh" value="" />
+						<component type="str" name="mode" value="DYNAMICS" />
+						<component type="POINTER" name="object" value="" />
+						<component type="int" name="time" value="0" />
+						<component type="POINTER" name="track_object" value="" />
+						<component type="bool" name="use_3d_tracking" value="False" />
+						<component type="bool" name="use_local_angular_velocity" value="False" />
+						<component type="bool" name="use_local_linear_velocity" value="False" />
+						<component type="bool" name="use_replace_display_mesh" value="True" />
+						<component type="bool" name="use_replace_physics_mesh" value="False" />
+					</actuator>
+					<actuator type="MOTION" name="motion_rot" />
+					<actuator type="MOTION" name="mini_jmp" />
+					<actuator type="STATE" name="state_jump" />
+					<actuator type="MOTION" name="jump_rot" />
+					<actuator type="MOTION" name="w_jmp" />
+					<actuator type="STATE" name="act1" />
+					<actuator type="PROPERTY" name="act2" />
+					<actuator type="STATE" name="state_stomp" />
+					<actuator type="MOTION" name="motion" />
+					<actuator type="STATE" name="state_back_to_main" />
+					<actuator type="STATE" name="act" />
+					<actuator type="STATE" name="main_st" />
+					<actuator type="EDIT_OBJECT" name="add_particles" >
+						<component type="str" name="dynamic_operation" value="RESTOREDYN" />
+						<component type="Vector" name="linear_velocity" value="0.0 0.0 0.0" />
+						<component type="float" name="mass" value="0.0" />
+						<component type="POINTER" name="mesh" value="" />
+						<component type="str" name="mode" value="ADDOBJECT" />
+						<component type="POINTER" name="object" value="" />
+						<component type="int" name="time" value="0" />
+						<component type="POINTER" name="track_object" value="" />
+						<component type="bool" name="use_3d_tracking" value="False" />
+						<component type="bool" name="use_local_angular_velocity" value="False" />
+						<component type="bool" name="use_local_linear_velocity" value="False" />
+						<component type="bool" name="use_replace_display_mesh" value="True" />
+						<component type="bool" name="use_replace_physics_mesh" value="False" />
+					</actuator>
+					<actuator type="STATE" name="swim_state" />
+					<actuator type="STATE" name="sphere_swim" />
+					<actuator type="PROPERTY" name="toogle_foot" />
+					<actuator type="STATE" name="fx_state" />
+					<actuator type="STATE" name="fire_state" />
+					<actuator type="MOTION" name="constant_fwd" />
+					<actuator type="MOTION" name="rot_rght" />
+					<actuator type="MOTION" name="rot_lft" />
+					<actuator type="PROPERTY" name="assign_time" />
+					<actuator type="MOTION" name="rot up" />
+					<actuator type="MOTION" name="rot dwn" />
+					<actuator type="STATE" name="stabilize_for_main" />
+					<actuator type="STATE" name="act10" />
+					<actuator type="STATE" name="act3" />
+					<actuator type="STATE" name="back_to_main" />
+					<actuator type="STATE" name="surface_state" />
+					<actuator type="MOTION" name="swim_fwd" />
+					<actuator type="MOTION" name="swim_lft" />
+					<actuator type="MOTION" name="swim_rght" />
+					<actuator type="MOTION" name="swim_up" />
+					<actuator type="MOTION" name="swim_dwn" />
+					<actuator type="CONSTRAINT" name="limit" >
+						<component type="str" name="mode" value="LOC" />
+						<component type="str" name="limit" value="LOCX" />
+						<component type="float" name="limit_min" value="0.10000000149011612" />
+						<component type="float" name="limit_max" value="0.20000000298023224" />
+						<component type="int" name="damping" value="2" />
+					</actuator>
+					<actuator type="ACTION" name="turn" />
+					<actuator type="STATE" name="back_to_main1" />
+					<actuator type="EDIT_OBJECT" name="add_fire_hand" >
+						<component type="str" name="dynamic_operation" value="RESTOREDYN" />
+						<component type="Vector" name="linear_velocity" value="0.0 0.0 0.0" />
+						<component type="float" name="mass" value="0.0" />
+						<component type="POINTER" name="mesh" value="" />
+						<component type="str" name="mode" value="ADDOBJECT" />
+						<component type="POINTER" name="object" value="" />
+						<component type="int" name="time" value="21" />
+						<component type="POINTER" name="track_object" value="" />
+						<component type="bool" name="use_3d_tracking" value="False" />
+						<component type="bool" name="use_local_angular_velocity" value="False" />
+						<component type="bool" name="use_local_linear_velocity" value="False" />
+						<component type="bool" name="use_replace_display_mesh" value="True" />
+						<component type="bool" name="use_replace_physics_mesh" value="False" />
+					</actuator>
+					<actuator type="STATE" name="launcher_state" />
+					<actuator type="STATE" name="fly_state" />
+					<actuator type="STATE" name="back_to_main2" />
+					<actuator type="STATE" name="back_to_main3" />
+					<actuator type="STATE" name="add_st" />
+					<actuator type="STATE" name="sub_st" />
+					<actuator type="STATE" name="back_to_main4" />
+					<actuator type="STATE" name="act4" />
+					<actuator type="MESSAGE" name="act7" >
+						<component type="str" name="to_property" value="yoshi_control" />
+						<component type="str" name="subject" value="eat" />
+						<component type="str" name="body_message" value="" />
+					</actuator>
+					<actuator type="EDIT_OBJECT" name="act8" >
+						<component type="str" name="dynamic_operation" value="RESTOREDYN" />
+						<component type="Vector" name="linear_velocity" value="0.0 0.0 0.0" />
+						<component type="float" name="mass" value="0.0" />
+						<component type="POINTER" name="mesh" value="" />
+						<component type="str" name="mode" value="ENDOBJECT" />
+						<component type="POINTER" name="object" value="" />
+						<component type="int" name="time" value="0" />
+						<component type="POINTER" name="track_object" value="" />
+						<component type="bool" name="use_3d_tracking" value="False" />
+						<component type="bool" name="use_local_angular_velocity" value="False" />
+						<component type="bool" name="use_local_linear_velocity" value="False" />
+						<component type="bool" name="use_replace_display_mesh" value="True" />
+						<component type="bool" name="use_replace_physics_mesh" value="False" />
+					</actuator>
+					<actuator type="PARENT" name="act9" />
+					<actuator type="PROPERTY" name="act12" />
+					<actuator type="MOTION" name="flip_motion" />
+					<actuator type="EDIT_OBJECT" name="power_fx" >
+						<component type="str" name="dynamic_operation" value="RESTOREDYN" />
+						<component type="Vector" name="linear_velocity" value="0.0 0.0 0.0" />
+						<component type="float" name="mass" value="0.0" />
+						<component type="POINTER" name="mesh" value="" />
+						<component type="str" name="mode" value="ADDOBJECT" />
+						<component type="POINTER" name="object" value="" />
+						<component type="int" name="time" value="0" />
+						<component type="POINTER" name="track_object" value="" />
+						<component type="bool" name="use_3d_tracking" value="False" />
+						<component type="bool" name="use_local_angular_velocity" value="False" />
+						<component type="bool" name="use_local_linear_velocity" value="False" />
+						<component type="bool" name="use_replace_display_mesh" value="True" />
+						<component type="bool" name="use_replace_physics_mesh" value="False" />
+					</actuator>
+					<actuator type="EDIT_OBJECT" name="act18" >
+						<component type="str" name="dynamic_operation" value="SUSPENDDYN" />
+						<component type="Vector" name="linear_velocity" value="0.0 0.0 0.0" />
+						<component type="float" name="mass" value="0.0" />
+						<component type="POINTER" name="mesh" value="" />
+						<component type="str" name="mode" value="DYNAMICS" />
+						<component type="POINTER" name="object" value="" />
+						<component type="int" name="time" value="0" />
+						<component type="POINTER" name="track_object" value="" />
+						<component type="bool" name="use_3d_tracking" value="False" />
+						<component type="bool" name="use_local_angular_velocity" value="False" />
+						<component type="bool" name="use_local_linear_velocity" value="False" />
+						<component type="bool" name="use_replace_display_mesh" value="True" />
+						<component type="bool" name="use_replace_physics_mesh" value="False" />
+					</actuator>
+					<actuator type="EDIT_OBJECT" name="act19" >
+						<component type="str" name="dynamic_operation" value="RESTOREDYN" />
+						<component type="Vector" name="linear_velocity" value="0.0 0.0 0.0" />
+						<component type="float" name="mass" value="0.0" />
+						<component type="POINTER" name="mesh" value="" />
+						<component type="str" name="mode" value="DYNAMICS" />
+						<component type="POINTER" name="object" value="" />
+						<component type="int" name="time" value="0" />
+						<component type="POINTER" name="track_object" value="" />
+						<component type="bool" name="use_3d_tracking" value="False" />
+						<component type="bool" name="use_local_angular_velocity" value="False" />
+						<component type="bool" name="use_local_linear_velocity" value="False" />
+						<component type="bool" name="use_replace_display_mesh" value="True" />
+						<component type="bool" name="use_replace_physics_mesh" value="False" />
+					</actuator>
+					<actuator type="STATE" name="act20" />
+					<actuator type="EDIT_OBJECT" name="add" >
+						<component type="str" name="dynamic_operation" value="RESTOREDYN" />
+						<component type="Vector" name="linear_velocity" value="0.0 0.0 0.0" />
+						<component type="float" name="mass" value="0.0" />
+						<component type="POINTER" name="mesh" value="" />
+						<component type="str" name="mode" value="DYNAMICS" />
+						<component type="POINTER" name="object" value="" />
+						<component type="int" name="time" value="0" />
+						<component type="POINTER" name="track_object" value="" />
+						<component type="bool" name="use_3d_tracking" value="False" />
+						<component type="bool" name="use_local_angular_velocity" value="False" />
+						<component type="bool" name="use_local_linear_velocity" value="False" />
+						<component type="bool" name="use_replace_display_mesh" value="True" />
+						<component type="bool" name="use_replace_physics_mesh" value="False" />
+					</actuator>
+					<actuator type="EDIT_OBJECT" name="sub1" >
+						<component type="str" name="dynamic_operation" value="SUSPENDDYN" />
+						<component type="Vector" name="linear_velocity" value="0.0 0.0 0.0" />
+						<component type="float" name="mass" value="0.0" />
+						<component type="POINTER" name="mesh" value="" />
+						<component type="str" name="mode" value="DYNAMICS" />
+						<component type="POINTER" name="object" value="" />
+						<component type="int" name="time" value="0" />
+						<component type="POINTER" name="track_object" value="" />
+						<component type="bool" name="use_3d_tracking" value="False" />
+						<component type="bool" name="use_local_angular_velocity" value="False" />
+						<component type="bool" name="use_local_linear_velocity" value="False" />
+						<component type="bool" name="use_replace_display_mesh" value="True" />
+						<component type="bool" name="use_replace_physics_mesh" value="False" />
+					</actuator>
+					<actuator type="PROPERTY" name="act21" />
+					<actuator type="PROPERTY" name="act22" />
+					<actuator type="STATE" name="act23" />
+					<actuator type="PROPERTY" name="act24" />
+					<actuator type="PROPERTY" name="f_b_toggle" />
+					<actuator type="CONSTRAINT" name="act27" >
+						<component type="str" name="mode" value="DIST" />
+						<component type="str" name="limit" value="NONE" />
+						<component type="float" name="limit_min" value="0.0" />
+						<component type="float" name="limit_max" value="0.0" />
+						<component type="int" name="damping" value="0" />
+					</actuator>
+					<actuator type="MOTION" name="left" />
+					<actuator type="MOTION" name="right" />
+					<actuator type="EDIT_OBJECT" name="restore" >
+						<component type="str" name="dynamic_operation" value="RESTOREDYN" />
+						<component type="Vector" name="linear_velocity" value="0.0 0.0 0.0" />
+						<component type="float" name="mass" value="0.0" />
+						<component type="POINTER" name="mesh" value="" />
+						<component type="str" name="mode" value="DYNAMICS" />
+						<component type="POINTER" name="object" value="" />
+						<component type="int" name="time" value="0" />
+						<component type="POINTER" name="track_object" value="" />
+						<component type="bool" name="use_3d_tracking" value="False" />
+						<component type="bool" name="use_local_angular_velocity" value="False" />
+						<component type="bool" name="use_local_linear_velocity" value="False" />
+						<component type="bool" name="use_replace_display_mesh" value="True" />
+						<component type="bool" name="use_replace_physics_mesh" value="False" />
+					</actuator>
+					<actuator type="STATE" name="hop_up" />
+					<actuator type="STATE" name="ledge_st" />
+					<actuator type="STATE" name="main" />
+					<actuator type="EDIT_OBJECT" name="act25" >
+						<component type="str" name="dynamic_operation" value="SUSPENDDYN" />
+						<component type="Vector" name="linear_velocity" value="0.0 0.0 0.0" />
+						<component type="float" name="mass" value="0.0" />
+						<component type="POINTER" name="mesh" value="" />
+						<component type="str" name="mode" value="DYNAMICS" />
+						<component type="POINTER" name="object" value="" />
+						<component type="int" name="time" value="0" />
+						<component type="POINTER" name="track_object" value="" />
+						<component type="bool" name="use_3d_tracking" value="False" />
+						<component type="bool" name="use_local_angular_velocity" value="False" />
+						<component type="bool" name="use_local_linear_velocity" value="False" />
+						<component type="bool" name="use_replace_display_mesh" value="True" />
+						<component type="bool" name="use_replace_physics_mesh" value="False" />
+					</actuator>
+					<actuator type="ACTION" name="mario_climb" />
+					<actuator type="STATE" name="act26" />
+					<actuator type="MOTION" name="fwd_mot" />
+					<actuator type="STATE" name="back_to_main5" />
+					<actuator type="MOTION" name="aaa" />
+					<actuator type="PROPERTY" name="act6" />
+					<actuator type="PROPERTY" name="act11" />
+					<actuator type="EDIT_OBJECT" name="disable" >
+						<component type="str" name="dynamic_operation" value="SUSPENDDYN" />
+						<component type="Vector" name="linear_velocity" value="0.0 0.0 0.0" />
+						<component type="float" name="mass" value="0.0" />
+						<component type="POINTER" name="mesh" value="" />
+						<component type="str" name="mode" value="DYNAMICS" />
+						<component type="POINTER" name="object" value="" />
+						<component type="int" name="time" value="0" />
+						<component type="POINTER" name="track_object" value="" />
+						<component type="bool" name="use_3d_tracking" value="False" />
+						<component type="bool" name="use_local_angular_velocity" value="False" />
+						<component type="bool" name="use_local_linear_velocity" value="False" />
+						<component type="bool" name="use_replace_display_mesh" value="True" />
+						<component type="bool" name="use_replace_physics_mesh" value="False" />
+					</actuator>
+					<actuator type="EDIT_OBJECT" name="restore" >
+						<component type="str" name="dynamic_operation" value="RESTOREDYN" />
+						<component type="Vector" name="linear_velocity" value="0.0 0.0 0.0" />
+						<component type="float" name="mass" value="0.0" />
+						<component type="POINTER" name="mesh" value="" />
+						<component type="str" name="mode" value="DYNAMICS" />
+						<component type="POINTER" name="object" value="" />
+						<component type="int" name="time" value="0" />
+						<component type="POINTER" name="track_object" value="" />
+						<component type="bool" name="use_3d_tracking" value="False" />
+						<component type="bool" name="use_local_angular_velocity" value="False" />
+						<component type="bool" name="use_local_linear_velocity" value="False" />
+						<component type="bool" name="use_replace_display_mesh" value="True" />
+						<component type="bool" name="use_replace_physics_mesh" value="False" />
+					</actuator>
+					<actuator type="EDIT_OBJECT" name="smoke" >
+						<component type="str" name="dynamic_operation" value="RESTOREDYN" />
+						<component type="Vector" name="linear_velocity" value="0.0 0.0 0.0" />
+						<component type="float" name="mass" value="0.0" />
+						<component type="POINTER" name="mesh" value="" />
+						<component type="str" name="mode" value="ADDOBJECT" />
+						<component type="POINTER" name="object" value="" />
+						<component type="int" name="time" value="0" />
+						<component type="POINTER" name="track_object" value="" />
+						<component type="bool" name="use_3d_tracking" value="False" />
+						<component type="bool" name="use_local_angular_velocity" value="False" />
+						<component type="bool" name="use_local_linear_velocity" value="False" />
+						<component type="bool" name="use_replace_display_mesh" value="True" />
+						<component type="bool" name="use_replace_physics_mesh" value="False" />
+					</actuator>
+					<actuator type="STATE" name="2D_state" />
+					<actuator type="EDIT_OBJECT" name="add_fx" >
+						<component type="str" name="dynamic_operation" value="RESTOREDYN" />
+						<component type="Vector" name="linear_velocity" value="0.0 0.0 0.0" />
+						<component type="float" name="mass" value="0.0" />
+						<component type="POINTER" name="mesh" value="" />
+						<component type="str" name="mode" value="ADDOBJECT" />
+						<component type="POINTER" name="object" value="" />
+						<component type="int" name="time" value="0" />
+						<component type="POINTER" name="track_object" value="" />
+						<component type="bool" name="use_3d_tracking" value="False" />
+						<component type="bool" name="use_local_angular_velocity" value="False" />
+						<component type="bool" name="use_local_linear_velocity" value="False" />
+						<component type="bool" name="use_replace_display_mesh" value="True" />
+						<component type="bool" name="use_replace_physics_mesh" value="False" />
+					</actuator>
+					<actuator type="STATE" name="act5" />
+					<actuator type="EDIT_OBJECT" name="add_footprint" >
+						<component type="str" name="dynamic_operation" value="RESTOREDYN" />
+						<component type="Vector" name="linear_velocity" value="0.0 0.0 0.0" />
+						<component type="float" name="mass" value="0.0" />
+						<component type="POINTER" name="mesh" value="" />
+						<component type="str" name="mode" value="ADDOBJECT" />
+						<component type="POINTER" name="object" value="" />
+						<component type="int" name="time" value="300" />
+						<component type="POINTER" name="track_object" value="" />
+						<component type="bool" name="use_3d_tracking" value="False" />
+						<component type="bool" name="use_local_angular_velocity" value="False" />
+						<component type="bool" name="use_local_linear_velocity" value="False" />
+						<component type="bool" name="use_replace_display_mesh" value="True" />
+						<component type="bool" name="use_replace_physics_mesh" value="False" />
+					</actuator>
+				</actuators>
+			</game>
+			<entity anisotropic_friction="False" lock_trans_y="False" damping_trans="0.35926553606987" damping_rot="0.6244584918022156" inertia_tensor="0.4000000059604645" actor="True" velocity_min="0.0" lock_trans_z="False" physics_type="DYNAMIC" lock_trans_x="False" meshFile="Cube.004.mesh" friction_y="1.0" friction_x="1.0" friction_z="1.0" velocity_max="0.0" ghost="False" name="Cube.004" mass_radius="1.0" mass="1.0" lock_rot_x="False" lock_rot_y="False" lock_rot_z="False" />
+			<node name="2d_cam_pos" >
+				<position y="0.000002" x="18.516401" z="0.000000" />
+				<rotation qy="0.707107" qx="0.000000" qz="-0.000000" qw="0.707107" />
+				<scale y="1.000000" x="1.000000" z="1.000000" />
+				<game >
+					<sensors />
+					<actuators />
+				</game>
+			</node>
+			<node name="Armature.004" >
+				<position y="0.000000" x="-0.223229" z="-0.000000" />
+				<rotation qy="0.000000" qx="0.000000" qz="-0.000000" qw="1.000000" />
+				<scale y="1.593545" x="1.593545" z="1.593545" />
+				<game >
+					<sensors >
+						<sensor type="MESSAGE" name="sensor" >
+							<component type="str" name="subject" value="fire_circle" />
+						</sensor>
+					</sensors>
+					<actuators >
+						<actuator type="ACTION" name="act" />
+					</actuators>
+				</game>
+				<node name="Circle.002" >
+					<position y="0.000001" x="0.000000" z="-0.000000" />
+					<rotation qy="0.000000" qx="0.000000" qz="-0.000000" qw="1.000000" />
+					<scale y="1.000000" x="1.000000" z="1.000000" />
+					<game >
+						<sensors />
+						<actuators >
+							<actuator type="ACTION" name="act1" />
+						</actuators>
+					</game>
+					<entity anisotropic_friction="False" lock_trans_y="False" damping_trans="0.03999999910593033" damping_rot="0.10000000149011612" inertia_tensor="0.4000000059604645" actor="False" velocity_min="0.0" lock_trans_z="False" physics_type="NO_COLLISION" lock_trans_x="False" meshFile="Circle.017.mesh" friction_y="1.0" friction_x="1.0" friction_z="1.0" velocity_max="0.0" ghost="False" name="Circle.017" mass_radius="1.0" mass="1.0" lock_rot_x="False" lock_rot_y="False" lock_rot_z="False" />
+				</node>
+			</node>
+			<node name="Armature.005" >
+				<position y="0.237656" x="0.000000" z="-0.000000" />
+				<rotation qy="0.969582" qx="0.047044" qz="0.024715" qw="0.238928" />
+				<scale y="1.774984" x="1.774984" z="1.774984" />
+				<game >
+					<sensors />
+					<actuators >
+						<actuator type="ACTION" name="act" />
+					</actuators>
+				</game>
+				<node name="Circle.003" >
+					<position y="0.237658" x="0.000000" z="0.000000" />
+					<rotation qy="0.969582" qx="0.047044" qz="0.024715" qw="0.238928" />
+					<scale y="1.774984" x="1.774984" z="1.774984" />
+					<game >
+						<sensors />
+						<actuators >
+							<actuator type="ACTION" name="" />
+						</actuators>
+					</game>
+					<entity anisotropic_friction="False" lock_trans_y="False" damping_trans="0.03999999910593033" damping_rot="0.10000000149011612" inertia_tensor="0.4000000059604645" actor="False" velocity_min="0.0" lock_trans_z="False" physics_type="NO_COLLISION" lock_trans_x="False" meshFile="Circle.018.mesh" friction_y="1.0" friction_x="1.0" friction_z="1.0" velocity_max="0.0" ghost="False" name="Circle.018" mass_radius="1.0" mass="1.0" lock_rot_x="False" lock_rot_y="False" lock_rot_z="False" />
+				</node>
+			</node>
+			<node name="Empty.025" >
+				<position y="-0.322020" x="0.000000" z="-0.000000" />
+				<rotation qy="0.000000" qx="0.000000" qz="-0.000000" qw="1.000000" />
+				<scale y="1.000000" x="1.000000" z="1.000000" />
+				<game >
+					<sensors >
+						<sensor type="RAY" name="water_top" >
+							<component type="str" name="ray_type" value="PROPERTY" />
+							<component type="str" name="property" value="water" />
+							<component type="str" name="material" value="" />
+							<component type="str" name="axis" value="ZAXIS" />
+							<component type="float" name="range" value="0.75" />
+							<component type="bool" name="use_x_ray" value="True" />
+						</sensor>
+					</sensors>
+					<actuators />
+				</game>
+			</node>
+			<node name="Empty.103" >
+				<position y="-0.843914" x="0.000000" z="-0.000000" />
+				<rotation qy="0.000000" qx="0.000000" qz="-0.000000" qw="1.000000" />
+				<scale y="1.000000" x="1.000000" z="1.000000" />
+				<game >
+					<sensors >
+						<sensor type="RAY" name="water_end" >
+							<component type="str" name="ray_type" value="PROPERTY" />
+							<component type="str" name="property" value="water" />
+							<component type="str" name="material" value="" />
+							<component type="str" name="axis" value="ZAXIS" />
+							<component type="float" name="range" value="50.0" />
+							<component type="bool" name="use_x_ray" value="True" />
+						</sensor>
+					</sensors>
+					<actuators />
+				</game>
+			</node>
+			<node name="fireball_emitter" >
+				<position y="-0.237373" x="0.911491" z="0.004021" />
+				<rotation qy="0.000000" qx="0.000000" qz="-0.000000" qw="1.000000" />
+				<scale y="1.203232" x="1.203232" z="1.203232" />
+				<game >
+					<sensors />
+					<actuators >
+						<actuator type="EDIT_OBJECT" name="add_fireball" >
+							<component type="str" name="dynamic_operation" value="RESTOREDYN" />
+							<component type="Vector" name="linear_velocity" value="0.0 0.0 0.0" />
+							<component type="float" name="mass" value="0.0" />
+							<component type="POINTER" name="mesh" value="" />
+							<component type="str" name="mode" value="ADDOBJECT" />
+							<component type="POINTER" name="object" value="" />
+							<component type="int" name="time" value="200" />
+							<component type="POINTER" name="track_object" value="" />
+							<component type="bool" name="use_3d_tracking" value="False" />
+							<component type="bool" name="use_local_angular_velocity" value="False" />
+							<component type="bool" name="use_local_linear_velocity" value="False" />
+							<component type="bool" name="use_replace_display_mesh" value="True" />
+							<component type="bool" name="use_replace_physics_mesh" value="False" />
+						</actuator>
+					</actuators>
+				</game>
+			</node>
+			<node name="fly_cam" >
+				<position y="3.861689" x="-0.000003" z="14.360121" />
+				<rotation qy="-0.000000" qx="-0.116689" qz="-0.000000" qw="0.993169" />
+				<scale y="1.203233" x="1.203232" z="1.203232" />
+				<game >
+					<sensors />
+					<actuators />
+				</game>
+			</node>
+			<node name="main_control.001" >
+				<position y="0.844742" x="-0.000000" z="-0.712973" />
+				<rotation qy="-0.000000" qx="0.000000" qz="-0.000000" qw="1.000000" />
+				<scale y="1.449960" x="1.449960" z="1.449960" />
+				<game >
+					<sensors />
+					<actuators />
+				</game>
+				<node name="local_control.001" >
+					<position y="0.844742" x="-0.000000" z="-0.712973" />
+					<rotation qy="-0.000000" qx="0.000000" qz="-0.000000" qw="1.000000" />
+					<scale y="1.169890" x="1.169890" z="1.169890" />
+					<game >
+						<sensors />
+						<actuators />
+					</game>
+					<node name="fps_leftright" >
+						<position y="0.844742" x="-0.000000" z="-0.712973" />
+						<rotation qy="-0.000000" qx="0.000000" qz="-0.000000" qw="1.000000" />
+						<scale y="0.828335" x="0.828335" z="0.828335" />
+						<game >
+							<sensors >
+								<sensor type="MOUSE" name="MouseLook" />
+								<sensor type="ALWAYS" name="init" />
+								<sensor type="PROPERTY" name="sensor" />
+								<sensor type="PROPERTY" name="sensor1" />
+							</sensors>
+							<actuators >
+								<actuator type="MOTION" name="LeftRight" />
+								<actuator type="STATE" name="act" />
+								<actuator type="STATE" name="act1" />
+							</actuators>
+						</game>
+						<node name="fps_cam_rot" >
+							<position y="0.868455" x="-0.000000" z="-0.798730" />
+							<rotation qy="0.001437" qx="0.707812" qz="-0.000425" qw="0.706400" />
+							<scale y="0.343991" x="0.343991" z="0.343991" />
+							<game >
+								<sensors />
+								<actuators >
+									<actuator type="MOTION" name="UpDown" />
+								</actuators>
+							</game>
+							<node name="fps_cam_pos" >
+								<position y="0.748158" x="-0.001423" z="2.746624" />
+								<rotation qy="-0.000000" qx="-0.039996" qz="0.000000" qw="0.999200" />
+								<scale y="1.203232" x="1.203233" z="1.203233" />
+								<game >
+									<sensors />
+									<actuators />
+								</game>
+							</node>
+						</node>
+					</node>
+				</node>
+			</node>
+			<node name="mario_rig_cont" >
+				<position y="-0.000000" x="0.000000" z="-0.000000" />
+				<rotation qy="-0.000021" qx="0.709267" qz="-0.000021" qw="0.704940" />
+				<scale y="1.000000" x="1.000000" z="1.000000" />
+				<game >
+					<sensors />
+					<actuators >
+						<actuator type="ACTION" name="rig_cont" />
+						<actuator type="ACTION" name="rig_ipo" />
+					</actuators>
+				</game>
+				<node name="mario_rig" >
+					<position y="-0.862582" x="0.024280" z="-0.414735" />
+					<rotation qy="0.153493" qx="0.692461" qz="-0.152598" qw="0.688224" />
+					<scale y="0.805734" x="0.805734" z="0.805734" />
+					<game >
+						<sensors >
+							<sensor type="PROPERTY" name="sensor" />
+						</sensors>
+						<actuators >
+							<actuator type="ACTION" name="mario_idle" />
+							<actuator type="ACTION" name="mario_lean" />
+							<actuator type="ACTION" name="mario_run" />
+							<actuator type="ACTION" name="mario_jump" />
+							<actuator type="ACTION" name="mario_jump2" />
+							<actuator type="ACTION" name="mario_jump_land" />
+							<actuator type="ACTION" name="mario_fall" />
+							<actuator type="ACTION" name="mario_ride" />
+							<actuator type="ACTION" name="mario_launch" />
+							<actuator type="ACTION" name="act2" />
+							<actuator type="ACTION" name="act1" />
+							<actuator type="ACTION" name="ball" />
+							<actuator type="ACTION" name="swim_idle" />
+							<actuator type="ACTION" name="swim_fwd2" />
+							<actuator type="ACTION" name="act13" />
+							<actuator type="ACTION" name="act5" />
+							<actuator type="ACTION" name="mario_fireball" />
+							<actuator type="ACTION" name="mario_w_set" />
+							<actuator type="ACTION" name="mario_jump3" />
+							<actuator type="ACTION" name="mario_shimmy_init" />
+							<actuator type="ACTION" name="mario_shimmy_idle" />
+							<actuator type="ACTION" name="mario_shimmy_left" />
+							<actuator type="ACTION" name="mario_shimmy_right" />
+							<actuator type="ACTION" name="mario_shimmy_climb" />
+							<actuator type="ACTION" name="yoshi_stomp" />
+							<actuator type="ACTION" name="yoshi_stomp_fall" />
+							<actuator type="ACTION" name="yoshi_stomp_land" />
+							<actuator type="ACTION" name="act28" />
+						</actuators>
+					</game>
+					<node name="mario" >
+						<position y="0.068973" x="-0.343117" z="-1.199872" />
+						<rotation qy="-0.688224" qx="-0.152598" qz="-0.692461" qw="0.153493" />
+						<scale y="0.017058" x="0.017058" z="0.017058" />
+						<game >
+							<sensors >
+								<sensor type="PROPERTY" name="trigger" />
+								<sensor type="ALWAYS" name="rainbow" />
+								<sensor type="KEYBOARD" name="w" />
+								<sensor type="KEYBOARD" name="s" />
+								<sensor type="PROPERTY" name="sensor1" />
+								<sensor type="DELAY" name="end_rainbow" />
+								<sensor type="ALWAYS" name="add_once" />
+							</sensors>
+							<actuators >
+								<actuator type="EDIT_OBJECT" name="add_obj" >
+									<component type="str" name="dynamic_operation" value="RESTOREDYN" />
+									<component type="Vector" name="linear_velocity" value="0.0 0.0 0.0" />
+									<component type="float" name="mass" value="0.0" />
+									<component type="POINTER" name="mesh" value="" />
+									<component type="str" name="mode" value="ADDOBJECT" />
+									<component type="POINTER" name="object" value="" />
+									<component type="int" name="time" value="25" />
+									<component type="POINTER" name="track_object" value="" />
+									<component type="bool" name="use_3d_tracking" value="False" />
+									<component type="bool" name="use_local_angular_velocity" value="False" />
+									<component type="bool" name="use_local_linear_velocity" value="False" />
+									<component type="bool" name="use_replace_display_mesh" value="True" />
+									<component type="bool" name="use_replace_physics_mesh" value="False" />
+								</actuator>
+								<actuator type="STATE" name="act" />
+								<actuator type="STATE" name="back_to_main6" />
+								<actuator type="EDIT_OBJECT" name="add_fx1" >
+									<component type="str" name="dynamic_operation" value="RESTOREDYN" />
+									<component type="Vector" name="linear_velocity" value="0.0 0.0 0.0" />
+									<component type="float" name="mass" value="0.0" />
+									<component type="POINTER" name="mesh" value="" />
+									<component type="str" name="mode" value="ADDOBJECT" />
+									<component type="POINTER" name="object" value="" />
+									<component type="int" name="time" value="0" />
+									<component type="POINTER" name="track_object" value="" />
+									<component type="bool" name="use_3d_tracking" value="False" />
+									<component type="bool" name="use_local_angular_velocity" value="False" />
+									<component type="bool" name="use_local_linear_velocity" value="False" />
+									<component type="bool" name="use_replace_display_mesh" value="True" />
+									<component type="bool" name="use_replace_physics_mesh" value="False" />
+								</actuator>
+							</actuators>
+						</game>
+						<entity anisotropic_friction="False" lock_trans_y="False" damping_trans="0.03999999910593033" damping_rot="0.10000000149011612" inertia_tensor="0.4000000059604645" actor="False" velocity_min="0.0" lock_trans_z="False" physics_type="NO_COLLISION" lock_trans_x="False" meshFile="mario.mesh" friction_y="1.0" friction_x="1.0" friction_z="1.0" velocity_max="0.0" ghost="False" name="mario" mass_radius="1.0" mass="1.0" lock_rot_x="False" lock_rot_y="False" lock_rot_z="False" />
+					</node>
+					<node name="mario_racoon_ear" >
+						<position y="-0.260063" x="0.477107" z="0.576081" />
+						<rotation qy="0.326124" qx="0.149570" qz="0.931283" qw="0.063118" />
+						<scale y="0.005821" x="0.005821" z="0.005821" />
+						<game >
+							<sensors />
+							<actuators >
+								<actuator type="ACTION" name="ears_on" />
+								<actuator type="ACTION" name="ears_off" />
+							</actuators>
+						</game>
+						<entity anisotropic_friction="False" lock_trans_y="False" damping_trans="0.03999999910593033" damping_rot="0.10000000149011612" inertia_tensor="0.4000000059604645" actor="False" velocity_min="0.0" lock_trans_z="False" physics_type="NO_COLLISION" lock_trans_x="False" meshFile="ma_mdl1__mat_eye_.002.mesh" friction_y="1.0" friction_x="1.0" friction_z="1.0" velocity_max="0.0" ghost="False" name="ma_mdl1__mat_eye_.002" mass_radius="1.0" mass="1.0" lock_rot_x="False" lock_rot_y="False" lock_rot_z="False" />
+					</node>
+					<node name="mario_tail_rig" >
+						<position y="-0.127567" x="-0.084945" z="-0.591631" />
+						<rotation qy="0.139662" qx="0.749858" qz="-0.165466" qw="0.625163" />
+						<scale y="0.115414" x="0.115414" z="0.115414" />
+						<game >
+							<sensors />
+							<actuators >
+								<actuator type="ACTION" name="tail_on" />
+								<actuator type="ACTION" name="tail_off" />
+								<actuator type="ACTION" name="skunk_jump" />
+								<actuator type="ACTION" name="skunk_run" />
+								<actuator type="ACTION" name="skunk_idle" />
+								<actuator type="ACTION" name="skunk_right" />
+								<actuator type="ACTION" name="skunk_left" />
+							</actuators>
+						</game>
+						<node name="Cube.083" >
+							<position y="-0.193983" x="-0.091672" z="-0.606451" />
+							<rotation qy="0.139731" qx="0.749844" qz="-0.165524" qw="0.625149" />
+							<scale y="0.020603" x="0.020603" z="0.020603" />
+							<game >
+								<sensors />
+								<actuators />
+							</game>
+							<entity anisotropic_friction="False" lock_trans_y="False" damping_trans="0.03999999910593033" damping_rot="0.10000000149011612" inertia_tensor="0.4000000059604645" actor="False" velocity_min="0.0" lock_trans_z="False" physics_type="NO_COLLISION" lock_trans_x="False" meshFile="Cube.195.mesh" friction_y="1.0" friction_x="1.0" friction_z="1.0" velocity_max="0.0" ghost="False" name="Cube.195" mass_radius="1.0" mass="1.0" lock_rot_x="False" lock_rot_y="False" lock_rot_z="False" />
+						</node>
+					</node>
+				</node>
+			</node>
+			<node name="mario_water_ray" >
+				<position y="1.074745" x="-0.000000" z="-0.000000" />
+				<rotation qy="-0.000000" qx="0.000000" qz="-0.000000" qw="1.000000" />
+				<scale y="1.000000" x="1.000000" z="1.000000" />
+				<game >
+					<sensors >
+						<sensor type="RAY" name="ray_water" >
+							<component type="str" name="ray_type" value="PROPERTY" />
+							<component type="str" name="property" value="" />
+							<component type="str" name="material" value="" />
+							<component type="str" name="axis" value="ZAXIS" />
+							<component type="float" name="range" value="20.0" />
+							<component type="bool" name="use_x_ray" value="True" />
+						</sensor>
+						<sensor type="RAY" name="ray_ground1" >
+							<component type="str" name="ray_type" value="PROPERTY" />
+							<component type="str" name="property" value="ground" />
+							<component type="str" name="material" value="" />
+							<component type="str" name="axis" value="NEGZAXIS" />
+							<component type="float" name="range" value="4.0" />
+							<component type="bool" name="use_x_ray" value="False" />
+						</sensor>
+					</sensors>
+					<actuators />
+				</game>
+			</node>
+			<node name="mario_z" >
+				<position y="1.546198" x="0.000000" z="0.000000" />
+				<rotation qy="-0.000000" qx="0.000000" qz="-0.000000" qw="1.000000" />
+				<scale y="0.116044" x="0.116044" z="0.116044" />
+				<game >
+					<sensors >
+						<sensor type="KEYBOARD" name="sensor" />
+						<sensor type="KEYBOARD" name="sensor1" />
+						<sensor type="RAY" name="ray_z" >
+							<component type="str" name="ray_type" value="PROPERTY" />
+							<component type="str" name="property" value="ledge_top" />
+							<component type="str" name="material" value="" />
+							<component type="str" name="axis" value="NEGZAXIS" />
+							<component type="float" name="range" value="4.0" />
+							<component type="bool" name="use_x_ray" value="True" />
+						</sensor>
+					</sensors>
+					<actuators >
+						<actuator type="MOTION" name="act" />
+						<actuator type="MOTION" name="act1" />
+						<actuator type="MOTION" name="z_rot" />
+					</actuators>
+				</game>
+				<entity anisotropic_friction="False" lock_trans_y="False" damping_trans="1.0" damping_rot="1.0" inertia_tensor="0.4000000059604645" actor="True" velocity_min="0.0" lock_trans_z="False" physics_type="NO_COLLISION" lock_trans_x="False" meshFile="Plane.066.mesh" friction_y="1.0" friction_x="1.0" friction_z="1.0" velocity_max="0.0" ghost="True" name="Plane.066" mass_radius="1.0" mass="1.0" lock_rot_x="False" lock_rot_y="False" lock_rot_z="False" />
+			</node>
+			<node name="tailwind_rig" >
+				<position y="-0.148708" x="0.000000" z="0.035697" />
+				<rotation qy="-0.000000" qx="0.000000" qz="0.000000" qw="1.000000" />
+				<scale y="0.013530" x="0.013530" z="0.013530" />
+				<game >
+					<sensors />
+					<actuators >
+						<actuator type="ACTION" name="tailwind_up" />
+						<actuator type="ACTION" name="tailwind_dwn" />
+						<actuator type="ACTION" name="act1" />
+						<actuator type="ACTION" name="tailwind_rght" />
+						<actuator type="ACTION" name="tailwind_left" />
+						<actuator type="ACTION" name="act2" />
+					</actuators>
+				</game>
+				<node name="Plane.023" >
+					<position y="-0.150835" x="0.000793" z="0.029874" />
+					<rotation qy="-0.000000" qx="0.707107" qz="0.000000" qw="0.707107" />
+					<scale y="0.013530" x="0.013530" z="0.013530" />
+					<game >
+						<sensors />
+						<actuators />
+					</game>
+					<entity anisotropic_friction="False" lock_trans_y="False" damping_trans="0.03999999910593033" damping_rot="0.10000000149011612" inertia_tensor="0.4000000059604645" actor="False" velocity_min="0.0" lock_trans_z="False" physics_type="NO_COLLISION" lock_trans_x="False" meshFile="Plane.055.mesh" friction_y="1.0" friction_x="1.0" friction_z="1.0" velocity_max="0.0" ghost="False" name="Plane.055" mass_radius="1.0" mass="1.0" lock_rot_x="False" lock_rot_y="False" lock_rot_z="False" />
+				</node>
+			</node>
+		</node>
+		<node name="starbit_camcont" >
+			<position y="-0.787203" x="-0.000000" z="0.795826" />
+			<rotation qy="0.000000" qx="0.000000" qz="-0.000000" qw="1.000000" />
+			<scale y="1.111065" x="1.111065" z="1.111065" />
+			<game >
+				<sensors >
+					<sensor type="ALWAYS" name="cam_track_prop" />
+				</sensors>
+				<actuators >
+					<actuator type="EDIT_OBJECT" name="mario_track" >
+						<component type="str" name="dynamic_operation" value="RESTOREDYN" />
+						<component type="Vector" name="linear_velocity" value="0.0 0.0 0.0" />
+						<component type="float" name="mass" value="0.0" />
+						<component type="POINTER" name="mesh" value="" />
+						<component type="str" name="mode" value="TRACKTO" />
+						<component type="POINTER" name="object" value="" />
+						<component type="int" name="time" value="0" />
+						<component type="POINTER" name="track_object" value="" />
+						<component type="bool" name="use_3d_tracking" value="True" />
+						<component type="bool" name="use_local_angular_velocity" value="False" />
+						<component type="bool" name="use_local_linear_velocity" value="False" />
+						<component type="bool" name="use_replace_display_mesh" value="True" />
+						<component type="bool" name="use_replace_physics_mesh" value="False" />
+					</actuator>
+				</actuators>
+			</game>
+			<node name="starbit_cam_parent" >
+				<position y="-0.600855" x="-0.000000" z="-0.199770" />
+				<rotation qy="0.000000" qx="0.245787" qz="-0.000000" qw="0.969324" />
+				<scale y="1.000000" x="1.000000" z="1.000000" />
+				<game >
+					<sensors />
+					<actuators />
+				</game>
+				<node name="starbit_cam_main" >
+					<position y="-0.694912" x="-0.000000" z="-0.250746" />
+					<rotation qy="-0.000000" qx="0.707067" qz="-0.000000" qw="0.707146" />
+					<scale y="1.000000" x="1.000000" z="1.000000" />
+					<game >
+						<sensors >
+							<sensor type="ALWAYS" name="sensor1" />
+							<sensor type="MESSAGE" name="sensor" >
+								<component type="str" name="subject" value="cam_shake" />
+							</sensor>
+							<sensor type="ALWAYS" name="sensor2" />
+						</sensors>
+						<actuators >
+							<actuator type="ACTION" name="cam_ipo" />
+							<actuator type="SCENE" name="act" />
+							<actuator type="SCENE" name="act1" />
+							<actuator type="SCENE" name="act2" />
+						</actuators>
+					</game>
+					<camera projectionType="perspective" fov="51.28201164861056" name="Camera.001" >
+						<clipping nearPlaneDist="0.10000000149011612" farPlaneDist="1000.0" />
+					</camera>
+					<node name="bowser_target" >
+						<position y="-65.496773" x="-1.579448" z="-1.916361" />
+						<rotation qy="0.001437" qx="-0.707230" qz="-0.000427" qw="0.706982" />
+						<scale y="0.193424" x="0.193424" z="0.193424" />
+						<game >
+							<sensors >
+								<sensor type="ALWAYS" name="sensor" />
+							</sensors>
+							<actuators >
+								<actuator type="ACTION" name="act" />
+							</actuators>
+						</game>
+						<entity anisotropic_friction="False" lock_trans_y="False" damping_trans="0.5659443736076355" damping_rot="0.8130007982254028" inertia_tensor="0.4000000059604645" actor="False" velocity_min="0.0" lock_trans_z="False" physics_type="NO_COLLISION" lock_trans_x="False" meshFile="Cube.188.mesh" friction_y="1.0" friction_x="1.0" friction_z="1.0" velocity_max="0.0" ghost="False" name="Cube.188" mass_radius="1.0" mass="1.0" lock_rot_x="False" lock_rot_y="False" lock_rot_z="False" />
+					</node>
+					<node name="main_control" >
+						<position y="0.000000" x="0.000000" z="0.000000" />
+						<rotation qy="0.000000" qx="-0.707863" qz="-0.000000" qw="0.706350" />
+						<scale y="1.205054" x="1.205054" z="1.205054" />
+						<game >
+							<sensors >
+								<sensor type="RAY" name="sensor" >
+									<component type="str" name="ray_type" value="PROPERTY" />
+									<component type="str" name="property" value="water" />
+									<component type="str" name="material" value="" />
+									<component type="str" name="axis" value="ZAXIS" />
+									<component type="float" name="range" value="20.0" />
+									<component type="bool" name="use_x_ray" value="True" />
+								</sensor>
+								<sensor type="RAY" name="sensor1" >
+									<component type="str" name="ray_type" value="PROPERTY" />
+									<component type="str" name="property" value="water" />
+									<component type="str" name="material" value="" />
+									<component type="str" name="axis" value="ZAXIS" />
+									<component type="float" name="range" value="20.0" />
+									<component type="bool" name="use_x_ray" value="True" />
+								</sensor>
+							</sensors>
+							<actuators >
+								<actuator type="STATE" name="act2" />
+								<actuator type="STATE" name="act" />
+							</actuators>
+						</game>
+						<node name="local_control" >
+							<position y="0.000000" x="0.000000" z="0.000000" />
+							<rotation qy="0.000000" qx="-0.707863" qz="-0.000000" qw="0.706350" />
+							<scale y="0.972289" x="0.972289" z="0.972289" />
+							<game >
+								<sensors />
+								<actuators />
+							</game>
+							<node name="leftright" >
+								<position y="0.000000" x="0.000000" z="0.000000" />
+								<rotation qy="0.000000" qx="-0.707863" qz="-0.000000" qw="0.706350" />
+								<scale y="0.688425" x="0.688425" z="0.688425" />
+								<game >
+									<sensors >
+										<sensor type="MOUSE" name="MouseLook" />
+										<sensor type="ALWAYS" name="init" />
+									</sensors>
+									<actuators >
+										<actuator type="MOTION" name="LeftRight" />
+									</actuators>
+								</game>
+								<node name="updown" >
+									<position y="0.000000" x="0.000000" z="0.000000" />
+									<rotation qy="0.000714" qx="-0.000071" qz="-0.001318" qw="0.999999" />
+									<scale y="0.285889" x="0.285889" z="0.285889" />
+									<game >
+										<sensors />
+										<actuators >
+											<actuator type="MOTION" name="UpDown" />
+										</actuators>
+									</game>
+									<node name="starbit_ray_end" >
+										<position y="-66.238335" x="-0.195145" z="-0.101562" />
+										<rotation qy="0.001437" qx="-0.707230" qz="-0.000427" qw="0.706982" />
+										<scale y="0.535206" x="0.535206" z="0.535206" />
+										<game >
+											<sensors />
+											<actuators />
+										</game>
+										<entity anisotropic_friction="False" lock_trans_y="False" damping_trans="0.5659443736076355" damping_rot="0.8130007982254028" inertia_tensor="0.4000000059604645" actor="False" velocity_min="0.0" lock_trans_z="False" physics_type="STATIC" lock_trans_x="False" meshFile="Cube.006.mesh" friction_y="1.0" friction_x="1.0" friction_z="1.0" velocity_max="0.0" ghost="True" name="Cube.006" mass_radius="1.0" mass="1.0" lock_rot_x="False" lock_rot_y="False" lock_rot_z="False" />
+									</node>
+									<node name="starbit_ray_pivot" >
+										<position y="-1.405451" x="-0.003705" z="-0.000061" />
+										<rotation qy="0.001437" qx="-0.707230" qz="-0.000427" qw="0.706982" />
+										<scale y="0.032799" x="0.032799" z="0.032799" />
+										<game >
+											<sensors >
+												<sensor type="RAY" name="ray" >
+													<component type="str" name="ray_type" value="PROPERTY" />
+													<component type="str" name="property" value="" />
+													<component type="str" name="material" value="" />
+													<component type="str" name="axis" value="YAXIS" />
+													<component type="float" name="range" value="200.0" />
+													<component type="bool" name="use_x_ray" value="False" />
+												</sensor>
+												<sensor type="ALWAYS" name="sensor" />
+											</sensors>
+											<actuators >
+												<actuator type="MOTION" name="act" />
+												<actuator type="ACTION" name="act1" />
+											</actuators>
+										</game>
+										<entity anisotropic_friction="False" lock_trans_y="False" damping_trans="0.5659443736076355" damping_rot="0.8130007982254028" inertia_tensor="0.4000000059604645" actor="False" velocity_min="0.0" lock_trans_z="False" physics_type="NO_COLLISION" lock_trans_x="False" meshFile="Cube.002.mesh" friction_y="1.0" friction_x="1.0" friction_z="1.0" velocity_max="0.0" ghost="False" name="Cube.002" mass_radius="1.0" mass="1.0" lock_rot_x="False" lock_rot_y="False" lock_rot_z="False" />
+									</node>
+								</node>
+							</node>
+						</node>
+					</node>
+					<node name="star rig center" >
+						<position y="1.812992" x="0.000001" z="-0.000001" />
+						<rotation qy="-0.000000" qx="-0.707107" qz="0.000000" qw="0.707107" />
+						<scale y="1.676232" x="1.676232" z="1.676233" />
+						<game >
+							<sensors />
+							<actuators />
+						</game>
+						<node name="star rig emitter" >
+							<position y="1.846629" x="-3.987122" z="-1.506766" />
+							<rotation qy="-0.000000" qx="-0.707107" qz="0.000000" qw="0.707107" />
+							<scale y="1.676232" x="1.676232" z="1.676233" />
+							<game >
+								<sensors >
+									<sensor type="ALWAYS" name="sensor" />
+									<sensor type="MOUSE" name="click" />
+								</sensors>
+								<actuators >
+									<actuator type="EDIT_OBJECT" name="track_to" >
+										<component type="str" name="dynamic_operation" value="RESTOREDYN" />
+										<component type="Vector" name="linear_velocity" value="0.0 0.0 0.0" />
+										<component type="float" name="mass" value="0.0" />
+										<component type="POINTER" name="mesh" value="" />
+										<component type="str" name="mode" value="TRACKTO" />
+										<component type="Object" name="object" value="starbit_target" />
+										<component type="int" name="time" value="0" />
+										<component type="Object" name="track_object" value="starbit_target" />
+										<component type="bool" name="use_3d_tracking" value="True" />
+										<component type="bool" name="use_local_angular_velocity" value="False" />
+										<component type="bool" name="use_local_linear_velocity" value="False" />
+										<component type="bool" name="use_replace_display_mesh" value="True" />
+										<component type="bool" name="use_replace_physics_mesh" value="False" />
+									</actuator>
+									<actuator type="ACTION" name="star_ipo" />
+									<actuator type="EDIT_OBJECT" name="add_starbit" >
+										<component type="str" name="dynamic_operation" value="RESTOREDYN" />
+										<component type="Vector" name="linear_velocity" value="0.0 0.0 0.0" />
+										<component type="float" name="mass" value="0.0" />
+										<component type="POINTER" name="mesh" value="" />
+										<component type="str" name="mode" value="ADDOBJECT" />
+										<component type="POINTER" name="object" value="" />
+										<component type="int" name="time" value="100" />
+										<component type="POINTER" name="track_object" value="" />
+										<component type="bool" name="use_3d_tracking" value="False" />
+										<component type="bool" name="use_local_angular_velocity" value="False" />
+										<component type="bool" name="use_local_linear_velocity" value="False" />
+										<component type="bool" name="use_replace_display_mesh" value="True" />
+										<component type="bool" name="use_replace_physics_mesh" value="False" />
+									</actuator>
+								</actuators>
+							</game>
+						</node>
+					</node>
+					<node name="water_filter" >
+						<position y="-0.156458" x="-0.000000" z="-0.040611" />
+						<rotation qy="0.000000" qx="-0.000000" qz="0.000000" qw="1.000000" />
+						<scale y="0.399577" x="0.399577" z="0.399577" />
+						<game >
+							<sensors />
+							<actuators >
+								<actuator type="ACTION" name="act" />
+							</actuators>
+						</game>
+						<entity anisotropic_friction="False" lock_trans_y="False" damping_trans="0.5659443736076355" damping_rot="0.8130007982254028" inertia_tensor="0.4000000059604645" actor="False" velocity_min="0.0" lock_trans_z="False" physics_type="NO_COLLISION" lock_trans_x="False" meshFile="Plane.069.mesh" friction_y="1.0" friction_x="1.0" friction_z="1.0" velocity_max="0.0" ghost="False" name="Plane.069" mass_radius="1.0" mass="1.0" lock_rot_x="False" lock_rot_y="False" lock_rot_z="False" />
+					</node>
+				</node>
+			</node>
+		</node>
+	</nodes>
+	<externals />
+	<environment >
+		<colourBackground r="0.05656290054321289" b="0.4000000059604645" g="0.22081542015075684" />
+		<colourAmbient r="0.0" b="0.0" g="0.0" />
+		<colourDiffuse r="0.05656290054321289" b="0.4000000059604645" g="0.22081542015075684" />
+	</environment>
+</scene>

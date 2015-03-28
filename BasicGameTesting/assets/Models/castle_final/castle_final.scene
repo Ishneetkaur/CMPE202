@@ -1,0 +1,197 @@
+<scene exported_by="Ishneet" formatVersion="1.0.1" previous_export_time="0" export_time="1417251709.007" >
+	<nodes >
+		<node name="archway_2.002" >
+			<position y="0.000000" x="0.000000" z="-0.000000" />
+			<rotation qy="0.000000" qx="0.707107" qz="-0.000000" qw="0.707107" />
+			<scale y="2.347090" x="6.465207" z="2.347090" />
+			<game >
+				<sensors />
+				<actuators />
+			</game>
+			<entity anisotropic_friction="False" lock_trans_y="False" damping_trans="0.03999999910593033" damping_rot="0.10000000149011612" inertia_tensor="0.4000000059604645" actor="False" velocity_min="0.0" lock_trans_z="False" physics_type="STATIC" lock_trans_x="False" meshFile="Plane.006.mesh" friction_y="1.0" friction_x="1.0" friction_z="1.0" velocity_max="0.0" ghost="False" name="Plane.006" mass_radius="1.0" mass="1.0" lock_rot_x="False" lock_rot_y="False" lock_rot_z="False" />
+		</node>
+		<node name="archway_2.001" >
+			<position y="0.000000" x="0.000000" z="-0.000000" />
+			<rotation qy="0.000000" qx="0.707107" qz="-0.000000" qw="0.707107" />
+			<scale y="2.347090" x="6.465207" z="2.347090" />
+			<game >
+				<sensors />
+				<actuators />
+			</game>
+			<entity anisotropic_friction="False" lock_trans_y="False" damping_trans="0.03999999910593033" damping_rot="0.10000000149011612" inertia_tensor="0.4000000059604645" actor="False" velocity_min="0.0" lock_trans_z="False" physics_type="STATIC" lock_trans_x="False" meshFile="Plane.004.mesh" friction_y="1.0" friction_x="1.0" friction_z="1.0" velocity_max="0.0" ghost="False" name="Plane.004" mass_radius="1.0" mass="1.0" lock_rot_x="False" lock_rot_y="False" lock_rot_z="False" />
+		</node>
+		<node name="archway_curve" >
+			<position y="0.000000" x="0.000000" z="-0.000000" />
+			<rotation qy="0.000000" qx="0.707107" qz="-0.000000" qw="0.707107" />
+			<scale y="2.347090" x="6.465207" z="2.347090" />
+			<game >
+				<sensors />
+				<actuators />
+			</game>
+			<entity anisotropic_friction="False" lock_trans_y="False" damping_trans="0.03999999910593033" damping_rot="0.10000000149011612" inertia_tensor="0.4000000059604645" actor="False" velocity_min="0.0" lock_trans_z="False" physics_type="STATIC" lock_trans_x="False" meshFile="Plane.005.mesh" friction_y="1.0" friction_x="1.0" friction_z="1.0" velocity_max="0.0" ghost="False" name="Plane.005" mass_radius="1.0" mass="1.0" lock_rot_x="False" lock_rot_y="False" lock_rot_z="False" />
+		</node>
+		<node name="spire_2" >
+			<position y="0.000000" x="0.000000" z="-0.000000" />
+			<rotation qy="0.000000" qx="0.000000" qz="-0.000000" qw="1.000000" />
+			<scale y="0.566571" x="0.566571" z="0.566571" />
+			<game >
+				<sensors />
+				<actuators />
+			</game>
+			<entity anisotropic_friction="False" lock_trans_y="False" damping_trans="0.03999999910593033" damping_rot="0.10000000149011612" inertia_tensor="0.4000000059604645" actor="False" velocity_min="0.0" lock_trans_z="False" physics_type="STATIC" lock_trans_x="False" meshFile="Cube.004.mesh" friction_y="1.0" friction_x="1.0" friction_z="1.0" velocity_max="0.0" ghost="False" name="Cube.004" mass_radius="1.0" mass="1.0" lock_rot_x="False" lock_rot_y="False" lock_rot_z="False" />
+		</node>
+		<node name="spire_1" >
+			<position y="0.000000" x="0.000000" z="-0.000000" />
+			<rotation qy="0.000000" qx="0.000000" qz="-0.000000" qw="1.000000" />
+			<scale y="0.566571" x="0.566571" z="0.566571" />
+			<game >
+				<sensors />
+				<actuators />
+			</game>
+			<entity anisotropic_friction="False" lock_trans_y="False" damping_trans="0.03999999910593033" damping_rot="0.10000000149011612" inertia_tensor="0.4000000059604645" actor="False" velocity_min="0.0" lock_trans_z="False" physics_type="STATIC" lock_trans_x="False" meshFile="Cube.003.mesh" friction_y="1.0" friction_x="1.0" friction_z="1.0" velocity_max="0.0" ghost="False" name="Cube.003" mass_radius="1.0" mass="1.0" lock_rot_x="False" lock_rot_y="False" lock_rot_z="False" />
+		</node>
+		<node name="archway_3" >
+			<position y="0.000000" x="0.000000" z="-0.000000" />
+			<rotation qy="0.000000" qx="0.707107" qz="-0.000000" qw="0.707107" />
+			<scale y="2.347090" x="6.465207" z="2.347090" />
+			<game >
+				<sensors />
+				<actuators />
+			</game>
+			<entity anisotropic_friction="False" lock_trans_y="False" damping_trans="0.03999999910593033" damping_rot="0.10000000149011612" inertia_tensor="0.4000000059604645" actor="False" velocity_min="0.0" lock_trans_z="False" physics_type="STATIC" lock_trans_x="False" meshFile="Plane.003.mesh" friction_y="1.0" friction_x="1.0" friction_z="1.0" velocity_max="0.0" ghost="False" name="Plane.003" mass_radius="1.0" mass="1.0" lock_rot_x="False" lock_rot_y="False" lock_rot_z="False" />
+		</node>
+		<node name="archway_2" >
+			<position y="0.000000" x="0.000000" z="-0.000000" />
+			<rotation qy="0.000000" qx="0.707107" qz="-0.000000" qw="0.707107" />
+			<scale y="2.347090" x="6.465207" z="2.347090" />
+			<game >
+				<sensors />
+				<actuators />
+			</game>
+			<entity anisotropic_friction="False" lock_trans_y="False" damping_trans="0.03999999910593033" damping_rot="0.10000000149011612" inertia_tensor="0.4000000059604645" actor="False" velocity_min="0.0" lock_trans_z="False" physics_type="STATIC" lock_trans_x="False" meshFile="Plane.002.mesh" friction_y="1.0" friction_x="1.0" friction_z="1.0" velocity_max="0.0" ghost="False" name="Plane.002" mass_radius="1.0" mass="1.0" lock_rot_x="False" lock_rot_y="False" lock_rot_z="False" />
+		</node>
+		<node name="archway_1" >
+			<position y="2.917137" x="0.000000" z="-0.000000" />
+			<rotation qy="0.000000" qx="0.707107" qz="-0.000000" qw="0.707107" />
+			<scale y="2.347090" x="6.465207" z="2.347090" />
+			<game >
+				<sensors />
+				<actuators />
+			</game>
+			<entity anisotropic_friction="False" lock_trans_y="False" damping_trans="0.03999999910593033" damping_rot="0.10000000149011612" inertia_tensor="0.4000000059604645" actor="False" velocity_min="0.0" lock_trans_z="False" physics_type="STATIC" lock_trans_x="False" meshFile="Plane.001.mesh" friction_y="1.0" friction_x="1.0" friction_z="1.0" velocity_max="0.0" ghost="False" name="Plane.001" mass_radius="1.0" mass="1.0" lock_rot_x="False" lock_rot_y="False" lock_rot_z="False" />
+		</node>
+		<node name="flag_pole" >
+			<position y="53.719387" x="0.000000" z="-9.088219" />
+			<rotation qy="0.000000" qx="0.000000" qz="-0.000000" qw="1.000000" />
+			<scale y="4.934024" x="0.057396" z="0.057396" />
+			<game >
+				<sensors />
+				<actuators />
+			</game>
+			<entity anisotropic_friction="False" lock_trans_y="False" damping_trans="0.03999999910593033" damping_rot="0.10000000149011612" inertia_tensor="0.4000000059604645" actor="False" velocity_min="0.0" lock_trans_z="False" physics_type="STATIC" lock_trans_x="False" meshFile="Cube.mesh" friction_y="1.0" friction_x="1.0" friction_z="1.0" velocity_max="0.0" ghost="False" name="Cube" mass_radius="1.0" mass="1.0" lock_rot_x="False" lock_rot_y="False" lock_rot_z="False" />
+		</node>
+		<node name="flag_armature" >
+			<position y="55.948753" x="1.086111" z="-9.716954" />
+			<rotation qy="0.000000" qx="0.707107" qz="-0.000000" qw="0.707107" />
+			<scale y="1.343058" x="1.343058" z="1.343058" />
+			<game >
+				<sensors >
+					<sensor type="ALWAYS" name="sensor" />
+				</sensors>
+				<actuators >
+					<actuator type="ACTION" name="act" />
+				</actuators>
+			</game>
+			<node name="mushroom_flag" >
+				<position y="0.424663" x="2.344375" z="-0.000001" />
+				<rotation qy="0.000000" qx="-0.000000" qz="-0.000000" qw="1.000000" />
+				<scale y="1.000000" x="3.185803" z="1.536869" />
+				<game >
+					<sensors />
+					<actuators />
+				</game>
+				<entity anisotropic_friction="False" lock_trans_y="False" damping_trans="0.03999999910593033" damping_rot="0.10000000149011612" inertia_tensor="0.4000000059604645" actor="False" velocity_min="0.0" lock_trans_z="False" physics_type="STATIC" lock_trans_x="False" meshFile="Plane.mesh" friction_y="1.0" friction_x="1.0" friction_z="1.0" velocity_max="0.0" ghost="False" name="Plane" mass_radius="1.0" mass="1.0" lock_rot_x="False" lock_rot_y="False" lock_rot_z="False" />
+			</node>
+		</node>
+		<node name="castle" >
+			<position y="7.292408" x="0.000000" z="-0.000000" />
+			<rotation qy="0.000000" qx="0.000000" qz="-0.000000" qw="1.000000" />
+			<scale y="1.000000" x="1.000000" z="1.000000" />
+			<game >
+				<sensors />
+				<actuators />
+			</game>
+			<entity anisotropic_friction="False" lock_trans_y="False" damping_trans="0.03999999910593033" damping_rot="0.10000000149011612" inertia_tensor="0.4000000059604645" actor="False" velocity_min="0.0" lock_trans_z="False" physics_type="STATIC" lock_trans_x="False" meshFile="Cube.002.mesh" friction_y="1.0" friction_x="1.0" friction_z="1.0" velocity_max="0.0" ghost="False" name="Cube.002" mass_radius="1.0" mass="1.0" lock_rot_x="False" lock_rot_y="False" lock_rot_z="False" />
+		</node>
+	</nodes>
+	<externals >
+		<item type="material" >
+			<file name="C:\Users\Ishneet\Desktop\yo_mario_scene\archway_rock.material" />
+		</item>
+		<item type="material" >
+			<file name="C:\Users\Ishneet\Desktop\yo_mario_scene\archway_brick.material" />
+		</item>
+		<item type="material" >
+			<file name="C:\Users\Ishneet\Desktop\yo_mario_scene\archway_siding_star.material" />
+		</item>
+		<item type="material" >
+			<file name="C:\Users\Ishneet\Desktop\yo_mario_scene\archway_siding.material" />
+		</item>
+		<item type="material" >
+			<file name="C:\Users\Ishneet\Desktop\yo_mario_scene\tower brick.material" />
+		</item>
+		<item type="material" >
+			<file name="C:\Users\Ishneet\Desktop\yo_mario_scene\tower_siding_2.material" />
+		</item>
+		<item type="material" >
+			<file name="C:\Users\Ishneet\Desktop\yo_mario_scene\tower_siding.material" />
+		</item>
+		<item type="material" >
+			<file name="C:\Users\Ishneet\Desktop\yo_mario_scene\tower_siding_star.material" />
+		</item>
+		<item type="material" >
+			<file name="C:\Users\Ishneet\Desktop\yo_mario_scene\tower_spire.material" />
+		</item>
+		<item type="material" >
+			<file name="C:\Users\Ishneet\Desktop\yo_mario_scene\flag.material" />
+		</item>
+		<item type="material" >
+			<file name="C:\Users\Ishneet\Desktop\yo_mario_scene\castle_brick.material" />
+		</item>
+		<item type="material" >
+			<file name="C:\Users\Ishneet\Desktop\yo_mario_scene\castle_siding 2.material" />
+		</item>
+		<item type="material" >
+			<file name="C:\Users\Ishneet\Desktop\yo_mario_scene\castle_siding.material" />
+		</item>
+		<item type="material" >
+			<file name="C:\Users\Ishneet\Desktop\yo_mario_scene\castle_roof.material" />
+		</item>
+		<item type="material" >
+			<file name="C:\Users\Ishneet\Desktop\yo_mario_scene\castle_wall.material" />
+		</item>
+		<item type="material" >
+			<file name="C:\Users\Ishneet\Desktop\yo_mario_scene\castle_siding  star.material" />
+		</item>
+		<item type="material" >
+			<file name="C:\Users\Ishneet\Desktop\yo_mario_scene\castle_pillar.material" />
+		</item>
+		<item type="material" >
+			<file name="C:\Users\Ishneet\Desktop\yo_mario_scene\castle_stain_glass.material" />
+		</item>
+		<item type="material" >
+			<file name="C:\Users\Ishneet\Desktop\yo_mario_scene\castle_spire.material" />
+		</item>
+		<item type="material" >
+			<file name="C:\Users\Ishneet\Desktop\yo_mario_scene\castle_spire.001.material" />
+		</item>
+		<item type="material" >
+			<file name="C:\Users\Ishneet\Desktop\yo_mario_scene\castle_window.material" />
+		</item>
+	</externals>
+	<environment >
+		<colourBackground r="0.05656290054321289" b="0.4000000059604645" g="0.22081542015075684" />
+		<colourAmbient r="0.0" b="0.0" g="0.0" />
+		<colourDiffuse r="0.05656290054321289" b="0.4000000059604645" g="0.22081542015075684" />
+	</environment>
+</scene>

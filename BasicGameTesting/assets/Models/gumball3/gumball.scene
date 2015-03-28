@@ -1,0 +1,42 @@
+<scene exported_by="Ishneet" formatVersion="1.0.1" previous_export_time="1417311254.521" export_time="1417311311.641" >
+	<nodes >
+		<node name="Mesh.006" >
+			<position y="0.000000" x="0.000000" z="-0.000000" />
+			<rotation qy="-0.614206" qx="0.350358" qz="0.614206" qw="0.350358" />
+			<scale y="0.095226" x="0.095226" z="0.095226" />
+			<game >
+				<sensors />
+				<actuators />
+			</game>
+			<entity anisotropic_friction="False" lock_trans_y="False" damping_trans="0.03999999910593033" damping_rot="0.10000000149011612" inertia_tensor="0.4000000059604645" actor="False" velocity_min="0.0" lock_trans_z="False" physics_type="STATIC" lock_trans_x="False" meshFile="Layer_Cove.mesh" friction_y="1.0" friction_x="1.0" friction_z="1.0" velocity_max="0.0" ghost="False" name="Layer_Cove" mass_radius="1.0" mass="1.0" lock_rot_x="False" lock_rot_y="False" lock_rot_z="False" />
+		</node>
+	</nodes>
+	<externals >
+		<item type="material" >
+			<file name="C:\Users\Ishneet\Desktop\gumballnew\Layer_Cove.material" />
+		</item>
+		<item type="material" >
+			<file name="C:\Users\Ishneet\Desktop\gumballnew\Layer_Cran.material" />
+		</item>
+		<item type="material" >
+			<file name="C:\Users\Ishneet\Desktop\gumballnew\Layer_Penn.material" />
+		</item>
+		<item type="material" >
+			<file name="C:\Users\Ishneet\Desktop\gumballnew\Layer_Mone.material" />
+		</item>
+		<item type="material" >
+			<file name="C:\Users\Ishneet\Desktop\gumballnew\Material.002.material" />
+		</item>
+		<item type="material" >
+			<file name="C:\Users\Ishneet\Desktop\gumballnew\Material.003.material" />
+		</item>
+		<item type="material" >
+			<file name="C:\Users\Ishneet\Desktop\gumballnew\Material.004.material" />
+		</item>
+	</externals>
+	<environment >
+		<colourBackground r="0.05087608844041824" b="0.05087608844041824" g="0.05087608844041824" />
+		<colourAmbient r="0.0" b="0.0" g="0.0" />
+		<colourDiffuse r="0.05087608844041824" b="0.05087608844041824" g="0.05087608844041824" />
+	</environment>
+</scene>

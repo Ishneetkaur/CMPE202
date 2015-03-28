@@ -1,0 +1,1 @@
+jm3test.helloworld.HelloAnimation2

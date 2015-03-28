@@ -1,0 +1,120 @@
+# Blender MTL File: 'new.blend'
+# Material Count: 12
+
+newmtl Buttons
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.000000 0.000000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd Nintendo 64 - Super Mario 64 - Mario\Buttons.png
+map_Ka Nintendo 64 - Super Mario 64 - Mario\\Buttons.png
+
+newmtl Eyes
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.796863 0.605490 0.379608
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd Nintendo 64 - Super Mario 64 - Mario\Eyes.png
+map_Ka Nintendo 64 - Super Mario 64 - Mario\\Eyes.png
+
+newmtl Gloves
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Hair
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.360784 0.018824 0.018824
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Hair_Piece
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.796863 0.605490 0.379608
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd Nintendo 64 - Super Mario 64 - Mario\Hair_Piece.png
+map_Ka Nintendo 64 - Super Mario 64 - Mario\\Hair_Piece.png
+
+newmtl Logo
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd Nintendo 64 - Super Mario 64 - Mario\Logo.png
+map_Ka Nintendo 64 - Super Mario 64 - Mario\\Logo.png
+
+newmtl Material
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Moustache
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.796863 0.605490 0.379608
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd Nintendo 64 - Super Mario 64 - Mario\Moustache.png
+map_Ka Nintendo 64 - Super Mario 64 - Mario\\Moustache.png
+
+newmtl Overalls
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.000000 0.000000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Shirt_Cap
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.000000 0.000000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Shoes
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.357647 0.087843 0.043922
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+
+newmtl Skin
+Ns 7.843137
+Ka 0.000000 0.000000 0.000000
+Kd 0.796863 0.605490 0.379608
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2

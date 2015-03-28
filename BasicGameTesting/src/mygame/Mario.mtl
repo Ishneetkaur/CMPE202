@@ -1,0 +1,156 @@
+# 3ds Max Wavefront OBJ Exporter v0.94b - (c)2007 guruware
+# File Created: 19.10.2009 22:21:09
+
+newmtl _mat_head
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Public\Documents\Ripping and Modding\Gamecube Ripping\mario sunshine\mario\bmd\ma_mdl1\Textures\H_ma_new_main_s3tc.tga
+	map_Kd C:\Users\Public\Documents\Ripping and Modding\Gamecube Ripping\mario sunshine\mario\bmd\ma_mdl1\Textures\H_ma_new_main_s3tc.tga
+
+newmtl _mat_head_2_
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Public\Documents\Ripping and Modding\Gamecube Ripping\mario sunshine\mario\bmd\ma_mdl1\Textures\H_ma_new_main_s3tc.tga
+	map_Kd C:\Users\Public\Documents\Ripping and Modding\Gamecube Ripping\mario sunshine\mario\bmd\ma_mdl1\Textures\H_ma_new_main_s3tc.tga
+
+newmtl _mat_head_3_
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Public\Documents\Ripping and Modding\Gamecube Ripping\mario sunshine\mario\bmd\ma_mdl1\Textures\H_ma_new_main_s3tc.tga
+	map_Kd C:\Users\Public\Documents\Ripping and Modding\Gamecube Ripping\mario sunshine\mario\bmd\ma_mdl1\Textures\H_ma_new_main_s3tc.tga
+
+newmtl _mat_head_4_
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Public\Documents\Ripping and Modding\Gamecube Ripping\mario sunshine\mario\bmd\ma_mdl1\Textures\H_ma_new_main_s3tc.tga
+	map_Kd C:\Users\Public\Documents\Ripping and Modding\Gamecube Ripping\mario sunshine\mario\bmd\ma_mdl1\Textures\H_ma_new_main_s3tc.tga
+
+newmtl _mat_head_5_
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Public\Documents\Ripping and Modding\Gamecube Ripping\mario sunshine\mario\bmd\ma_mdl1\Textures\H_ma_new_main_s3tc.tga
+	map_Kd C:\Users\Public\Documents\Ripping and Modding\Gamecube Ripping\mario sunshine\mario\bmd\ma_mdl1\Textures\H_ma_new_main_s3tc.tga
+
+newmtl _mat_head_6_
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Public\Documents\Ripping and Modding\Gamecube Ripping\mario sunshine\mario\bmd\ma_mdl1\Textures\H_ma_new_main_s3tc.tga
+	map_Kd C:\Users\Public\Documents\Ripping and Modding\Gamecube Ripping\mario sunshine\mario\bmd\ma_mdl1\Textures\H_ma_new_main_s3tc.tga
+
+newmtl _mat_head_7_
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Public\Documents\Ripping and Modding\Gamecube Ripping\mario sunshine\mario\bmd\ma_mdl1\Textures\H_ma_new_main_s3tc.tga
+	map_Kd C:\Users\Public\Documents\Ripping and Modding\Gamecube Ripping\mario sunshine\mario\bmd\ma_mdl1\Textures\H_ma_new_main_s3tc.tga
+
+newmtl _mat_eye_L
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Public\Documents\Ripping and Modding\Gamecube Ripping\mario sunshine\mario\bmd\ma_mdl1\Textures\H_ma_eye1_s3tc.tga
+	map_Kd C:\Users\Public\Documents\Ripping and Modding\Gamecube Ripping\mario sunshine\mario\bmd\ma_mdl1\Textures\H_ma_eye1_s3tc.tga
+
+newmtl _mat_eye_R
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Public\Documents\Ripping and Modding\Gamecube Ripping\mario sunshine\mario\bmd\ma_mdl1\Textures\H_ma_eye1_s3tc.tga
+	map_Kd C:\Users\Public\Documents\Ripping and Modding\Gamecube Ripping\mario sunshine\mario\bmd\ma_mdl1\Textures\H_ma_eye1_s3tc.tga
+
+newmtl _mat_head_8_
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Public\Documents\Ripping and Modding\Gamecube Ripping\mario sunshine\mario\bmd\ma_mdl1\Textures\H_ma_new_main_s3tc.tga
+	map_Kd C:\Users\Public\Documents\Ripping and Modding\Gamecube Ripping\mario sunshine\mario\bmd\ma_mdl1\Textures\H_ma_new_main_s3tc.tga
+
+newmtl _mat_mouse
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 1.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Public\Documents\Ripping and Modding\Gamecube Ripping\mario sunshine\mario\bmd\ma_mdl1\Textures\H_ma_mouse1_s3tc.tga
+	map_Kd C:\Users\Public\Documents\Ripping and Modding\Gamecube Ripping\mario sunshine\mario\bmd\ma_mdl1\Textures\H_ma_mouse1_s3tc.tga

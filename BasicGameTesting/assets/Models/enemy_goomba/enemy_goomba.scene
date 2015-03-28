@@ -1,0 +1,223 @@
+<scene exported_by="Ishneet" formatVersion="1.0.1" previous_export_time="1417250574.009" export_time="1417250708.495" >
+	<nodes >
+		<node name="goomba_control" >
+			<position y="0.634452" x="0.000000" z="-0.000000" />
+			<rotation qy="0.000000" qx="0.000000" qz="-0.000000" qw="1.000000" />
+			<scale y="0.562479" x="0.562479" z="0.562479" />
+			<game >
+				<sensors >
+					<sensor type="ALWAYS" name="initiate" />
+					<sensor type="RAY" name="ray_axis_dwn" >
+						<component type="str" name="ray_type" value="PROPERTY" />
+						<component type="str" name="property" value="ground" />
+						<component type="str" name="material" value="" />
+						<component type="str" name="axis" value="NEGZAXIS" />
+						<component type="float" name="range" value="23.719989776611328" />
+						<component type="bool" name="use_x_ray" value="True" />
+					</sensor>
+					<sensor type="ALWAYS" name="walk_fwd" />
+					<sensor type="NEAR" name="tounge_st" >
+						<component type="str" name="property" value="tounge" />
+						<component type="float" name="distance" value="1.0" />
+						<component type="float" name="reset_distance" value="2.0" />
+					</sensor>
+					<sensor type="COLLISION" name="end_obj_trigger1" >
+						<component type="str" name="property" value="player" />
+					</sensor>
+					<sensor type="ALWAYS" name="alwys_parent" />
+					<sensor type="ALWAYS" name="cnst_fwd_motion" />
+					<sensor type="RAY" name="ray_wall" >
+						<component type="str" name="ray_type" value="PROPERTY" />
+						<component type="str" name="property" value="wall" />
+						<component type="str" name="material" value="" />
+						<component type="str" name="axis" value="YAXIS" />
+						<component type="float" name="range" value="3.0" />
+						<component type="bool" name="use_x_ray" value="True" />
+					</sensor>
+					<sensor type="NEAR" name="attack_st" >
+						<component type="str" name="property" value="mario" />
+						<component type="float" name="distance" value="6.0" />
+						<component type="float" name="reset_distance" value="7.0" />
+					</sensor>
+					<sensor type="NEAR" name="search_st" >
+						<component type="str" name="property" value="mario" />
+						<component type="float" name="distance" value="0.0" />
+						<component type="float" name="reset_distance" value="6.0" />
+					</sensor>
+					<sensor type="COLLISION" name="stun" >
+						<component type="str" name="property" value="stun" />
+					</sensor>
+					<sensor type="ALWAYS" name="alwys_action" />
+					<sensor type="NEAR" name="get_kicked" >
+						<component type="str" name="property" value="attack" />
+						<component type="float" name="distance" value="1.5" />
+						<component type="float" name="reset_distance" value="2.0" />
+					</sensor>
+					<sensor type="DELAY" name="recover" />
+					<sensor type="ALWAYS" name="get_kicked1" />
+					<sensor type="ALWAYS" name="alwys_const" />
+					<sensor type="PROPERTY" name="prop_change" />
+					<sensor type="ALWAYS" name="play_ipo" />
+					<sensor type="DELAY" name="end_obj2" />
+					<sensor type="PROPERTY" name="targeted_prop" />
+					<sensor type="DELAY" name="add" />
+					<sensor type="DELAY" name="sensor" />
+					<sensor type="COLLISION" name="sensor1" >
+						<component type="str" name="property" value="stomped" />
+					</sensor>
+					<sensor type="COLLISION" name="sensor2" >
+						<component type="str" name="property" value="rainbow" />
+					</sensor>
+					<sensor type="ALWAYS" name="sensor3" />
+				</sensors>
+				<actuators >
+					<actuator type="MOTION" name="act" />
+					<actuator type="STATE" name="act1" />
+					<actuator type="EDIT_OBJECT" name="end_obj" >
+						<component type="str" name="dynamic_operation" value="RESTOREDYN" />
+						<component type="Vector" name="linear_velocity" value="0.0 0.0 0.0" />
+						<component type="float" name="mass" value="0.0" />
+						<component type="POINTER" name="mesh" value="" />
+						<component type="str" name="mode" value="ENDOBJECT" />
+						<component type="POINTER" name="object" value="" />
+						<component type="int" name="time" value="0" />
+						<component type="POINTER" name="track_object" value="" />
+						<component type="bool" name="use_3d_tracking" value="False" />
+						<component type="bool" name="use_local_angular_velocity" value="False" />
+						<component type="bool" name="use_local_linear_velocity" value="False" />
+						<component type="bool" name="use_replace_display_mesh" value="True" />
+						<component type="bool" name="use_replace_physics_mesh" value="False" />
+					</actuator>
+					<actuator type="MESSAGE" name="send_eat_msg" >
+						<component type="str" name="to_property" value="yoshi_control" />
+						<component type="str" name="subject" value="eat" />
+						<component type="str" name="body_message" value="" />
+					</actuator>
+					<actuator type="PARENT" name="parent_to_tounge" />
+					<actuator type="CONSTRAINT" name="act6" >
+						<component type="str" name="mode" value="DIST" />
+						<component type="str" name="limit" value="NONE" />
+						<component type="float" name="limit_min" value="0.0" />
+						<component type="float" name="limit_max" value="0.0" />
+						<component type="int" name="damping" value="0" />
+					</actuator>
+					<actuator type="MOTION" name="act5" />
+					<actuator type="MOTION" name="motion" />
+					<actuator type="STATE" name="act7" />
+					<actuator type="STATE" name="act8" />
+					<actuator type="STATE" name="act9" />
+					<actuator type="MOTION" name="kicked_mot" />
+					<actuator type="STATE" name="st_spin" />
+					<actuator type="CONSTRAINT" name="constraint" >
+						<component type="str" name="mode" value="DIST" />
+						<component type="str" name="limit" value="NONE" />
+						<component type="float" name="limit_min" value="0.0" />
+						<component type="float" name="limit_max" value="0.0" />
+						<component type="int" name="damping" value="6" />
+					</actuator>
+					<actuator type="STATE" name="st_kicked" />
+					<actuator type="STATE" name="backto_main" />
+					<actuator type="EDIT_OBJECT" name="end" >
+						<component type="str" name="dynamic_operation" value="RESTOREDYN" />
+						<component type="Vector" name="linear_velocity" value="0.0 0.0 0.0" />
+						<component type="float" name="mass" value="0.0" />
+						<component type="POINTER" name="mesh" value="" />
+						<component type="str" name="mode" value="ENDOBJECT" />
+						<component type="POINTER" name="object" value="" />
+						<component type="int" name="time" value="0" />
+						<component type="POINTER" name="track_object" value="" />
+						<component type="bool" name="use_3d_tracking" value="False" />
+						<component type="bool" name="use_local_angular_velocity" value="False" />
+						<component type="bool" name="use_local_linear_velocity" value="False" />
+						<component type="bool" name="use_replace_display_mesh" value="True" />
+						<component type="bool" name="use_replace_physics_mesh" value="False" />
+					</actuator>
+					<actuator type="MOTION" name="kicked_mot1" />
+					<actuator type="STATE" name="st_pounded" />
+					<actuator type="EDIT_OBJECT" name="1" >
+						<component type="str" name="dynamic_operation" value="RESTOREDYN" />
+						<component type="Vector" name="linear_velocity" value="0.0 0.0 0.0" />
+						<component type="float" name="mass" value="0.0" />
+						<component type="POINTER" name="mesh" value="" />
+						<component type="str" name="mode" value="ADDOBJECT" />
+						<component type="POINTER" name="object" value="" />
+						<component type="int" name="time" value="20" />
+						<component type="POINTER" name="track_object" value="" />
+						<component type="bool" name="use_3d_tracking" value="False" />
+						<component type="bool" name="use_local_angular_velocity" value="False" />
+						<component type="bool" name="use_local_linear_velocity" value="False" />
+						<component type="bool" name="use_replace_display_mesh" value="True" />
+						<component type="bool" name="use_replace_physics_mesh" value="False" />
+					</actuator>
+					<actuator type="EDIT_OBJECT" name="2" >
+						<component type="str" name="dynamic_operation" value="RESTOREDYN" />
+						<component type="Vector" name="linear_velocity" value="0.0 0.0 0.0" />
+						<component type="float" name="mass" value="0.0" />
+						<component type="POINTER" name="mesh" value="" />
+						<component type="str" name="mode" value="ENDOBJECT" />
+						<component type="POINTER" name="object" value="" />
+						<component type="int" name="time" value="0" />
+						<component type="POINTER" name="track_object" value="" />
+						<component type="bool" name="use_3d_tracking" value="False" />
+						<component type="bool" name="use_local_angular_velocity" value="False" />
+						<component type="bool" name="use_local_linear_velocity" value="False" />
+						<component type="bool" name="use_replace_display_mesh" value="True" />
+						<component type="bool" name="use_replace_physics_mesh" value="False" />
+					</actuator>
+					<actuator type="STATE" name="st_targeted" />
+					<actuator type="STATE" name="act2" />
+					<actuator type="EDIT_OBJECT" name="add_fx" >
+						<component type="str" name="dynamic_operation" value="RESTOREDYN" />
+						<component type="Vector" name="linear_velocity" value="0.0 0.0 0.0" />
+						<component type="float" name="mass" value="0.0" />
+						<component type="POINTER" name="mesh" value="" />
+						<component type="str" name="mode" value="ADDOBJECT" />
+						<component type="POINTER" name="object" value="" />
+						<component type="int" name="time" value="20" />
+						<component type="POINTER" name="track_object" value="" />
+						<component type="bool" name="use_3d_tracking" value="False" />
+						<component type="bool" name="use_local_angular_velocity" value="False" />
+						<component type="bool" name="use_local_linear_velocity" value="False" />
+						<component type="bool" name="use_replace_display_mesh" value="True" />
+						<component type="bool" name="use_replace_physics_mesh" value="False" />
+					</actuator>
+				</actuators>
+			</game>
+			<entity anisotropic_friction="False" lock_trans_y="False" damping_trans="0.1467437446117401" damping_rot="0.0" inertia_tensor="0.4000000059604645" actor="True" velocity_min="0.0" lock_trans_z="False" physics_type="DYNAMIC" lock_trans_x="False" meshFile="Cube.177.mesh" friction_y="1.0" friction_x="1.0" friction_z="1.0" velocity_max="0.0" ghost="False" name="Cube.177" mass_radius="1.0" mass="1.0" lock_rot_x="False" lock_rot_y="False" lock_rot_z="False" />
+			<node name="goomba_rig" >
+				<position y="0.738438" x="0.000000" z="-0.152144" />
+				<rotation qy="0.000000" qx="0.000000" qz="-0.000000" qw="1.000000" />
+				<scale y="1.296939" x="1.273237" z="1.273237" />
+				<game >
+					<sensors />
+					<actuators >
+						<actuator type="ACTION" name="act" />
+						<actuator type="MOTION" name="kicked_mot1" />
+						<actuator type="ACTION" name="stun_action" />
+						<actuator type="ACTION" name="scale_ipo" />
+					</actuators>
+				</game>
+				<node name="goomba" >
+					<position y="0.738438" x="0.000000" z="-0.152144" />
+					<rotation qy="0.000000" qx="0.000000" qz="-0.000000" qw="1.000000" />
+					<scale y="0.656910" x="0.644905" z="0.644905" />
+					<game >
+						<sensors />
+						<actuators />
+					</game>
+					<entity anisotropic_friction="False" lock_trans_y="False" damping_trans="0.02539999969303608" damping_rot="0.18000000715255737" inertia_tensor="0.4000000059604645" actor="False" velocity_min="0.0" lock_trans_z="False" physics_type="NO_COLLISION" lock_trans_x="False" meshFile="Cube.178.mesh" friction_y="1.0" friction_x="1.0" friction_z="1.0" velocity_max="0.0" ghost="False" name="Cube.178" mass_radius="1.0" mass="1.0" lock_rot_x="False" lock_rot_y="False" lock_rot_z="False" />
+				</node>
+			</node>
+		</node>
+	</nodes>
+	<externals >
+		<item type="material" >
+			<file name="C:\Users\Ishneet\Desktop\enemy1\goomba.001.material" />
+		</item>
+	</externals>
+	<environment >
+		<colourBackground r="0.05656290054321289" b="0.4000000059604645" g="0.22081542015075684" />
+		<colourAmbient r="0.0" b="0.0" g="0.0" />
+		<colourDiffuse r="0.05656290054321289" b="0.4000000059604645" g="0.22081542015075684" />
+	</environment>
+</scene>

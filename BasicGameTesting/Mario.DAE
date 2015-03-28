@@ -1,0 +1,1304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Shadowth117</author>
+      <authoring_tool>3dsMax 11 - Feeling ColladaMax v3.05B.</authoring_tool>
+      <comments>ColladaMax Export Options: ExportNormals=1;ExportEPolyAsTriangles=1;ExportXRefs=1;ExportSelected=0;ExportTangents=0;ExportAnimations=1;SampleAnim=0;ExportAnimClip=0;BakeMatrices=0;ExportRelativePaths=1;AnimStart=0;AnimEnd=3.33333;</comments>
+      <source_data>file:///C:/Users/Public/Documents/Ripping%20and%20Modding/Gamecube%20Ripping/mario%20sunshine/mario/bmd/ma_mdl1/ma_mdl1.max</source_data>
+    </contributor>
+    <created>2009-10-16T19:04:24Z</created>
+    <modified>2009-10-16T19:04:26Z</modified>
+    <unit meter="0.0254" name="inch"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="H_ma_new_main_s3tc.tga" name="H_ma_new_main_s3tc_tga">
+      <init_from>../../../../Ripping%20and%20Modding/Gamecube%20Ripping/mario%20sunshine/mario/bmd/ma_mdl1/Textures/H_ma_new_main_s3tc.tga</init_from>
+    </image>
+    <image id="H_ma_eye1_s3tc.tga" name="H_ma_eye1_s3tc_tga">
+      <init_from>../../../../Ripping%20and%20Modding/Gamecube%20Ripping/mario%20sunshine/mario/bmd/ma_mdl1/Textures/H_ma_eye1_s3tc.tga</init_from>
+    </image>
+    <image id="H_ma_mouse1_s3tc.tga" name="H_ma_mouse1_s3tc_tga">
+      <init_from>../../../../Ripping%20and%20Modding/Gamecube%20Ripping/mario%20sunshine/mario/bmd/ma_mdl1/Textures/H_ma_mouse1_s3tc.tga</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="_mat_head" name="_mat_head">
+      <instance_effect url="#_mat_head-fx"/>
+    </material>
+    <material id="_mat_head_2_" name="_mat_head_2_">
+      <instance_effect url="#_mat_head_2_-fx"/>
+    </material>
+    <material id="_mat_head_3_" name="_mat_head_3_">
+      <instance_effect url="#_mat_head_3_-fx"/>
+    </material>
+    <material id="_mat_head_4_" name="_mat_head_4_">
+      <instance_effect url="#_mat_head_4_-fx"/>
+    </material>
+    <material id="_mat_head_5_" name="_mat_head_5_">
+      <instance_effect url="#_mat_head_5_-fx"/>
+    </material>
+    <material id="_mat_head_6_" name="_mat_head_6_">
+      <instance_effect url="#_mat_head_6_-fx"/>
+    </material>
+    <material id="_mat_head_7_" name="_mat_head_7_">
+      <instance_effect url="#_mat_head_7_-fx"/>
+    </material>
+    <material id="_mat_eye_L" name="_mat_eye_L">
+      <instance_effect url="#_mat_eye_L-fx"/>
+    </material>
+    <material id="_mat_eye_R" name="_mat_eye_R">
+      <instance_effect url="#_mat_eye_R-fx"/>
+    </material>
+    <material id="_mat_head_8_" name="_mat_head_8_">
+      <instance_effect url="#_mat_head_8_-fx"/>
+    </material>
+    <material id="_mat_mouse" name="_mat_mouse">
+      <instance_effect url="#_mat_mouse-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="_mat_head-fx" name="_mat_head">
+      <profile_COMMON>
+        <newparam sid="H_ma_new_main_s3tc_tga-surface">
+          <surface type="2D">
+            <init_from>H_ma_new_main_s3tc.tga</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="H_ma_new_main_s3tc_tga-sampler">
+          <sampler2D>
+            <source>H_ma_new_main_s3tc_tga-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="H_ma_new_main_s3tc_tga-sampler" texcoord="CHANNEL1">
+                <extra>
+                  <technique profile="MAYA">
+                    <mirrorU>0</mirrorU>
+                    <mirrorV>0</mirrorV>
+                    <wrapU>1</wrapU>
+                    <wrapV>1</wrapV>
+                    <repeatU>1</repeatU>
+                    <repeatV>1</repeatV>
+                    <offsetU>0</offsetU>
+                    <offsetV>0</offsetV>
+                    <rotateUV>0</rotateUV>
+                  </technique>
+                  <technique profile="MAX3D">
+                    <amount>1</amount>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>0.415939</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>1</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA">
+              <spec_level>
+                <float>0</float>
+              </spec_level>
+              <emission_level>
+                <float>0</float>
+              </emission_level>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="MAX3D">
+          <faceted>0</faceted>
+          <double_sided>0</double_sided>
+          <wireframe>0</wireframe>
+          <face_map>0</face_map>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="_mat_head_2_-fx" name="_mat_head_2_">
+      <profile_COMMON>
+        <newparam sid="H_ma_new_main_s3tc_tga-surface">
+          <surface type="2D">
+            <init_from>H_ma_new_main_s3tc.tga</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="H_ma_new_main_s3tc_tga-sampler">
+          <sampler2D>
+            <source>H_ma_new_main_s3tc_tga-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="H_ma_new_main_s3tc_tga-sampler" texcoord="CHANNEL1">
+                <extra>
+                  <technique profile="MAYA">
+                    <mirrorU>0</mirrorU>
+                    <mirrorV>0</mirrorV>
+                    <wrapU>1</wrapU>
+                    <wrapV>1</wrapV>
+                    <repeatU>1</repeatU>
+                    <repeatV>1</repeatV>
+                    <offsetU>0</offsetU>
+                    <offsetV>0</offsetV>
+                    <rotateUV>0</rotateUV>
+                  </technique>
+                  <technique profile="MAX3D">
+                    <amount>1</amount>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>0.415939</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>1</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA">
+              <spec_level>
+                <float>0</float>
+              </spec_level>
+              <emission_level>
+                <float>0</float>
+              </emission_level>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="MAX3D">
+          <faceted>0</faceted>
+          <double_sided>0</double_sided>
+          <wireframe>0</wireframe>
+          <face_map>0</face_map>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="_mat_head_3_-fx" name="_mat_head_3_">
+      <profile_COMMON>
+        <newparam sid="H_ma_new_main_s3tc_tga-surface">
+          <surface type="2D">
+            <init_from>H_ma_new_main_s3tc.tga</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="H_ma_new_main_s3tc_tga-sampler">
+          <sampler2D>
+            <source>H_ma_new_main_s3tc_tga-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="H_ma_new_main_s3tc_tga-sampler" texcoord="CHANNEL1">
+                <extra>
+                  <technique profile="MAYA">
+                    <mirrorU>0</mirrorU>
+                    <mirrorV>0</mirrorV>
+                    <wrapU>1</wrapU>
+                    <wrapV>1</wrapV>
+                    <repeatU>1</repeatU>
+                    <repeatV>1</repeatV>
+                    <offsetU>0</offsetU>
+                    <offsetV>0</offsetV>
+                    <rotateUV>0</rotateUV>
+                  </technique>
+                  <technique profile="MAX3D">
+                    <amount>1</amount>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>0.415939</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>1</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA">
+              <spec_level>
+                <float>0</float>
+              </spec_level>
+              <emission_level>
+                <float>0</float>
+              </emission_level>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="MAX3D">
+          <faceted>0</faceted>
+          <double_sided>0</double_sided>
+          <wireframe>0</wireframe>
+          <face_map>0</face_map>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="_mat_head_4_-fx" name="_mat_head_4_">
+      <profile_COMMON>
+        <newparam sid="H_ma_new_main_s3tc_tga-surface">
+          <surface type="2D">
+            <init_from>H_ma_new_main_s3tc.tga</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="H_ma_new_main_s3tc_tga-sampler">
+          <sampler2D>
+            <source>H_ma_new_main_s3tc_tga-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="H_ma_new_main_s3tc_tga-sampler" texcoord="CHANNEL1">
+                <extra>
+                  <technique profile="MAYA">
+                    <mirrorU>0</mirrorU>
+                    <mirrorV>0</mirrorV>
+                    <wrapU>1</wrapU>
+                    <wrapV>1</wrapV>
+                    <repeatU>1</repeatU>
+                    <repeatV>1</repeatV>
+                    <offsetU>0</offsetU>
+                    <offsetV>0</offsetV>
+                    <rotateUV>0</rotateUV>
+                  </technique>
+                  <technique profile="MAX3D">
+                    <amount>1</amount>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>0.415939</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>1</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA">
+              <spec_level>
+                <float>0</float>
+              </spec_level>
+              <emission_level>
+                <float>0</float>
+              </emission_level>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="MAX3D">
+          <faceted>0</faceted>
+          <double_sided>0</double_sided>
+          <wireframe>0</wireframe>
+          <face_map>0</face_map>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="_mat_head_5_-fx" name="_mat_head_5_">
+      <profile_COMMON>
+        <newparam sid="H_ma_new_main_s3tc_tga-surface">
+          <surface type="2D">
+            <init_from>H_ma_new_main_s3tc.tga</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="H_ma_new_main_s3tc_tga-sampler">
+          <sampler2D>
+            <source>H_ma_new_main_s3tc_tga-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="H_ma_new_main_s3tc_tga-sampler" texcoord="CHANNEL1">
+                <extra>
+                  <technique profile="MAYA">
+                    <mirrorU>0</mirrorU>
+                    <mirrorV>0</mirrorV>
+                    <wrapU>1</wrapU>
+                    <wrapV>1</wrapV>
+                    <repeatU>1</repeatU>
+                    <repeatV>1</repeatV>
+                    <offsetU>0</offsetU>
+                    <offsetV>0</offsetV>
+                    <rotateUV>0</rotateUV>
+                  </technique>
+                  <technique profile="MAX3D">
+                    <amount>1</amount>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>0.415939</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>1</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA">
+              <spec_level>
+                <float>0</float>
+              </spec_level>
+              <emission_level>
+                <float>0</float>
+              </emission_level>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="MAX3D">
+          <faceted>0</faceted>
+          <double_sided>0</double_sided>
+          <wireframe>0</wireframe>
+          <face_map>0</face_map>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="_mat_head_6_-fx" name="_mat_head_6_">
+      <profile_COMMON>
+        <newparam sid="H_ma_new_main_s3tc_tga-surface">
+          <surface type="2D">
+            <init_from>H_ma_new_main_s3tc.tga</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="H_ma_new_main_s3tc_tga-sampler">
+          <sampler2D>
+            <source>H_ma_new_main_s3tc_tga-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="H_ma_new_main_s3tc_tga-sampler" texcoord="CHANNEL1">
+                <extra>
+                  <technique profile="MAYA">
+                    <mirrorU>0</mirrorU>
+                    <mirrorV>0</mirrorV>
+                    <wrapU>1</wrapU>
+                    <wrapV>1</wrapV>
+                    <repeatU>1</repeatU>
+                    <repeatV>1</repeatV>
+                    <offsetU>0</offsetU>
+                    <offsetV>0</offsetV>
+                    <rotateUV>0</rotateUV>
+                  </technique>
+                  <technique profile="MAX3D">
+                    <amount>1</amount>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>0.415939</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>1</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA">
+              <spec_level>
+                <float>0</float>
+              </spec_level>
+              <emission_level>
+                <float>0</float>
+              </emission_level>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="MAX3D">
+          <faceted>0</faceted>
+          <double_sided>0</double_sided>
+          <wireframe>0</wireframe>
+          <face_map>0</face_map>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="_mat_head_7_-fx" name="_mat_head_7_">
+      <profile_COMMON>
+        <newparam sid="H_ma_new_main_s3tc_tga-surface">
+          <surface type="2D">
+            <init_from>H_ma_new_main_s3tc.tga</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="H_ma_new_main_s3tc_tga-sampler">
+          <sampler2D>
+            <source>H_ma_new_main_s3tc_tga-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="H_ma_new_main_s3tc_tga-sampler" texcoord="CHANNEL1">
+                <extra>
+                  <technique profile="MAYA">
+                    <mirrorU>0</mirrorU>
+                    <mirrorV>0</mirrorV>
+                    <wrapU>1</wrapU>
+                    <wrapV>1</wrapV>
+                    <repeatU>1</repeatU>
+                    <repeatV>1</repeatV>
+                    <offsetU>0</offsetU>
+                    <offsetV>0</offsetV>
+                    <rotateUV>0</rotateUV>
+                  </technique>
+                  <technique profile="MAX3D">
+                    <amount>1</amount>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>0.415939</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>1</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA">
+              <spec_level>
+                <float>0</float>
+              </spec_level>
+              <emission_level>
+                <float>0</float>
+              </emission_level>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="MAX3D">
+          <faceted>0</faceted>
+          <double_sided>0</double_sided>
+          <wireframe>0</wireframe>
+          <face_map>0</face_map>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="_mat_eye_L-fx" name="_mat_eye_L">
+      <profile_COMMON>
+        <newparam sid="H_ma_eye1_s3tc_tga-surface">
+          <surface type="2D">
+            <init_from>H_ma_eye1_s3tc.tga</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="H_ma_eye1_s3tc_tga-sampler">
+          <sampler2D>
+            <source>H_ma_eye1_s3tc_tga-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="H_ma_eye1_s3tc_tga-sampler" texcoord="CHANNEL1">
+                <extra>
+                  <technique profile="MAYA">
+                    <mirrorU>0</mirrorU>
+                    <mirrorV>0</mirrorV>
+                    <wrapU>1</wrapU>
+                    <wrapV>1</wrapV>
+                    <repeatU>1</repeatU>
+                    <repeatV>1</repeatV>
+                    <offsetU>0</offsetU>
+                    <offsetV>0</offsetV>
+                    <rotateUV>0</rotateUV>
+                  </technique>
+                  <technique profile="MAX3D">
+                    <amount>1</amount>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>0.415939</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>1</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA">
+              <spec_level>
+                <float>0</float>
+              </spec_level>
+              <emission_level>
+                <float>0</float>
+              </emission_level>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="MAX3D">
+          <faceted>0</faceted>
+          <double_sided>0</double_sided>
+          <wireframe>0</wireframe>
+          <face_map>0</face_map>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="_mat_eye_R-fx" name="_mat_eye_R">
+      <profile_COMMON>
+        <newparam sid="H_ma_eye1_s3tc_tga-surface">
+          <surface type="2D">
+            <init_from>H_ma_eye1_s3tc.tga</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="H_ma_eye1_s3tc_tga-sampler">
+          <sampler2D>
+            <source>H_ma_eye1_s3tc_tga-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="H_ma_eye1_s3tc_tga-sampler" texcoord="CHANNEL1">
+                <extra>
+                  <technique profile="MAYA">
+                    <mirrorU>0</mirrorU>
+                    <mirrorV>0</mirrorV>
+                    <wrapU>1</wrapU>
+                    <wrapV>1</wrapV>
+                    <repeatU>1</repeatU>
+                    <repeatV>1</repeatV>
+                    <offsetU>0</offsetU>
+                    <offsetV>0</offsetV>
+                    <rotateUV>0</rotateUV>
+                  </technique>
+                  <technique profile="MAX3D">
+                    <amount>1</amount>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>0.415939</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>1</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA">
+              <spec_level>
+                <float>0</float>
+              </spec_level>
+              <emission_level>
+                <float>0</float>
+              </emission_level>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="MAX3D">
+          <faceted>0</faceted>
+          <double_sided>0</double_sided>
+          <wireframe>0</wireframe>
+          <face_map>0</face_map>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="_mat_head_8_-fx" name="_mat_head_8_">
+      <profile_COMMON>
+        <newparam sid="H_ma_new_main_s3tc_tga-surface">
+          <surface type="2D">
+            <init_from>H_ma_new_main_s3tc.tga</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="H_ma_new_main_s3tc_tga-sampler">
+          <sampler2D>
+            <source>H_ma_new_main_s3tc_tga-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="H_ma_new_main_s3tc_tga-sampler" texcoord="CHANNEL1">
+                <extra>
+                  <technique profile="MAYA">
+                    <mirrorU>0</mirrorU>
+                    <mirrorV>0</mirrorV>
+                    <wrapU>1</wrapU>
+                    <wrapV>1</wrapV>
+                    <repeatU>1</repeatU>
+                    <repeatV>1</repeatV>
+                    <offsetU>0</offsetU>
+                    <offsetV>0</offsetV>
+                    <rotateUV>0</rotateUV>
+                  </technique>
+                  <technique profile="MAX3D">
+                    <amount>1</amount>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>0.415939</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>1</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA">
+              <spec_level>
+                <float>0</float>
+              </spec_level>
+              <emission_level>
+                <float>0</float>
+              </emission_level>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="MAX3D">
+          <faceted>0</faceted>
+          <double_sided>0</double_sided>
+          <wireframe>0</wireframe>
+          <face_map>0</face_map>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="_mat_mouse-fx" name="_mat_mouse">
+      <profile_COMMON>
+        <newparam sid="H_ma_mouse1_s3tc_tga-surface">
+          <surface type="2D">
+            <init_from>H_ma_mouse1_s3tc.tga</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="H_ma_mouse1_s3tc_tga-sampler">
+          <sampler2D>
+            <source>H_ma_mouse1_s3tc_tga-surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="H_ma_mouse1_s3tc_tga-sampler" texcoord="CHANNEL1">
+                <extra>
+                  <technique profile="MAYA">
+                    <mirrorU>0</mirrorU>
+                    <mirrorV>0</mirrorV>
+                    <wrapU>1</wrapU>
+                    <wrapV>1</wrapV>
+                    <repeatU>1</repeatU>
+                    <repeatV>1</repeatV>
+                    <offsetU>0</offsetU>
+                    <offsetV>0</offsetV>
+                    <rotateUV>0</rotateUV>
+                  </technique>
+                  <technique profile="MAX3D">
+                    <amount>1</amount>
+                  </technique>
+                </extra>
+              </texture>
+            </diffuse>
+            <specular>
+              <color>0.9 0.9 0.9 1</color>
+            </specular>
+            <shininess>
+              <float>0.415939</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>1</float>
+            </reflectivity>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="FCOLLADA">
+              <spec_level>
+                <float>0</float>
+              </spec_level>
+              <emission_level>
+                <float>0</float>
+              </emission_level>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="MAX3D">
+          <faceted>0</faceted>
+          <double_sided>0</double_sided>
+          <wireframe>0</wireframe>
+          <face_map>0</face_map>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="ma_mdl1-mesh" name="ma_mdl1">
+      <mesh>
+        <source id="ma_mdl1-mesh-positions">
+          <float_array id="ma_mdl1-mesh-positions-array" count="2436">26.0519 102.322 -11.6741 18.3563 99.2565 -8.42429 19.6807 101.998 -11.038 29.72 111.158 -13.3903 20.9259 104.176 -1.13592 22.7659 112.004 -3.2974 23.656 105.2 2.11415 24.375 116.742 -0.02862 19.8391 108.517 8.21471 22.0349 101.68 2.3256 21.0666 96.8514 -2.072 26.282 97.9519 -7.8764 27.5398 100.714 -7.80259 24.2507 106.241 -7.72975 29.3566 102.021 -11.8495 30.845 106.154 -12.858 29.954 106.022 -9.11978 21.3212 112.588 -9.17656 25.5671 114.929 -6.95394 29.4268 114.065 -10.8323 31.4777 111.084 -11.5151 26.4341 113.019 -5.40271 12.4768 88.8709 -2.48536 17.219 91.9959 -2.64566 19.0495 103.354 13.2273 17.2057 95.1201 13.7366 21.2532 100.24 7.77893 18.679 92.3962 7.20206 6.64179 90.8261 -12.1425 14.7273 95.8933 -7.92008 11.4944 101.351 -22.8394 19.572 109.802 -17.1606 14.0214 90.9341 -19.4973 21.0603 95.8288 -18.3023 19.3219 91.2001 -17.0867 16.1388 95.5587 -21.5136 9.45929 90.359 -23.5953 10.0221 94.6671 -26.4476 3.76436 94.3036 -27.6083 4.12739 90.0346 -25.0059 16.7405 100.882 17.1377 13.6504 101.641 20.2818 14.3264 100.144 18.3955 12.631 104.871 19.3944 15.6195 106.57 16.703 17.5102 103.464 15.9498 12.3268 107.058 14.0033 10.8342 103.855 18.3436 17.995 108.432 11.1755 10.2873 98.5351 18.6845 7.59583 92.543 19.1228 10.1237 87.7919 13.1474 9.38148 106.554 -26.8328 21.0151 113.708 5.0732 17.4599 114.534 10.9399 12.9088 113.073 13.678 21.3315 119.009 5.04878 17.6395 122.034 12.251 11.5025 118.011 14.8644 -9.45477 90.359 -23.5971 -4.12261 90.0346 -25.0067 -3.75908 94.3036 -27.6091 -11.49 101.351 -22.8416 -10.017 94.6671 -26.4496 -6.63946 90.8261 -12.1438 -14.7258 95.8933 -7.9229 -19.6786 101.998 -11.0417 -19.3187 91.2001 -17.0904 -16.1347 95.5587 -21.5167 -14.0177 90.9341 -19.5 -21.0568 95.8288 -18.3063 -13.8826 88.8709 -2.48788 -26.2805 97.9519 -7.88144 -30.8425 106.154 -12.8639 -29.3543 102.021 -11.8552 -26.0497 102.322 -11.6791 -27.5383 100.714 -7.80787 -18.3547 99.2565 -8.4278 -21.0662 96.8514 -2.07604 -29.9523 106.022 -9.12552 -31.4755 111.084 -11.5212 -29.7175 111.158 -13.396 -19.5687 109.802 -17.1643 -9.37634 106.554 -26.8346 -24.2493 106.241 -7.73439 -26.4331 113.019 -5.40777 -29.4247 114.065 -10.8379 -21.3194 112.588 -9.18064 -20.9257 104.176 -1.13993 -21.2547 100.24 7.77486 -22.0354 101.68 2.32138 -18.6804 92.3962 7.19848 -17.2185 91.9959 -2.64896 -8.43197 104.196 23.8105 -5.72887 108.466 24.1029 -7.08011 104.344 20.7598 -5.21323 99.6572 23.9093 -7.80285 103.079 21.6428 -4.58029 102.532 22.6041 -7.46294 95.4652 20.9177 -9.89649 95.5472 20.4292 -5.19735 93.8716 21.2815 -5.97105 97.9502 24.0658 -16.7438 100.882 17.1345 -13.6543 101.641 20.2792 -17.5132 103.464 15.9465 -12.6347 104.871 19.392 -15.6227 106.57 16.7 -14.3299 100.144 18.3927 -10.4707 103.907 20.6736 -12.451 96.461 18.9756 5.20865 99.6572 23.9103 -9.56125 104.267 27.744 -6.59644 108.674 28.1145 -6.54215 108.046 32.2513 6.2434 99.0252 28.1176 9.55594 104.267 27.7458 6.40713 99.0571 31.6488 9.34853 104.268 31.6911 6.53597 108.046 32.2526 5.14896 104.163 35.3079 -9.3546 104.268 31.6893 -5.15572 104.163 35.3069 -6.41319 99.0571 31.6476 -6.24879 99.0252 28.1164 5.19327 93.8716 21.2825 2.18542 93.1724 21.7394 4.57596 102.532 22.605 -2.18958 93.1724 21.739 5.96645 97.9502 24.067 7.07614 104.344 20.7612 8.42741 104.196 23.8121 7.45893 95.4652 20.9191 9.89258 95.5472 20.4311 12.4474 96.461 18.978 7.79871 103.079 21.6443 -7.95083 105.812 16.779 -10.8377 103.855 18.3416 -10.2869 98.5351 18.6825 -22.7653 112.004 -3.30176 -25.5657 114.929 -6.95884 -24.375 116.742 -0.033288 -21.0161 113.708 5.06918 -21.3286 119.009 5.04469 -23.6565 105.2 2.10962 -19.8406 108.517 8.21091 -17.6418 122.034 12.2476 -17.2083 95.1201 13.7333 -7.59949 92.543 19.1214 -10.1263 87.7919 13.1455 -3.45878 113.199 18.278 -12.3295 107.058 14.001 -12.9115 113.073 13.6755 -7.6149 112.48 16.8559 -17.462 114.534 10.9365 -11.5053 118.011 14.8622 -17.9972 108.432 11.172 -19.052 103.354 13.2237 10.4668 103.907 20.6756 9.50241 124.765 15.6559 5.72425 108.466 24.104 6.59106 108.674 28.1158 3.45528 113.199 18.2787 -7.87661 118.433 16.8156 -4.7126 117.25 17.3591 -9.5054 124.765 15.6541 7.94761 105.812 16.7805 7.61167 112.48 16.8573 4.70928 117.25 17.36 7.87339 118.433 16.8171 -0.000697 82.8181 7.28414 0.001207 89.5447 -12.6117 0.002231 101.332 -23.3053 -0.002429 97.9895 25.375 -0.002034 97.5161 21.2462 -0.002269 102.352 23.7062 -0.002317 96.9971 24.2033 -0.002725 96.5839 28.4651 -0.002764 111.326 28.8685 -0.003136 110.335 32.7554 -0.003437 107.093 35.8967 -0.00338 100.398 35.3042 -0.003511 104.183 36.6707 -0.003038 97.147 31.7306 -0.001914 109.5 19.9978 -0.002387 110.759 24.9311 -0.002124 94.0319 22.1921 -0.00184 90.168 19.2241 5.3423 84.9173 15.1553 -0.001849 113.043 19.3135 -0.001853 118.66 19.3554 -0.001719 125.336 17.9596 -5.22044 107.449 17.6149 5.21706 107.449 17.6159 29.5907 112.049 -8.45691 -29.589 112.049 -8.46258 -0.002031 91.77 21.2199 13.4017 87.5407 7.07748 -13.403 87.5407 7.07492 -0.001752 87.2811 18.2989 -5.3452 84.9173 15.1543 24.3734 116.745 -0.029065 21.3191 112.591 -9.1771 19.5694 109.805 -17.1612 9.37827 106.557 -26.8328 26.3539 116.717 -3.53297 23.1119 114.235 -18.9038 21.3302 119.01 5.04884 17.6385 122.034 12.2517 25.6415 131.472 6.13359 15.6067 127.468 14.3019 21.83 120.741 6.52915 28.8767 122.584 -5.73666 12.5223 112.112 -28.9661 22.4825 119.316 -21.9785 12.1038 117.768 -30.8026 21.2635 122.543 19.7516 20.7363 121.164 19.8143 -19.5713 109.801 -17.1612 -9.37954 106.555 -26.8328 -21.3215 112.587 -9.1771 -12.1072 117.765 -30.8026 -12.5246 112.109 -28.9661 -22.4862 119.312 -21.9785 -23.1146 114.23 -18.9038 -24.3766 116.74 -0.029057 -21.3339 119.006 5.04885 -26.3571 116.712 -3.53296 -17.6427 122.031 12.2517 16.1344 124.09 28.1773 17.0171 125.539 28.1263 9.50153 124.764 15.6577 8.3098 128.215 32.5948 7.95058 126.547 32.5755 -9.50628 124.762 15.6577 -21.834 120.737 6.52915 -28.8811 122.579 -5.73665 -21.2678 122.539 19.7516 -20.7364 121.16 19.8143 -11.01 123.238 -29.7094 -16.4945 123.621 -23.8149 -16.139 124.087 28.1773 -15.612 127.465 14.3019 -25.6475 131.467 6.1336 -17.022 125.536 28.1264 -26.9754 128.657 -8.9091 -8.68658 131.149 18.0555 -8.3152 128.213 32.5948 -7.95567 126.545 32.5755 -9.36572 125.43 -24.9635 -22.5662 139.088 2.51177 -18.1517 134.36 -11.9682 -10.7149 141.606 17.9647 -18.7536 137.558 13.7033 -16.0785 144.808 8.6167 10.707 141.608 17.9647 -11.7105 136.513 -13.9255 -9.2112 143.452 -4.80896 18.7464 137.562 13.7033 16.0738 144.811 8.61669 9.20286 143.454 -4.80896 18.1451 134.364 -11.9682 11.7035 136.515 -13.9255 22.5588 139.092 2.51177 16.4335 142.197 -1.6604 8.68061 131.151 18.0555 9.95639 147.49 3.46019 10.7103 147.588 11.7336 -9.96549 147.488 3.46019 -16.4415 142.194 -1.6604 -10.7194 147.586 11.7336 26.9699 128.662 -8.90911 9.36084 125.432 -24.9635 11.0056 123.24 -29.7094 16.4899 123.624 -23.8149 -0.001171 112.169 -31.9466 -0.001811 118.841 -33.8769 -0.002426 125.334 17.9623 -0.002732 128.55 33.9972 -0.002567 126.839 33.8606 -0.002354 124.505 -31.9361 -0.003095 132.322 19.9499 -0.003651 138.115 20.7384 -0.004775 149.826 13.5732 -0.004268 144.553 19.8003 -0.003556 137.073 -13.9333 -0.004542 147.371 -1.3523 -0.004768 149.743 5.43263 -0.002565 126.716 -25.3972 50.8102 76.5743 -13.7838 59.6188 88.7 -13.9752 59.6427 90.4491 -3.19552 59.1127 83.2897 -12.7503 50.1957 85.6818 7.43203 49.4554 72.6586 4.3467 54.293 87.1489 -14.5756 51.8182 74.2341 -8.80403 54.0915 73.1662 10.9081 60.2528 78.546 6.12066 60.3651 82.1913 -2.70655 59.64 90.3432 2.57489 59.6696 89.8363 -8.78975 60.1392 82.7152 -8.58264 60.1946 82.0463 2.40838 75.299 83.8522 2.37667 70.4781 79.8792 1.95324 75.1647 79.3957 -3.36145 70.6436 80.2469 -3.31413 73.0472 78.0171 -8.76398 67.7847 79.3643 -8.77299 67.8221 78.8873 -3.92 66.394 80.1611 -9.43096 66.6795 79.8764 -13.7742 70.7263 78.7829 -13.5136 51.2123 73.7961 -2.72418 68.8228 88.9259 2.70941 66.5829 82.9609 2.59028 71.2081 80.8675 2.4119 66.7538 83.1099 -3.4076 70.4124 88.1883 -3.31371 70.3572 88.1058 2.33855 66.6504 82.8633 2.09923 71.7711 76.9967 0.030715 63.0746 79.714 8.22286 59.8568 73.6514 7.30468 70.8628 80.6835 7.68776 70.1058 87.8172 -3.85843 65.6407 82.9575 -3.6465 65.8952 83.1415 -8.8654 69.9332 87.634 -8.79206 68.9999 76.3368 -5.09055 68.086 87.3335 -13.8067 67.8425 87.005 -9.4081 63.9289 82.8992 -9.45181 67.1715 77.5519 -10.5033 49.3105 79.4511 9.31424 58.4988 80.1237 10.2148 73.9525 79.6956 5.99711 73.6972 76.8955 -1.91919 70.7473 75.9855 -7.30937 68.6985 77.2592 -11.9838 65.4558 75.554 8.78513 74.6933 83.9025 8.01118 75.29 79.0359 1.8174 73.3084 77.9307 -3.75455 70.2547 79.1185 -9.46679 54.7079 76.5333 12.4589 54.9228 83.686 8.75183 49.1274 73.5411 7.36479 68.878 88.1989 8.09013 75.4726 80.774 4.02825 59.4433 88.6356 8.06818 60.391 82.5146 7.75268 61.9505 75.3542 12.2888 60.3702 72.616 10.244 64.1897 83.3332 -13.9439 66.8086 82.7183 7.61469 54.3148 72.7173 7.20448 58.5397 79.081 7.08602 64.6782 77.144 6.18877 56.3231 76.0066 6.10024 51.5326 88.9094 -3.22106 45.5441 87.2136 -3.47005 45.3589 83.0332 5.28548 45.2449 73.1819 2.34068 45.0396 74.5657 -10.0946 45.3515 83.14 -10.9595 40.4256 87.2796 -3.66018 43.3061 88.7643 -4.38158 40.1986 83.0811 -11.4042 43.1071 83.6713 -13.6723 39.9004 82.7788 5.1009 42.9417 83.4196 6.30062 40.2157 74.3544 -10.1505 42.8346 73.0228 -12.3811 40.1012 73.244 1.81019 42.8706 71.4863 2.5008 -50.8089 76.5738 -13.7898 -59.6183 88.699 -13.9798 -59.6423 90.4468 -3.19995 -59.1118 83.2886 -12.7555 -50.195 85.6789 7.42704 -49.4539 72.6561 4.34019 -54.2924 87.1482 -14.5804 -51.8168 74.233 -8.81036 -54.09 73.1626 10.9017 -60.2516 78.5425 6.11485 -60.3642 82.1889 -2.71194 -59.6397 90.3401 2.57046 -59.6692 89.9206 -8.79423 -60.1383 82.7135 -8.58797 -60.1936 82.0433 2.40297 -75.2982 83.8482 2.37148 -70.477 79.8756 1.94758 -75.1636 79.3923 -3.36717 -70.6425 80.2438 -3.31975 -73.046 78.0145 -8.76986 -67.7836 79.3621 -8.77871 -67.821 78.8845 -3.92578 -66.3929 80.1591 -9.43659 -66.6785 79.8748 -13.7799 -70.7252 78.781 -13.5194 -51.2108 73.7942 -2.73056 -68.8224 88.9223 2.70481 -66.582 82.9574 2.58498 -71.2071 80.8638 2.40636 -66.7529 83.1071 -3.41288 -70.4119 88.1852 -3.31839 -70.3567 88.102 2.33386 -66.6495 82.8599 2.09392 -71.7698 76.9931 0.02472 -63.0735 79.7101 8.21718 -59.8552 73.6478 7.29829 -70.8618 80.6791 7.68219 -70.1053 87.8142 -3.86316 -65.6398 82.9548 -3.6518 -65.8943 83.1394 -8.87068 -69.9326 87.6316 -8.79681 -68.9986 76.334 -5.09662 -68.0854 87.3318 -13.8115 -67.8419 87.0028 -9.41292 -63.928 82.8973 -9.45712 -67.1702 77.5499 -10.5092 -49.3093 79.448 9.30852 -58.4977 80.1198 10.2092 -73.9514 79.6912 5.99143 -73.696 76.892 -1.9252 -70.746 75.9829 -7.31549 -68.6972 77.2573 -11.9897 -65.4544 75.5499 8.77897 -74.6924 83.8978 8.006 -75.2888 79.0319 1.81165 -73.3072 77.9275 -3.76044 -70.2536 79.1161 -9.47254 -54.7066 76.5295 12.4528 -54.9219 83.6826 8.74661 -49.1258 73.5383 7.35838 -68.8775 88.1946 8.08544 -75.4716 80.7697 4.02269 -59.4428 88.632 8.06354 -60.3901 82.511 7.74733 -61.9491 75.3499 12.2826 -60.3686 72.612 10.2375 -64.1889 83.3318 -13.9491 -66.8077 82.7142 7.60936 -54.3132 72.7141 7.19798 -58.5386 79.0775 7.08026 -64.6769 77.1403 6.18279 -56.3217 76.0034 6.09412 -51.5321 88.9076 -3.22567 -45.5435 87.2123 -3.47485 -45.358 83.0308 5.28019 -45.2433 73.1799 2.33423 -45.0382 74.5652 -10.1009 -45.3507 83.1396 -10.9648 -40.425 87.2787 -3.66498 -43.3057 88.7632 -4.3862 -40.1977 83.081 -11.4095 -43.1063 83.6714 -13.6775 -39.8995 82.7769 5.09557 -42.9408 83.4173 6.29536 -40.2142 74.3542 -10.1568 -42.8331 73.0227 -12.3875 -40.0997 73.2424 1.80375 -42.869 71.4845 2.49415 -3.625 0.001282 -11.4971 -3.62614 11.947 -11.5275 -19.2344 -0.000211 -11.4986 -19.2355 12.2435 -11.6816 -12.3324 8.86657 24.1226 -12.3314 -0.001055 22.4034 -11.7808 17.3442 7.28753 -12.3324 17.9157 15.4481 -11.4685 0.003165 -14.4887 -11.4258 2.83057 -14.5537 -19.2347 3.02434 -11.5087 -3.71124 3.16773 -11.4523 -5.84012 15.7335 16.4442 -18.8479 15.3456 16.4425 -12.1608 15.8282 20.6278 -11.4267 11.8917 -13.864 -3.06311 7.15068 -12.245 -11.5511 7.18475 -15.8448 -20.2272 7.37134 -11.9861 -20.8469 14.0243 7.36206 -2.36643 14.0261 7.36383 -1.34556 0.0016 7.42429 -22.6581 -0.00044 7.42225 -22.8576 3.71408 7.40919 -1.34591 3.66918 7.41395 -22.2527 9.86997 7.30701 -0.70585 9.7445 7.24428 -12.3317 3.74963 22.1998 -3.33097 -0.002202 18.266 -1.69132 10.7224 17.7183 -19.913 -0.002527 18.5799 -22.3905 10.1466 17.5648 -20.554 3.90876 18.4521 -3.31965 4.14935 18.2187 3.63831 0.001975 -11.4964 3.63716 11.9477 -11.5268 19.2477 0.003469 -11.4949 19.2465 12.2472 -11.678 12.3372 8.86893 24.125 12.3382 0.001303 22.4058 11.7872 17.3465 7.28979 12.3371 17.918 15.4505 11.4823 0.00536 -14.4865 11.4391 2.83276 -14.5515 19.2474 3.02802 -11.505 3.72394 3.16844 -11.4516 5.84506 15.7346 16.4453 18.8529 15.3492 16.4461 12.165 15.8306 20.6302 11.4382 11.8939 -13.8618 3.07519 7.15127 -12.2444 11.5638 7.18696 -15.8426 20.2392 7.37522 -11.9823 20.8539 14.0283 7.36605 2.37344 14.0265 7.36428 1.35524 0.001855 7.42455 22.6677 0.003896 7.42659 22.8666 3.71845 7.41357 1.35489 3.66943 7.41421 22.2606 9.87422 7.31128 0.713702 9.74463 7.24442 12.3378 3.75199 22.2022 3.33858 -0.001566 18.2667 1.69698 10.7227 17.7187 19.9206 0.001283 18.5837 22.3963 10.1509 17.5691 20.5608 3.91269 18.4561 3.32647 4.14999 18.2194 -0.00048 88.9145 5.01657 0.001289 85.9167 -13.4714 0.000274 90.488 -2.86639 0.000656 55.2461 -17.1211 0.001597 79.8226 -16.6818 0.001439 73.3032 -15.0366 0.002751 43.9258 -14.6563 0.001069 65.582 -15.9453 0.001645 39.1328 1.6875 -0.001552 74.3883 16.2133 0.002349 49.6289 -16.1641 -0.001502 57.8203 22.4023 -0.000904 48.0781 19.3672 -0.001992 67.084 20.8038 -11.138 17.8735 11.8481 -0.89433 13.5623 0.747336 -19.7157 11.0995 -14.021 -21.9219 13.8688 3.23752 -0.973446 10.6514 -13.8529 -1.4144 17.8356 2.23571 -11.1106 20.0767 9.34032 -1.32591 16.74 -10.5567 -20.6175 17.7127 2.24558 -19.2048 16.6134 -10.5763 -11.3951 11.2931 -17.1169 -20.2884 55.5738 -12.5322 -19.7502 56.3238 11.9371 -16.1102 82.5673 -10.7253 -19.0826 44.9095 -9.75323 -19.6469 46.0758 8.46726 -21.5827 66.7507 7.10256 -22.4335 66.4297 -0.888223 -23.2266 58.5156 -0.512164 -11.3124 44.2494 12.7025 -10.8009 48.6521 17.1014 -11.9622 33.4042 9.12565 -7.67118 55.3516 -18.0862 -6.08636 87.4065 5.01633 -10.2641 80.1435 -15.9634 -8.31139 65.7188 -16.5279 -12.9661 85.101 4.25425 -5.09296 90.2847 -2.86645 -13.5595 88.8075 -4.13644 -5.54951 85.1237 -13.3234 -23.5664 65.3359 -0.739862 -1.45174 39.9648 -10.8673 -21.1462 46.4668 -0.215679 -8.37645 76.4663 15.1107 -16.5675 74.7785 11.7156 -17.856 74.8052 5.82871 -6.15862 73.1664 -16.088 -19.2468 48.3286 -11.2475 -22.3591 52.4286 -0.575288 -29.5562 73.6045 0.706415 -29.5086 82.4013 4.42144 -29.6133 86.503 -4.15271 -29.4501 73.9289 -10.2662 -29.5546 82.8079 -11.4614 -31.7942 74.1393 -10.321 -31.9028 83.0224 -11.9543 -31.4326 73.3088 1.17236 -32.195 87.345 -3.96312 -31.4139 82.5229 4.81133 -13.9292 87.32 -5.09784 -15.0787 82.8291 3.72282 -23.265 87.5635 -4.46225 -22.3914 82.3847 4.83956 -15.1002 74.9759 -14.1312 -13.6069 81.4468 -13.1481 -20.0304 67.5742 -12.1498 -12.2353 57.4685 19.2064 -12.0017 65.7243 17.502 -12.0617 45.7262 -15.8714 -11.752 41.7023 -12.3406 -19.7508 63.25 11.9557 -19.2774 50.6637 10.6715 -40.4314 87.2787 -3.80161 -40.1532 83.081 -11.5431 -39.9567 82.7769 4.95986 -40.1776 74.3542 -10.2943 -40.1373 73.2424 1.67159 -21.3054 72.3878 -1.85523 -17.8982 87.7709 -4.48056 -19.9112 82.7122 -10.8773 -17.0709 82.591 3.83206 -19.6022 76.079 3.301 -20.2345 73.0045 -9.22237 -19.0903 30.3578 -9.03388 -20.9779 29.7986 1.21982 -2.00821 30.168 -8.98147 -1.40756 29.5192 1.19824 -11.9866 30.1546 10.0527 -11.7032 30.2923 -12.2207 -11.9761 26.5972 -14.2408 -1.48768 41.41 10.3163 11.1434 17.8756 11.8502 0.902699 13.5625 0.747509 19.7273 11.1033 -14.0172 21.9298 13.873 3.24172 0.985168 10.6516 -13.8527 1.42167 17.8359 2.23598 11.1161 20.0788 9.34245 1.32925 16.7389 -10.5572 20.6248 17.7167 2.24953 19.2148 16.6171 -10.5726 11.4073 11.2953 -17.1147 20.2897 55.5748 -12.5298 19.7498 56.3243 11.9384 16.1123 82.5673 -10.7222 19.087 44.9131 -9.74958 19.6476 46.0795 8.47103 21.5814 66.7507 7.1067 22.4337 66.4297 -0.885214 23.2266 58.516 -0.510344 11.3126 44.2496 12.7046 10.8006 48.6521 17.1021 11.9652 33.4065 9.12794 7.67257 55.3516 -18.0856 6.08539 87.4065 5.0175 10.2646 80.1477 -15.9679 8.31361 65.7188 -16.5268 12.9652 85.101 4.25673 5.09351 90.2847 -2.86547 13.5603 88.8075 -4.13384 5.55206 85.1237 -13.3224 23.5665 65.3359 -0.736701 1.4545 39.9653 -10.8667 21.1484 46.4709 -0.211628 8.37355 76.4663 15.1123 16.5653 74.7785 11.7187 17.8549 74.8052 5.83213 6.1617 73.1664 -16.0868 19.2508 48.3322 -11.2438 22.3597 52.4306 -0.572041 29.556 73.6045 0.71208 29.5078 82.4013 4.42709 29.614 86.503 -4.14703 29.4521 73.9289 -10.2606 29.5568 82.8079 -11.4557 31.7957 74.1389 -10.3146 31.9037 83.0219 -11.949 31.4342 73.3098 1.1788 32.1956 87.3454 -3.95833 31.4148 82.5243 4.81669 13.9293 87.3226 -5.10232 15.0785 82.8292 3.72093 23.2658 87.5635 -4.45779 22.3908 82.3846 4.84043 15.1039 74.9773 -14.1285 13.6094 81.4468 -13.1455 20.0321 67.5742 -12.1471 12.2335 57.4685 19.2082 11.9983 65.7243 17.5043 12.0633 45.7273 -15.8703 11.7594 41.7076 -12.3402 19.7491 63.25 11.9588 19.2773 50.6641 10.6726 40.4319 87.2796 -3.79681 40.1541 83.0811 -11.5378 39.9575 82.7789 4.96519 40.1791 74.3544 -10.2879 40.1388 73.244 1.67803 21.3055 72.3886 -1.85822 17.8988 87.7715 -4.47888 19.9132 82.7122 -10.8735 17.0707 82.591 3.83028 19.6021 76.0792 3.29592 20.2351 73.0065 -9.22534 19.0973 30.3618 -9.03031 20.9831 29.8024 1.22373 2.01524 30.1687 -8.98118 1.41277 29.5193 1.19839 11.99 30.1562 10.0549 11.7109 30.295 -12.2185 11.9849 26.5998 -14.2386 1.48888 41.4103 10.3165 0.001608 89.0648 -16.7999 0.000314 94.4684 -3.28474 0.002021 46.2558 -21.1161 0.001714 83.5413 -17.9087 0.001822 73.0451 -19.0288 0.001907 66.002 -19.9226 -23.2446 46.4517 -15.216 -23.2865 47.0404 13.7605 -14.8217 84.5767 -13.9958 -24.743 68.1844 8.04353 -26.7024 68.0772 -0.738737 -26.5664 58.2773 -0.486945 -7.96664 46.4237 -22.0739 -7.15381 83.4663 15.3133 -11.3265 84.2093 -16.9567 -9.09179 66.0176 -20.4391 -15.2622 87.8641 6.01533 -13.2539 94.2265 -0.364113 -18.0229 92.2969 -4.96573 -6.2601 89.0765 -16.9411 -26.3782 66.4249 -0.554993 -9.2714 78.6855 19.5323 -19.6107 76.4662 13.6878 -21.1258 75.6922 7.95331 -6.22073 73.084 -20.088 -26.3164 46.8476 -0.528796 -29.3765 70.2523 2.87857 -29.1885 82.7645 8.39412 -29.2498 88.4678 -3.86359 -29.4614 70.6893 -12.6136 -29.3043 84.5384 -15.059 -16.2221 90.5311 -5.7584 -16.8549 85.6267 5.96497 -23.5543 88.9003 -5.08252 -22.3719 84.8732 7.97235 -17.1194 75.5686 -17.5307 -15.6389 86.0886 -14.6561 -23.3111 68.2838 -14.3274 -14.2092 48.1975 22.6636 -13.6662 66.6427 22.1776 -23.1264 63.5053 14.091 -26.8157 69.796 -0.770119 -17.8004 89.7624 -4.39493 -19.7181 84.1849 -14.5939 -17.5794 84.5257 7.29697 -20.8288 74.7819 6.87921 -22.9051 72.5418 -12.1637 23.2476 46.4517 -15.2115 23.2838 47.0404 13.765 14.8244 84.5767 -13.993 24.7414 68.1844 8.04827 26.7037 68.0799 -0.744668 26.5665 58.2773 -0.481858 7.97086 46.4237 -22.0723 7.15088 83.4663 15.3147 11.3297 84.2093 -16.9545 9.09571 66.0176 -20.4374 15.2624 87.8637 6.01178 13.2539 94.2265 -0.361575 18.0231 92.299 -4.96821 6.26334 89.0765 -16.9399 26.3792 66.4271 -0.561043 9.26766 78.6855 19.5341 19.6081 76.4662 13.6915 21.1242 75.6922 7.95736 6.22458 73.084 -20.0868 26.3165 46.8476 -0.523756 29.3761 70.2524 2.8792 29.1869 82.7645 8.39971 29.2505 88.4678 -3.85798 29.4629 70.6907 -12.613 29.3072 84.5384 -15.0534 16.2223 90.5335 -5.76131 16.8538 85.6267 5.96819 23.555 88.9008 -5.07995 22.3707 84.873 7.97451 17.1228 75.5686 -17.5274 15.6417 86.0886 -14.6531 23.3139 68.2838 -14.323 14.2049 48.1975 22.6664 13.6619 66.6427 22.1802 23.1236 63.5053 14.0954 26.8169 69.7986 -0.775685 17.8008 89.7637 -4.39559 19.7203 84.186 -14.5921 17.578 84.5257 7.30033 20.8275 74.7819 6.8832 22.9074 72.5418 -12.1594 -7.10391 48.6273 24.5315 7.09921 48.6273 24.5328 6.82974 67.5531 23.9451 -6.83432 67.5531 23.9437 -5.88865 77.6816 20.1226 5.88479 77.6816 20.1237 -14.9314 79.9393 18.3676 14.9279 79.9393 18.3704 13.6829 91.7273 7.71292 -13.6843 91.7273 7.7103 10.6971 83.9279 -18.5444 -10.6935 83.9279 -18.5465 0.001853 83.4864 -19.3618 -17.8951 88.0947 6.69867 17.8952 88.0941 6.69519</float_array>
+          <technique_common>
+            <accessor source="#ma_mdl1-mesh-positions-array" count="812" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ma_mdl1-mesh-normals">
+          <float_array id="ma_mdl1-mesh-normals-array" count="2529">-0.881543 -0.370048 0.293165 -0.017946 -0.725859 -0.687609 -0.67349 -0.187883 -0.71492 -0.155142 -0.987415 -0.030695 -0.155142 -0.987415 -0.030695 0.097302 -0.801049 0.590638 -0.573696 -0.240305 0.783024 -0.142187 -0.38444 0.912134 -0.142187 -0.38444 0.912134 0.06874 0.379302 0.922716 0.014981 0.384943 0.922819 0.083169 0.996534 -0.001473 -0.072033 0.996255 -0.047828 0.048552 0.443709 -0.894855 0.039882 0.995996 -0.080006 -0.240121 0.547004 -0.801953 0.120519 0.609633 -0.783468 0.01485 0.403458 0.914878 0.058613 -0.132494 -0.989449 0.058613 -0.132494 -0.989449 0.058613 -0.132494 -0.989449 -0.895294 0.26928 0.354877 -0.596671 0.592887 0.540804 -0.692355 0.427 0.581648 -0.850951 -0.2515 0.461119 -0.517187 0.725618 0.453869 -0.637339 0.768808 -0.052274 -0.63405 0.742576 -0.215781 -0.145571 0.988162 -0.048422 -0.261539 0.818666 0.511256 -0.000048 0.859311 0.511454 -0.229438 0.526445 0.818666 -0.035085 -0.003601 -0.999378 -0.282534 0.29617 -0.912391 -0.017269 -0.01813 -0.999686 -0.504739 0.123587 -0.85438 -0.150499 0.083367 -0.985089 -0.754529 0.090886 -0.649943 -0.071608 0.843311 0.532633 -0.071608 0.843311 0.532633 -0.071608 0.843311 0.532633 0.000065 0.733072 -0.680151 -0.162102 0.71694 -0.678027 0.000009 0.994574 -0.10403 -0.475523 0.502774 -0.72187 0.028368 0.490182 -0.871158 -0.849401 0.527485 0.016652 -0.45888 -0.050709 0.88705 -0.438184 0.228064 0.869472 -0.821921 0.087827 0.562789 -0.000079 -0.052005 0.998647 0.438019 0.228081 0.869551 -0.000097 0.294369 0.955692 0.229282 0.526445 0.818709 0.692247 0.427007 0.581773 0.517219 0.725554 0.453934 0.492614 0.669813 0.555592 0.395134 0.915067 -0.080752 0.157133 0.985378 0.065876 0.17071 0.687648 -0.70569 0.637534 0.768662 -0.052047 0.090528 0.894618 -0.437565 0.090528 0.894618 -0.437565 0.47589 0.502949 -0.721506 0.829513 0.434743 -0.350582 0.240444 0.546848 -0.801963 0.28281 0.296526 -0.91219 0.504905 0.123528 -0.85429 0.673413 -0.18754 -0.715083 -0.000079 0.565145 0.824992 0.261441 0.818666 0.511306 -0.940919 0.213696 0.262688 -0.953398 0.301193 -0.017759 0.849388 0.527501 0.0168 0.940874 0.213709 0.262841 0.953399 0.301198 -0.017605 0.895316 0.269535 0.354626 -0.050683 0.372034 -0.926834 -0.03547 0.997801 -0.055999 0.000067 0.105257 -0.994445 0.000092 -0.066195 -0.997807 0.035171 -0.003811 -0.999374 0.150628 0.083394 -0.985067 0.801677 -0.53827 0.259959 0.754613 0.090739 -0.649866 0.517137 -0.265555 0.813664 0.007884 0.535991 0.844187 0.072078 0.996257 -0.047702 -0.809862 -0.195806 0.552976 -0.987507 -0.15712 -0.01199 -0.993744 -0.110952 -0.012767 -0.723437 -0.26679 0.636759 -0.272655 -0.490365 0.827769 -0.370793 -0.487593 0.790421 0.163301 -0.762744 0.625743 -0.00005 -0.555272 0.831669 -0.960873 -0.134415 0.24219 -0.848799 -0.100718 0.519033 -0.960873 -0.134415 0.24219 -0.773118 -0.055481 -0.631832 -0.997197 -0.073769 0.012484 -0.807864 -0.236175 -0.539979 -0.821619 -0.196975 -0.534923 -0.120958 -0.167943 0.978348 0.000035 -0.228379 -0.973572 -0.120285 -0.01545 -0.992619 0.000052 -0.029293 -0.999571 -0.280819 -0.39398 -0.875169 0.000109 -0.543228 -0.839585 -0.189915 -0.380179 -0.905205 0.649016 -0.487132 -0.584363 0.814087 0.024716 -0.580216 -0.954934 -0.068 0.288925 -0.055287 0.097204 0.993728 -0.032035 0.257509 -0.965745 -0.860142 0.02619 -0.509381 0.932039 -0.072228 0.355085 0.120373 -0.015458 -0.992608 0.280894 -0.394037 -0.875119 0.000297 -0.99807 0.062097 0.77317 -0.055427 -0.631772 0.807997 -0.236043 -0.539838 0.987786 -0.15567 0.006825 0.997198 -0.073744 0.012545 -0.163298 -0.762774 0.625707 0.370746 -0.487569 0.790458 0.458783 -0.050711 0.8871 0.804845 -0.236814 0.544191 0.848781 -0.100688 0.519068 0.821838 0.087845 0.562908 0.809801 -0.195611 0.553135 0.272536 -0.490305 0.827843 0.120806 -0.167971 0.978362 -0.932059 -0.072378 0.355004 -0.649108 -0.487029 -0.584346 0.81393 0.040686 -0.579536 0.993769 -0.110752 -0.012565 0.954893 -0.067816 0.289104 0.821773 -0.196761 -0.534765 0.190326 -0.380279 -0.905076 -0.81393 0.024649 -0.58044 0.032155 0.25744 -0.965759 0.055079 0.097174 0.993742 0.045139 0.364835 0.929977 0.054771 -0.022699 0.998241 0.732477 -0.582824 0.351843 -0.793825 -0.441341 0.418402 -0.916311 0.215653 0.337442 -0.666876 -0.475375 -0.573843 -0.881888 0.198387 -0.427687 -0.038224 -0.470257 -0.881701 0.07981 0.308774 -0.947781 0.682725 0.216559 -0.697846 -0.861827 0.170225 -0.477784 -0.15192 -0.605306 -0.781361 -0.586475 -0.561216 -0.584024 0.072541 0.270539 -0.959972 0.858868 -0.039021 0.510708 0.392192 -0.643673 -0.657169 0.916205 0.215831 0.337618 -0.045387 0.36483 0.929967 -0.553761 0.097416 -0.826957 -0.553761 0.097416 -0.826957 -0.553761 0.097416 -0.826957 0.85445 0.188969 -0.483949 0.668686 -0.468398 -0.577462 0.794669 -0.436384 0.421983 0.99839 0.056685 0.002051 0.99839 0.056685 0.002051 -0.858874 -0.039254 0.510681 -0.735308 -0.576447 0.356414 -0.990819 0.1314 -0.031793 0.583971 0.128585 -0.801526 -0.054958 -0.022709 0.99823 -0.128438 -0.834372 0.53603 -0.069121 0.379049 0.922791 -0.070207 -0.851411 0.519779 -0.132322 0.347779 0.928192 -0.02293 -0.840157 0.541858 -0.017884 0.381692 0.924117 -0.083291 0.996524 -0.00141 -0.145176 0.989406 0.000278 0.008433 0.999931 -0.008149 -0.110361 0.433912 -0.89417 0.030502 -0.725741 -0.687292 0.028591 -0.723946 -0.689264 -0.091851 0.428943 -0.89865 -0.020352 -0.727048 -0.686285 0.097896 0.433879 -0.895637 -0.033889 -0.727041 -0.685757 -0.040485 0.463834 -0.884997 0.140948 0.990006 0.004768 0.0003 0.999999 -0.000964 0.031188 -0.830497 0.55615 0.125691 -0.829548 0.544107 0.14885 -0.988469 -0.027787 0.120373 0.345357 0.930719 0.028679 0.454286 -0.890394 0.013461 -0.724399 -0.689249 0.042376 0.377992 0.924838 -0.015496 0.384604 0.922952 0.905104 -0.407634 -0.120921 0.977155 -0.212365 -0.008335 0.903412 0.367587 -0.220742 0.653442 0.660021 0.370655 0.732431 0.429956 0.527904 0.868752 0.484509 -0.102576 0.998129 -0.058016 0.01928 0.621953 -0.769088 0.147237 0.947732 0.181908 0.262134 0.996659 -0.081643 0.002131 0.848828 0.08572 0.521674 0.999988 0.003854 0.002955 0.535559 -0.106902 -0.837704 0.783313 0.106657 -0.61241 -0.625062 0.270453 0.732224 0.370792 0.835555 0.405414 -0.072823 0.401004 -0.913177 0.658819 0.087706 -0.747172 -0.189703 -0.753477 -0.629512 -0.021129 0.47358 -0.880497 0.301846 -0.631963 0.713801 0.095363 0.653962 0.750493 0.978148 -0.207395 0.014593 -0.013864 0.558227 0.829572 0.220929 0.974974 0.024809 0.085197 0.991795 -0.095306 0.111978 0.992703 0.044735 0.250967 0.532452 0.8084 0.484393 -0.571704 -0.662207 0.857043 0.044228 -0.513343 0.503506 0.231721 -0.832338 0.057338 0.883032 0.465796 0.239336 0.970489 -0.029481 -0.045838 -0.86263 0.503755 0.167328 0.314601 0.934359 0.091027 0.699672 -0.708642 0.374173 -0.523305 -0.765602 0.021735 0.133355 -0.99083 0.000095 0.076194 -0.997093 0.000094 0.115929 -0.993257 0.172848 0.055088 -0.983407 0.013983 0.736398 -0.676404 -0.239403 0.970467 -0.029675 0.000035 0.928533 -0.371248 -0.110822 0.722384 -0.682554 0.02432 -0.561605 -0.827048 -0.392741 -0.517913 -0.759948 -0.49592 0.022407 0.868079 -0.84892 0.085717 0.521525 -0.880213 -0.007218 0.474523 -0.469052 0.167973 0.86705 -0.255599 0.033142 0.966215 -0.248876 0.185793 0.950548 -0.251091 0.532413 0.808387 -0.013833 0.471769 0.881614 -0.680372 0.423513 0.598106 -0.947749 0.182001 0.262006 -0.998131 -0.057979 0.019331 -0.996671 -0.081501 0.002237 -0.999989 0.003877 0.002726 -0.057274 0.883067 0.465739 -0.095348 0.654008 0.750455 -0.301981 -0.632046 0.71367 -0.978203 -0.207124 0.014774 -0.503347 0.231721 -0.832435 -0.021546 0.133355 -0.990834 -0.172659 0.055088 -0.98344 -0.487559 -0.571181 -0.660332 -0.65884 0.08767 -0.747157 0.013774 0.558106 0.829655 -0.111944 0.992712 0.044624 -0.167581 0.314636 0.934302 -0.085037 0.991805 -0.095347 -0.220732 0.975019 0.024807 -0.905016 -0.407797 -0.121032 -0.628015 0.676532 0.38458 -0.977269 -0.211824 -0.00867 -0.845058 0.497531 -0.195805 -0.372282 0.835094 0.405 -0.622223 -0.768779 0.14771 0.625072 0.270413 0.732231 0.006893 -0.653251 -0.75711 -0.99976 -0.021863 -0.001303 -0.763337 0.02349 -0.645573 0.045284 -0.86237 0.504249 -0.856909 0.044387 -0.513554 0.468782 0.167827 0.867224 0.248868 0.185564 0.950595 0.495598 0.022648 0.868257 0.880122 -0.007218 0.474692 0.99976 -0.021863 -0.001111 -0.535651 -0.106698 -0.837672 0.072807 0.401068 -0.91315 0.189657 -0.753613 -0.629363 0.021543 0.473423 -0.880572 0.76346 0.02349 -0.645427 0.145186 0.062269 -0.987443 -0.903538 0.367323 -0.220667 0.000095 0.060328 -0.998179 0.013665 0.471769 0.881616 -0.783244 0.10668 -0.612494 0.255815 0.033647 0.96614 -0.144996 0.062269 -0.987471 -0.890418 0.418569 0.178759 -0.890418 0.418569 0.178759 -0.890418 0.418569 0.178759 -0.999728 -0.021117 -0.009902 -0.801392 -0.018187 -0.597863 -0.759193 -0.126602 -0.638434 -0.975805 0.208091 -0.067104 -0.857639 0.208641 0.470025 -0.706494 0.700792 -0.098773 -0.566194 0.754939 0.330895 -0.028769 0.990637 0.133458 -0.012667 0.699405 0.714613 0.496764 0.805723 0.322547 0.823401 0.221824 0.522308 0.69199 0.719103 -0.063573 0.992138 0.124257 -0.014898 0.593795 0.646311 -0.47926 0.786542 -0.034103 -0.616594 -0.008022 0.015468 -0.999848 0.00186 -0.144734 -0.989469 0.000131 0.987505 -0.157585 0.019531 0.744796 -0.667006 -0.557094 0.670454 -0.490038 -0.019137 -0.602358 0.797997 0.738146 -0.674314 0.020994 0.621248 -0.614914 0.485728 -0.003825 -0.643224 -0.765669 -0.728123 -0.68537 0.010289 -0.609956 -0.613037 -0.502135 0.795717 -0.113615 -0.594916 0.997556 -0.066339 0.021929 0.011131 0.044112 0.998965 -0.77359 -0.146027 0.616631 0.018176 -0.13637 0.990491 0.763839 -0.064092 0.642216 0.636077 -0.597404 -0.48838 -0.564344 -0.657842 0.498759 -0.829649 0.233963 0.506896 -0.997548 -0.06653 0.021738 -0.780143 -0.098701 0.617765 -0.992159 0.124067 -0.015088 -0.692115 0.71897 -0.063705 -0.593827 0.646197 -0.479374 -0.019546 0.744792 -0.66701 0.008211 0.01547 -0.999847 0.55706 0.670561 -0.489931 0.80151 -0.018033 -0.59771 0.975778 0.208278 -0.066917 0.999734 -0.020926 -0.009711 0.850987 0.196041 0.487225 0.75841 -0.101127 0.643884 0.035578 -0.128601 0.991058 0.046137 0.042252 0.998041 0.012396 0.699408 0.714615 0.565986 0.755047 0.331003 0.028554 0.990642 0.133464 0.706379 0.700927 -0.098638 -0.00029 0.987505 -0.157585 -0.49698 0.805628 0.322452 -0.001643 -0.144734 -0.989469 -0.786418 -0.034254 -0.616744 -0.795582 -0.113767 -0.595069 0.002482 -0.604523 0.796584 0.728252 -0.68523 0.010429 0.56939 -0.662277 0.487015 0.004094 -0.643223 -0.765668 0.759339 -0.126457 -0.638289 0.61017 -0.61292 -0.502018 -0.738021 -0.674455 0.020853 -0.635869 -0.597526 -0.488501 -0.619214 -0.613615 0.48995 -0.239439 -0.608186 -0.756822 0.131746 -0.698109 0.703767 0.249208 -0.470591 -0.846427 -0.404774 -0.904661 -0.133214 -0.387774 -0.894638 -0.221933 -0.374949 -0.923416 -0.081954 -0.072297 -0.881843 0.465968 -0.040329 -0.998994 0.019606 0.528044 -0.645828 0.55143 -0.173623 -0.928048 -0.329517 0.246386 -0.754475 0.608327 -0.135449 -0.714763 -0.686125 -0.201016 -0.95349 0.224611 -0.941848 -0.26698 0.20407 -0.445298 0.202175 0.872258 0.034338 0.625708 -0.779301 0.195843 0.511042 -0.836948 0.323139 0.946307 -0.009153 -0.217073 0.528322 -0.820826 -0.160618 0.986577 0.029455 -0.067463 0.994451 -0.080721 0.002811 0.390946 0.92041 0.404455 0.319577 0.856905 0.539295 -0.666756 0.51439 0.069357 0.985332 0.155921 -0.469783 0.633833 -0.614459 -0.474616 0.603232 0.640977 -0.016766 0.999071 -0.039698 0.002164 0.985657 -0.168749 -0.576364 0.573762 -0.581894 0.150871 -0.674926 -0.722297 -0.29965 0.743367 -0.59801 0.083033 -0.60611 -0.791035 -0.724307 0.263316 -0.637216 -0.790194 -0.55012 -0.270113 -0.674738 0.223522 0.703397 -0.331576 -0.89822 0.288545 0.18981 -0.728186 0.658572 0.488199 -0.445849 -0.750254 -0.739162 -0.35374 -0.573156 -0.07934 -0.974528 -0.209763 -0.674861 -0.279202 0.683088 0.496556 -0.797762 0.342065 0.540071 -0.381372 0.750252 -0.418017 -0.906773 -0.054992 0.118303 -0.632558 0.765425 0.160716 -0.542922 -0.824261 -0.495161 -0.867794 -0.041818 -0.568607 -0.564798 -0.598071 0.568516 -0.399487 -0.719166 -0.529016 0.568824 -0.629747 0.24307 -0.430289 -0.869349 -0.694903 -0.289005 -0.658472 -0.032252 -0.937992 -0.345153 -0.718974 -0.328171 0.612682 0.448805 -0.829443 0.332565 0.609267 -0.422436 0.671075 -0.009741 0.24037 0.970632 0.079573 0.633113 0.769958 -0.304345 -0.499759 0.810935 0.397127 0.655761 0.64208 0.528628 0.081661 0.844916 0.212034 0.500247 0.83952 0.001139 -0.866263 0.499588 0.414805 -0.473576 -0.776957 -0.729088 -0.11759 -0.674243 -0.218809 -0.903672 -0.368102 -0.740176 -0.235577 0.629796 0.423401 -0.878228 0.222367 0.434199 -0.511889 0.741243 0.179461 0.091747 0.979478 -0.468302 0.676049 0.568904 -0.408211 0.900445 0.150205 0.342446 0.647762 -0.68054 -0.407115 -0.732458 -0.545676 -0.033913 -0.51118 -0.858804 -0.086261 0.415751 -0.905379 0.444414 0.89412 0.055179 -0.580212 0.509277 0.635602 0.134197 -0.567106 0.812639 -0.575848 0.589878 0.566076 -0.26235 0.63683 0.724997 0.131127 -0.671603 0.729215 -0.045115 -0.682222 -0.729751 0.617051 0.420811 -0.664956 -0.675367 0.07617 -0.733538 -0.875138 -0.437386 0.206945 0.676273 -0.590749 -0.44008 0.674881 -0.279075 0.68312 -0.131698 -0.698035 0.703848 -0.540044 -0.38132 0.750298 0.577994 0.512556 0.634988 0.574975 0.575979 -0.581079 0.001441 0.985923 -0.167193 -0.031462 0.630213 -0.775784 -0.322126 0.946645 -0.009908 -0.195879 0.510931 -0.837007 0.216162 0.527043 -0.821888 0.033948 -0.511278 -0.858744 0.401327 -0.737547 -0.543102 -0.079616 0.633198 0.769884 0.304379 -0.499643 0.810993 -0.131081 -0.671527 0.729294 0.009725 0.240484 0.970604 -0.397172 0.655809 0.642004 -0.528633 0.081724 0.844907 -0.201925 0.499126 0.842674 0.076264 -0.886057 0.457259 -0.003562 0.39465 0.918825 0.003686 -0.871728 0.489976 -0.415866 0.332087 0.846625 -0.549741 -0.673683 0.493899 0.041975 -0.678569 -0.733337 -0.670967 -0.585231 -0.455311 0.387835 -0.894637 -0.221828 0.375012 -0.9234 -0.081846 0.404802 -0.904665 -0.133106 0.41808 -0.906751 -0.054886 0.16798 0.985549 0.02181 0.067136 0.994286 -0.082996 0.082802 0.407289 -0.909538 -0.61378 0.404032 -0.678257 -0.183931 0.070328 0.98042 0.234994 -0.928635 0.28708 0.377693 -0.071352 0.923178 -0.258395 -0.722254 0.641546 -0.528 -0.645799 0.551507 0.119803 -0.921508 -0.36942 0.040398 -0.998989 0.019723 0.524811 -0.594267 -0.609443 0.015367 0.998816 -0.046151 -0.160678 -0.543029 -0.824197 0.469739 0.633793 -0.614534 -0.069424 0.985345 0.155806 0.474575 0.60334 0.640905 0.49522 -0.867765 -0.041717 -0.118259 -0.632477 0.765498 -0.082992 -0.606209 -0.790963 0.299599 0.743317 -0.598097 0.262306 0.636933 0.724922 0.674723 0.22365 0.70337 -0.189759 -0.728122 0.658658 0.331639 -0.898163 0.288651 0.718997 -0.32805 0.612721 -0.134158 -0.56702 0.812705 -0.609238 -0.422399 0.671125 0.575808 0.589984 0.566007 0.528186 0.569337 -0.62998 0.790231 -0.550098 -0.27005 0.724288 0.263291 -0.637248 -0.150825 -0.675021 -0.722218 0.94877 -0.294851 0.113574 0.188827 -0.668993 -0.718883 -0.020788 0.460155 -0.887595 0.399882 0.675471 0.619543 0.447813 0.891746 0.065209 0.835842 0.423431 -0.34939 0.23948 -0.608258 -0.756751 -0.414773 -0.473694 -0.776902 0.729096 -0.117619 -0.674229 0.740192 -0.235452 0.629824 -0.249177 -0.470707 -0.846372 -0.48817 -0.44597 -0.7502 -0.243006 -0.430399 -0.869313 -0.568489 -0.39961 -0.719119 -0.44681 0.892828 0.056738 -0.423342 -0.87823 0.222469 -0.434164 -0.511832 0.741303 0.21887 -0.903701 -0.367996 -0.4965 -0.797756 0.342159 0.079409 -0.974547 -0.209649 0.739185 -0.353757 -0.573115 -0.448748 -0.829435 0.332662 0.032317 -0.93803 -0.345044 0.694923 -0.289034 -0.658438 0.675362 0.07613 -0.733547 0.42835 0.339073 0.837584 -0.000047 0.501123 0.865376 -0.000000 0.00536 0.999986 0.414898 0.848926 0.327389 0.615567 0.770909 0.163633 0.322753 0.917013 -0.234345 0.490624 0.785861 -0.376445 0.226982 0.816928 -0.530195 0.49609 0.674413 -0.546866 0.254588 0.737883 -0.625071 0.221377 0.819673 -0.528326 -0.000081 0.849029 -0.528346 -0.428455 0.339011 0.837555 -0.750379 0.416963 0.512906 -0.448975 0.53439 0.716135 -0.690508 0.242997 0.681287 -0.634644 0.750789 0.183146 -0.899352 0.11226 0.422569 -0.774166 0.632517 -0.024276 -0.839283 0.428782 -0.334292 -0.49622 0.674317 -0.546865 -0.485835 0.593055 -0.642068 -0.221534 0.81963 -0.528326 0.785095 -0.571406 0.238998 0.900061 -0.240643 0.363291 0.623453 -0.653534 0.429185 0.996266 -0.084277 0.01872 0.820868 -0.436158 -0.368702 0.769176 0.12151 -0.627378 0.481948 -0.39948 -0.779834 0.463866 0.009302 -0.885857 0.000041 -0.437154 -0.899387 -0.000002 0.027456 -0.999623 -0.000089 0.9344 0.356225 -0.000094 0.98796 -0.154707 -0.000084 0.879754 -0.475429 -0.000073 0.766647 -0.642069 0.485721 0.593148 -0.642068 0.8392 0.428943 -0.334292 0.714451 0.660995 -0.229445 0.903433 0.062268 0.424183 0.785796 0.494463 0.371525 0.785796 0.494463 0.371525 0.785796 0.494463 0.371525 0.690424 0.243002 0.68137 0.7503 0.417107 0.512905 -0.62333 -0.653658 0.429174 -0.95376 0.216879 0.208099 -0.900015 -0.240816 0.363292 -0.393338 -0.872313 0.290438 0.430754 -0.897011 0.099106 -0.243299 -0.769309 0.590736 0.183743 -0.978269 0.096064 -0.157256 -0.652821 0.74101 0.000095 -0.995027 0.099606 0.000063 -0.662691 0.748893 -0.99625 -0.084468 0.01872 -0.784986 -0.571557 0.238999 -0.820785 -0.436315 -0.368702 -0.680709 -0.685759 -0.257622 -0.337619 -0.574986 -0.745255 0.40446 0.603291 -0.687352 -0.000055 0.575992 0.817455 -0.415201 0.848788 0.327364 0.394809 -0.871658 0.290409 -0.430393 -0.897174 0.099201 0.243366 -0.769256 0.590777 0.732386 0.334301 0.593172 0.34223 0.56177 0.753188 0.448872 0.534475 0.716136 -0.481872 -0.399573 -0.779834 -0.7692 0.121363 -0.627377 -0.183556 -0.978304 0.096064 0.157381 -0.652791 0.74101 -0.000053 0.55864 0.82941 -0.25473 0.737834 -0.625071 -0.227139 0.816885 -0.530195 -0.490786 0.785789 -0.376385 -0.322998 0.916935 -0.234314 -0.732513 0.334093 0.593133 -0.342338 0.561705 0.753188 -0.000066 0.692117 -0.721785 -0.463868 0.009213 -0.885856 0.33773 -0.574921 -0.745255 0.855431 -0.181875 0.484932 0.478039 -0.855505 0.198971 -0.404576 0.603213 -0.687352 0.953543 0.21814 0.207777 0.680841 -0.685629 -0.257622 -0.477875 -0.855597 0.198971 -0.855396 -0.18204 0.484933 0.444421 0.537915 0.716336 0.588965 0.463056 0.662343 0.943642 0.220345 0.246957 0.328271 0.047071 0.94341 0.418538 0.000002 0.9082 0.377689 0.018631 0.925745 0.503184 -0.008456 0.864138 0.461609 -0.04971 0.885689 0.707197 -0.01757 0.706798 0.617396 -0.099055 0.780391 -0.000095 0.073102 0.997324 0.358048 0.076137 0.930594 -0.000093 0.204668 0.978831 0.253814 -0.047802 0.966071 -0.000095 0.096003 0.995381 0.473817 0.418523 0.774814 0.454081 0.325386 0.829418 0.738659 0.16328 0.654005 0.651425 0.235442 0.721257 -0.00005 0.849255 0.527983 -0.253999 -0.047802 0.966022 -0.377867 0.018631 0.925673 -0.328452 0.047071 0.943347 -0.418711 0.000002 0.908119 -0.50335 -0.008456 0.864041 -0.444558 0.537915 0.716251 -0.45424 0.325386 0.829331 -0.473992 0.418343 0.774804 -0.738762 0.163255 0.653895 -0.358226 0.076137 0.930525 -0.461779 -0.04971 0.885601 -0.707397 -0.017489 0.7066 -0.651564 0.235442 0.721133 -0.589092 0.463057 0.662231 -0.943716 0.220268 0.246743 -0.617655 -0.099037 0.780188 0.000092 -0.248909 -0.968527 -0.30081 -0.489685 -0.818365 0.300967 -0.489685 -0.818308 -0.519152 -0.137542 -0.843542 -0.62884 -0.063901 -0.774904 -0.652027 -0.717742 -0.24435 0.361246 -0.079674 -0.92906 0.346532 -0.768288 -0.53819 0.003113 -0.974247 -0.225462 -0.280209 -0.948515 -0.147654 0.133993 -0.784027 -0.606093 -0.295919 -0.182622 -0.937593 -0.647009 -0.759769 -0.064272 -0.929698 0.021692 -0.367683 -0.635834 -0.380826 -0.671332 -0.871745 -0.263483 -0.413083 0.003759 -0.9987 -0.050827 0.50014 -0.740693 0.448591 0.417146 -0.736969 0.531852 0.520328 -0.849327 0.088897 0.401354 -0.866533 -0.296709 0.666464 -0.651845 -0.361836 0.278546 -0.951189 -0.132857 0.706385 -0.689094 -0.161769 0.647021 -0.759769 -0.064148 0.635963 -0.380826 -0.67121 0.929768 0.021692 -0.367505 0.519314 -0.137542 -0.843443 0.296098 -0.182622 -0.937537 -0.133877 -0.784027 -0.606118 0.85443 -0.065417 0.515431 0.820338 0.084806 0.565555 0.87398 0.118113 0.471389 0.977616 -0.046238 0.205254 0.958515 -0.276686 0.068504 0.966153 0.138659 0.217536 0.987093 -0.157311 0.030008 0.608185 0.275103 0.7446 0.689055 -0.033459 0.723936 0.731183 0.20329 0.651187 0.737506 -0.165851 0.654658 0.962211 0.251253 -0.104984 0.714279 -0.282544 -0.640292 -0.021643 0.978315 0.205989 -0.966195 0.138659 0.217351 -0.025711 0.660791 -0.750129 -0.608328 0.275103 0.744484 -0.401606 0.879221 -0.256285 -0.731308 0.20329 0.651047 -0.962191 0.251253 -0.105168 -0.737632 -0.165851 0.654517 -0.714157 -0.282544 -0.640429 -0.808808 -0.165097 0.564422 -0.643897 -0.550628 -0.531231 -0.496923 -0.861765 -0.102115 0.603093 -0.717664 -0.348192 0.000001 -0.999903 -0.013944 0.000012 -0.991233 -0.132127 0.62747 -0.765993 -0.139768 0.993028 0.019943 -0.116177 0.590486 -0.711123 0.381615 0.922513 0.040557 0.38383 0.468828 -0.003749 0.883282 0.582249 0.678935 0.44725 -0.000082 0.502141 0.864786 -0.000046 0.873246 0.48728 -0.977648 -0.046052 0.205141 -0.958528 -0.276686 0.06832 -0.987099 -0.157311 0.02982 -0.986362 -0.16459 0.000432 -0.827469 -0.55891 -0.05399 -0.962458 -0.106476 0.249675 -0.805259 -0.566226 0.175916 -0.708447 -0.352449 0.611459 -0.500226 -0.740693 0.448495 -0.603026 -0.717664 -0.348308 -0.627444 -0.765993 -0.139888 -0.590559 -0.711123 0.381502 -0.993006 0.019943 -0.116367 -0.922586 0.040557 0.383653 -0.582335 0.678935 0.447139 -0.468997 -0.003749 0.883192 -0.000095 -0.040601 0.999175 -0.098066 0.991765 -0.082369 0.241489 -0.892072 -0.381956 -0.060526 -0.946348 -0.31743 0.092394 -0.842816 -0.530212 -0.130046 0.988922 -0.071569 0.365374 -0.880988 -0.300602 -0.398296 0.910747 0.109088 0.359579 -0.830575 -0.425262 0.314491 -0.743545 -0.590115 -0.000004 0.998787 0.049246 0.630994 0.775372 -0.025374 0.604034 0.77091 -0.202091 0.941819 -0.028809 -0.334884 0.652074 -0.717742 -0.244225 0.628989 -0.063901 -0.774784 -0.361069 -0.079674 -0.929129 0.96241 -0.106476 0.249859 0.986362 -0.164591 0.00062 0.827479 -0.55891 -0.053832 0.8087 -0.165097 0.564577 -0.524687 -0.844396 0.108165 -0.700009 -0.61472 -0.363465 -0.706354 -0.689094 -0.161905 -0.342756 -0.777427 -0.527376 0.401655 0.879221 -0.256208 0.021603 0.978315 0.205993 0.025854 0.660791 -0.750124 -0.486067 -0.820316 -0.301363 -0.000095 -0.117543 0.993068 0.060587 -0.946348 -0.317419 0.000037 -0.918649 -0.395075 -0.241416 -0.892072 -0.382002 -0.318515 -0.159647 0.934377 -0.092293 -0.842816 -0.53023 -0.365316 -0.880988 -0.300672 0.805225 -0.566226 0.17607 0.70836 -0.352493 0.611535 -0.941755 -0.028809 -0.335064 -0.603995 0.77091 -0.202207 -0.689193 -0.033459 0.723804 -0.000004 0.999084 0.04279 0.098081 0.991765 -0.08235 -0.854571 -0.064959 0.515256 -0.820408 0.085061 0.565416 -0.874071 0.118113 0.471222 -0.346429 -0.768288 -0.538257 0.198887 0.328275 -0.923406 -0.087669 -0.416801 -0.90476 0.643998 -0.550628 -0.531108 -0.359498 -0.830575 -0.425331 -0.572046 0.009707 0.820164 0.130061 0.988921 -0.071544 0.398274 0.910747 0.109163 0.087843 -0.416801 -0.904743 -0.19871 0.328275 -0.923445 0.571889 0.009707 0.820274 0.318336 -0.159647 0.934439 -0.283473 0.958888 -0.013335 0.680965 -0.588281 -0.436134 0.745936 0.092708 -0.659534 0.000018 0.982073 -0.188502 -0.00004 -0.906722 0.421728 -0.000079 -0.550878 0.834586 -0.314379 -0.743545 -0.590176 -0.680882 -0.58828 -0.436265 -0.74581 0.092707 -0.659677 0.283474 0.958888 -0.01328 -0.173792 0.9021 -0.394982 0.496943 -0.861765 -0.10202 0.342857 -0.777427 -0.52731 0.173867 0.9021 -0.39495 -0.630989 0.775372 -0.025495 0.871824 -0.263483 -0.412916 -0.417247 -0.736969 0.531773 -0.000095 -0.680821 0.73245 -0.000079 -0.560762 0.827977 -0.379878 -0.354975 0.854216 -0.000081 -0.527706 0.849427 -0.000086 -0.428476 0.903553 -0.44061 -0.095534 0.8926 0.379675 -0.355046 0.854277 0.440505 -0.095525 0.892653</float_array>
+          <technique_common>
+            <accessor source="#ma_mdl1-mesh-normals-array" count="843" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ma_mdl1-mesh-map-channel1">
+          <float_array id="ma_mdl1-mesh-map-channel1-array" count="2508">0.832 -0.219 0 0.837891 -0.223437 0 0.739583 -0.238281 0 0.757813 -0.196289 0 0.716797 -0.232422 0 0.725586 -0.166992 0 0.662961 -0.213333 0 0.710603 -0.253981 0 0.801339 -0.273438 0 0.784801 -0.229759 0 0.826 -0.27 0 0.800781 -0.288504 0 0.838086 -0.238672 0 0.818359 -0.237305 0 0.752344 -0.310938 0 0.78776 -0.188542 0 0.818848 -0.193359 0 0.833 -0.219 0 0.835906 -0.219 0 0.816895 -0.194336 0 0.77691 -0.195747 0 0.826389 -0.207031 0 0.806424 -0.201389 0 0.755022 -0.326451 0 0.67117 -0.309181 0 0.678906 -0.335938 0 0.622437 -0.244042 0 0.595312 -0.288281 0 0.66652 -0.26253 0 0.587948 -0.336549 0 0.758594 -0.340625 0 0.924665 -0.319196 0 0.850781 -0.305469 0 0.810938 -0.298437 0 0.926562 -0.244531 0 0.876674 -0.196987 0 0.83774 -0.256611 0 0.907031 -0.3 0 0.878255 -0.270833 0 0.872656 -0.29375 0 0.906901 -0.273438 0 0.764323 -0.360677 0 0.593844 -0.365 0 0.97204 -0.330011 0 0.934896 -0.297526 0 0.942708 -0.276042 0 0.98125 -0.25 0 0.969401 -0.276693 0 0.965495 -0.299479 0 0.722591 -0.542338 0 0.681966 -0.53515 0 0.69087 -0.549359 0 0.668581 -0.504419 0 0.70786 -0.488236 0 0.732699 -0.517774 0 0.626032 -0.868877 0 0.566064 -0.98611 0 0.969477 -0.966545 0 0.974716 -0.788216 0 0.76747 -0.373466 0 0.69503 -0.602465 0 0.927926 -0.504163 0 0.970206 -0.167904 0 0.789876 -0.165239 0 0.639043 -0.213854 0 0.748823 -0.784039 0 0.972 -0.231 0 0.520539 -0.412253 0 0.512626 -0.631906 0 0.332353 -0.602237 0 0.510421 -0.693143 0 0.688356 -0.182492 0 0.64093 -0.177589 0 0.684652 -0.56152 0 0.959343 -0.475319 0 0.691 -0.148 0 0.635851 -0.136285 0 0.965661 -0.115683 0 0.602858 -0.313253 0 0.409791 -0.290965 0 0.025974 -0.265836 0 0.500781 -0.026975 0 0.029328 -0.015479 0 0.611411 -0.319417 0 0.950877 -0.138867 0 0.487823 -0.010727 0 0.010723 -0.26826 0 0.39706 -0.298187 0 0.011018 -0.033452 0 0.406425 -0.939089 0 0.384817 -0.600895 0 0.21832 -0.363915 0 0.606495 -0.442039 0 0.566406 -0.392857 0 0.625493 -0.442126 0 0.57914 -0.482544 0 0.604834 -0.521301 0 0.562856 -0.526406 0 0.600369 -0.594234 0 0.632522 -0.593505 0 0.570895 -0.608821 0 0.502586 -0.56987 0 0.580719 -0.570166 0 0.72273 -0.542451 0 0.681645 -0.535158 0 0.732555 -0.517654 0 0.668248 -0.504526 0 0.707547 -0.488481 0 0.690577 -0.549015 0 0.641 -0.513 0 0.666462 -0.584753 0 0.578805 -0.482817 0 0.625493 -0.441832 0 0.586526 -0.500411 0 0.502586 -0.528374 0 0.50662 -0.506346 0 0.50662 -0.496157 0 0.506377 -0.519123 0 0.581166 -0.442039 0 0.506696 -0.389509 0 0.554129 -0.40625 0 0.538106 -0.420605 0 0.563942 -0.473096 0 0.544438 -0.46391 0 0.559003 -0.441601 0 0.52924 -0.442039 0 0.506696 -0.406808 0 0.507184 -0.425854 0 0.50662 -0.458626 0 0.50662 -0.442294 0 0.50662 -0.481652 0 0.506138 -0.375558 0 0.623593 -0.385769 0 0.506696 -0.382813 0 0.570862 -0.609083 0 0.531334 -0.615743 0 0.562769 -0.52667 0 0.502586 -0.607561 0 0.531596 -0.615385 0 0.338819 -0.9537 0 0.41773 -0.900192 0 0.575819 -0.965639 0 0.265667 -0.815119 0 0.359912 -0.16752 0 0.26744 -0.16491 0 0.276413 -0.373156 0 0.106548 -0.503646 0 0.265481 -0.783734 0 0.506446 -0.803511 0 0.026223 -0.695612 0 0.166219 -0.533736 0 0.633046 -0.848615 0 0.691076 -0.560786 0 0.397211 -0.577568 0 0.952906 -0.494477 0 0.959723 -0.791902 0 0.960935 -0.983503 0 0.695744 -0.16518 0 0.082312 -0.164793 0 0.149017 -0.571804 0 0.251079 -0.860743 0 0.357279 -0.990408 0 0.013899 -0.76892 0 0.012207 -0.560067 0 0.030058 -0.521404 0 0.234527 -0.341094 0 0.627279 -0.889852 0 0.380965 -0.889696 0 0.755329 -0.99797 0 0.831738 -0.982167 0 0.85251 -0.98894 0 0.754587 -0.990294 0 0.942272 -0.856187 0 0.930032 -0.772764 0 0.954142 -0.780666 0 0.924468 -0.822622 0 0.898504 -0.760159 0 0.890158 -0.707855 0 0.829884 -0.938706 0 0.83248 -0.975393 0 0.7557 -0.948301 0 0.753845 -0.983973 0 0.931887 -0.70842 0 0.899528 -0.959257 0 0.912599 -0.918499 0 0.853066 -0.666088 0 0.7557 -0.705598 0 0.85523 -0.749623 0 0.839157 -0.710113 0 0.757554 -0.765427 0 0.841011 -0.677941 0 0.75651 -0.671224 0 0.755208 -0.692057 0 0.897268 -0.803808 0 0.912104 -0.882075 0 0.894795 -0.835416 0 0.838229 -0.819612 0 0.845339 -0.851972 0 0.755082 -0.816601 0 0.755082 -0.838426 0 0.753845 -0.866271 0 0.84163 -0.788004 0 0.756627 -0.803808 0 0.847812 -0.88358 0 0.753845 -0.904276 0 0.753845 -0.93626 0 0.98567 -0.776715 0 0.979179 -0.706162 0 0.967124 -0.788004 0 0.883667 -0.641253 0 0.95136 -0.706162 0 0.900729 -0.966814 0 0.966753 -0.909017 0 0.982888 -0.841624 0 0.937821 -0.961847 0 0.938563 -0.94514 0 0.951916 -0.901341 0 0.867903 -0.655928 0 0.75651 -0.651693 0 0.934112 -0.934303 0 0.754557 -0.639323 0 0.883341 -0.641416 0 0.590304 -0.951193 0 0.588133 -0.972699 0 0.560201 -0.953655 0 0.591002 -0.805086 0 0.648224 -0.802121 0 0.615832 -0.796718 0 0.633841 -0.963554 0 0.639023 -0.958898 0 0.65933 -0.975708 0 0.658129 -0.81478 0 0.628804 -0.818838 0 0.629135 -0.741995 0 0.62863 -0.704419 0 0.580865 -0.705687 0 0.705491 -0.842417 0 0.691897 -0.849148 0 0.693077 -0.822871 0 0.626246 -0.922224 0 0.67184 -0.953566 0 0.627609 -0.954485 0 0.71182 -0.741211 0 0.713746 -0.740786 0 0.728494 -0.751557 0 0.697695 -0.662324 0 0.697231 -0.663264 0 0.711232 -0.65608 0 0.663461 -0.663548 0 0.628664 -0.670203 0 0.663373 -0.663691 0 0.626917 -0.668823 0 0.659022 -0.849549 0 0.619731 -0.830423 0 0.657749 -0.822426 0 0.625321 -0.855649 0 0.624841 -0.635617 0 0.6625 -0.635206 0 0.662062 -0.634745 0 0.668544 -0.884887 0 0.66861 -0.853371 0 0.625808 -0.891025 0 0.673248 -0.667771 0 0.711364 -0.668224 0 0.710926 -0.667762 0 0.726189 -0.67738 0 0.726779 -0.691854 0 0.710843 -0.699996 0 0.71387 -0.699491 0 0.698446 -0.63522 0 0.69889 -0.636148 0 0.710693 -0.646276 0 0.571626 -0.774481 0 0.627442 -0.777461 0 0.541615 -0.656555 0 0.543572 -0.704769 0 0.53801 -0.923162 0 0.569062 -0.892109 0 0.561284 -0.935621 0 0.54242 -0.742257 0 0.561596 -0.774801 0 0.562413 -0.785413 0 0.571669 -0.855176 0 0.566531 -0.825211 0 0.625918 -0.979577 0 0.65393 -0.991115 0 0.711061 -0.777107 0 0.716378 -0.70515 0 0.718261 -0.705041 0 0.733964 -0.714653 0 0.711227 -0.775202 0 0.727616 -0.764323 0 0.601108 -0.942905 0 0.677038 -0.777503 0 0.598825 -0.782433 0 0.53012 -0.69916 0 0.512958 -0.70414 0 0.510755 -0.760659 0 0.529084 -0.768048 0 0.511598 -0.739453 0 0.528237 -0.743565 0 0.708052 -0.883092 0 0.705619 -0.853796 0 0.720586 -0.875936 0 0.535507 -0.848126 0 0.721398 -0.943838 0 0.705486 -0.954032 0 0.706062 -0.922182 0 0.727563 -0.897299 0 0.728098 -0.909017 0 0.710487 -0.888395 0 0.679657 -0.739631 0 0.719711 -0.738494 0 0.67795 -0.740587 0 0.718106 -0.739146 0 0.678421 -0.704143 0 0.67972 -0.704127 0 0.525606 -0.926297 0 0.511762 -0.920535 0 0.511177 -0.848297 0 0.525606 -0.839732 0 0.674894 -0.887436 0 0.712164 -0.920247 0 0.674833 -0.920702 0 0.543416 -0.761209 0 0.66369 -0.798337 0 0.642776 -0.780396 0 0.63102 -0.775687 0 0.621116 -0.777581 0 0.617993 -0.95626 0 0.603727 -0.763327 0 0.67318 -0.701406 0 0.673593 -0.699533 0 0.527921 -0.639348 0 0.510762 -0.654293 0 0.720013 -0.862374 0 0.676574 -0.774706 0 0.675268 -0.742791 0 0.67483 -0.742329 0 0.629616 -0.741255 0 0.670146 -0.92323 0 0.625457 -0.994918 0 0.588753 -0.982032 0 0.629166 -0.707957 0 0.734516 -0.72716 0 0.704967 -0.833231 0 0.622907 -0.643279 0 0.59443 -0.632228 0 0.722252 -0.931876 0 0.526434 -0.647698 0 0.510995 -0.662355 0 0.539843 -0.662173 0 0.568115 -0.637717 0 0.563098 -0.954226 0 0.592755 -0.973347 0 0.595061 -0.951754 0 0.622165 -0.796656 0 0.656557 -0.802082 0 0.595802 -0.805058 0 0.668349 -0.976368 0 0.646788 -0.95949 0 0.641286 -0.964164 0 0.635938 -0.818866 0 0.667074 -0.814791 0 0.585038 -0.705259 0 0.635753 -0.703985 0 0.636289 -0.741713 0 0.70418 -0.822915 0 0.702927 -0.849298 0 0.717361 -0.842539 0 0.634669 -0.955059 0 0.681631 -0.954137 0 0.633222 -0.922668 0 0.741785 -0.751313 0 0.726126 -0.740499 0 0.724081 -0.740926 0 0.723457 -0.655452 0 0.708591 -0.662665 0 0.709083 -0.661721 0 0.672642 -0.663094 0 0.63579 -0.669631 0 0.672735 -0.66295 0 0.633935 -0.668246 0 0.66667 -0.822468 0 0.626305 -0.830497 0 0.668022 -0.8497 0 0.63224 -0.855825 0 0.67125 -0.634031 0 0.671715 -0.634494 0 0.63173 -0.634906 0 0.678202 -0.853538 0 0.678132 -0.88518 0 0.632757 -0.891343 0 0.683127 -0.66719 0 0.739337 -0.676837 0 0.723132 -0.667181 0 0.723597 -0.667645 0 0.726257 -0.699038 0 0.723044 -0.699545 0 0.739964 -0.69137 0 0.722884 -0.645609 0 0.710352 -0.63544 0 0.709881 -0.634507 0 0.634492 -0.777322 0 0.545442 -0.704337 0 0.543365 -0.655929 0 0.564249 -0.936119 0 0.572507 -0.892432 0 0.539537 -0.92361 0 0.565447 -0.785306 0 0.564579 -0.774651 0 0.544219 -0.741976 0 0.569819 -0.825264 0 0.575275 -0.85535 0 0.662616 -0.991836 0 0.632874 -0.980253 0 0.723275 -0.776967 0 0.747593 -0.714261 0 0.730919 -0.704611 0 0.728921 -0.70472 0 0.740852 -0.764131 0 0.723451 -0.775054 0 0.606532 -0.943432 0 0.687151 -0.777364 0 0.604108 -0.782314 0 0.575229 -0.774329 0 0.530059 -0.767871 0 0.510598 -0.760452 0 0.512937 -0.703706 0 0.531159 -0.698705 0 0.52916 -0.743289 0 0.511493 -0.739161 0 0.733388 -0.876194 0 0.717497 -0.853964 0 0.72008 -0.883379 0 0.53688 -0.848271 0 0.599441 -0.631504 0 0.717967 -0.922626 0 0.717356 -0.954604 0 0.734251 -0.94437 0 0.722666 -0.888703 0 0.741365 -0.909408 0 0.740796 -0.897642 0 0.688119 -0.740299 0 0.73246 -0.738197 0 0.689932 -0.739339 0 0.730754 -0.738852 0 0.689998 -0.703692 0 0.688619 -0.703709 0 0.526367 -0.839844 0 0.511046 -0.848443 0 0.511667 -0.920973 0 0.526367 -0.926758 0 0.68481 -0.92114 0 0.724447 -0.920684 0 0.684874 -0.887739 0 0.545277 -0.761005 0 0.650773 -0.780269 0 0.672978 -0.798282 0 0.638291 -0.77554 0 0.627776 -0.777442 0 0.624459 -0.956842 0 0.609312 -0.763131 0 0.683493 -0.69908 0 0.683055 -0.700961 0 0.510606 -0.653658 0 0.528825 -0.638653 0 0.73278 -0.862577 0 0.686658 -0.774556 0 0.685272 -0.742512 0 0.684807 -0.742049 0 0.636801 -0.74097 0 0.679833 -0.923679 0 0.593414 -0.982717 0 0.632384 -0.995655 0 0.636322 -0.707538 0 0.748179 -0.726818 0 0.716805 -0.833317 0 0.629677 -0.6426 0 0.735157 -0.932359 0 0.510853 -0.661752 0 0.527246 -0.647036 0 0.541483 -0.661569 0 0.571501 -0.637015 0 0.004883 -0.777344 0 0.12207 -0.985352 0 0.12207 -0.636719 0 0.199777 -0.695313 0 0.127232 -0.698103 0 0.170759 -0.714844 0 0.234437 -0.792094 0 0.21596 -0.673549 0 0.127441 -0.776367 0 0.19308 -0.785156 0 0.128906 -0.941406 0 0.193 -0.934 0 0.202 -0.951 0 0.216 -0.79 0 0.12207 -0.652832 0 0.001953 -0.650635 0 0.001709 -0.625977 0 0.216 -0.964 0 0.128906 -0.968359 0 0.129297 -0.985937 0 0.126953 -0.673828 0 0.127232 -0.642857 0 0.121582 -0.626465 0 0.002 -0.651 0 0.002 -0.626 0 0.122 -0.626 0 0.128906 -0.986 0 0.127232 -0.726563 0 0.12207 -0.625977 0 0.12207 -0.651367 0 0.004395 -0.651367 0 0.004395 -0.625977 0 0.122 -0.653 0 0.049805 -0.969727 0 0.027344 -0.670898 0 0.410156 -0.624023 0 0.349219 -0.603125 0 0.403562 -0.525123 0 0.494141 -0.501953 0 0.493164 -0.600586 0 0.337 -0.497 0 0.088 -0.625 0 0.252 -0.62 0 0.160156 -0.614258 0 0.03271 -0.401983 0 0.004 -0.346529 0 0.001 -0.401 0 0.004 -0.469 0 0.012277 -0.417969 0 0.302439 -0.732346 0 0.291258 -0.796381 0 0.260939 -0.793637 0 0.273349 -0.388431 0 0.272234 -0.259677 0 0.180826 -0.277894 0 0.271745 -0.43803 0 0.342787 -0.450979 0 0.350813 -0.422539 0 0.410152 -0.444161 0 0.103063 -0.268367 0 0.181641 -0.238281 0 0.187803 -0.403106 0 0.103612 -0.419833 0 0.204518 -0.441286 0 0.13458 -0.456447 0 0.170024 -0.468543 0 0.395569 -0.477642 0 0.421958 -0.079801 0 0.449193 -0.038371 0 0.374349 -0.066406 0 0.004 -0.265447 0 0.11263 -0.207031 0 0.161317 -0.495521 0 0.261068 -0.498484 0 0.49375 -0.622656 0 0.094 -0.602 0 0.005469 -0.595312 0 0.003125 -0.623438 0 0.083 -0.501 0 0.252344 -0.620313 0 0.25 -0.594531 0 0.162109 -0.587891 0 0.275486 -0.193871 0 0.276042 -0.154948 0 0.203125 -0.121094 0 0.456692 -0.721991 0 0.486917 -0.793765 0 0.44146 -0.793637 0 0.496094 -0.458984 0 0.344727 -0.996094 0 0.340662 -0.843785 0 0.398391 -0.840999 0 0.398438 -0.995117 0 0.338948 -0.680572 0 0.345425 -0.729581 0 0.2997 -0.684555 0 0.273484 -0.202962 0 0.352696 -0.184336 0 0.446337 -0.286007 0 0.35373 -0.284141 0 0.496094 -0.028646 0 0.496094 -0.002604 0 0.373698 0 0 0.346614 -0.767601 0 0.378196 -0.680572 0 0.004 -0.188435 0 0.106771 -0.113281 0 0.004 -0.127673 0 0.395642 -0.796423 0 0.386411 -0.755455 0 0.423833 -0.721991 0 0.380934 -0.72438 0 0.259107 -0.835427 0 0.005469 -0.5 0 0.172526 -0.130859 0 0.345243 -0.797816 0 0.494141 -0.494141 0 0.218138 -0.191208 0 0.495117 -0.080078 0 0.452178 -0.137812 0 0.496094 -0.136719 0 0.263 -0.001 0 0.276 -0.02 0 0.437361 -0.199758 0 0.496094 -0.198242 0 0.388672 -0.126953 0 0.494141 -0.414063 0 0.35625 -0.623438 0 0.429309 -0.681369 0 0.449219 -0.995117 0 0.446958 -0.835427 0 0.488043 -0.835646 0 0.495117 -0.995117 0 0.179688 -0.03776 0 0.125 -0.002604 0 0.110352 -0.023438 0 0.002604 -0.002604 0 0.001953 -0.014648 0 0.088281 -0.625 0 0.393555 -0.496094 0 0.496094 -0.287109 0 0.295761 -0.846571 0 0.335526 -0.139174 0 0.355469 -0.077148 0 0.207031 -0.058594 0 0.484987 -0.734735 0 0.260453 -0.739514 0 0.289063 -0.996094 0 0.251953 -0.99707 0 0.783203 -0.40625 0 0.828125 -0.439453 0 0.825195 -0.401367 0 0.860937 -0.603906 0 0.836719 -0.511719 0 0.886719 -0.4875 0 0.85101 -0.448281 0 0.84207 -0.4148 0 0.777344 -0.417969 0 0.791524 -0.566522 0 0.793482 -0.568496 0 0.798422 -0.564838 0 0.786133 -0.464844 0 0.756836 -0.473633 0 0.757813 -0.608398 0 0.769703 -0.550834 0 0.767988 -0.539972 0 0.774836 -0.547071 0 0.892578 -0.47168 0 0.96875 -0.52832 0 0.84082 -0.582031 0 0.77377 -0.556594 0 0.816406 -0.601563 0 0.881836 -0.592773 0 0.776367 -0.520508 0 0.893815 -0.473981 0 0.999349 -0.486979 0 0.992674 -0.594673 0 0.851563 -0.605469 0 0.960018 -0.559988 0 0.871875 -0.446875 0 0.771484 -0.422852 0 0.87793 -0.484375 0 0.870719 -0.543531 0 0.824219 -0.585938 0 0.896484 -0.605469 0 0.780553 -0.541914 0 0.803915 -0.580416 0 0.798385 -0.58132 0 0.798242 -0.582181 0 0.934375 -0.41875 0 0.948242 -0.573242 0 0.76888 -0.470703 0 0.806641 -0.415365 0 0.853687 -0.447825 0 0.864866 -0.536113 0 0.892393 -0.508911 0 0.836022 -0.526026 0 0.921875 -0.402344 0 0.870117 -0.455078 0 0.916016 -0.452148 0 0.879883 -0.401367 0 0.891602 -0.418945 0 0.838867 -0.404297 0 0.90625 -0.397461 0 0.924972 -0.475016 0 0.850967 -0.587265 0 0.817562 -0.515192 0 0.836914 -0.414063 0 0.857422 -0.414063 0 0.867188 -0.401367 0 0.793203 -0.574421 0 0.791011 -0.575347 0 0.768229 -0.516927 0 0.762574 -0.601163 0 0.792969 -0.548177 0 0.783956 -0.504081 0 0.865912 -0.503523 0 0.806491 -0.574976 0 0.804113 -0.570255 0 0.802685 -0.576135 0 0.775 -0.454687 0 0.782812 -0.492969 0 0.785156 -0.421094 0 0.798425 -0.57763 0 0.797954 -0.574708 0 0.785874 -0.592639 0 0.779485 -0.584224 0 0.864062 -0.4 0 0.777344 -0.450521 0 0.832125 -0.461454 0 0.798152 -0.587557 0 0.912105 -0.413126 0 0.941406 -0.46582 0 0.785007 -0.588613 0 0.787435 -0.588751 0 0.78812 -0.582937 0 0.785349 -0.582056 0 0.940453 -0.505498 0 0.932366 -0.416239 0 0.824204 -0.414698 0 0.822266 -0.413086 0 0.853226 -0.585997 0 0.913475 -0.600605 0 0.89104 -0.506647 0 0.769531 -0.547852 0 0.783203 -0.515625 0 0.891602 -0.398438 0 0.839844 -0.450195 0 0.772833 -0.575904 0 0.781615 -0.566539 0 0.793311 -0.568607 0 0.903125 -0.577344 0 0.79375 -0.555469 0 0.758789 -0.473633 0 0.986663 -0.519933 0 0.973633 -0.447266 0 0.927734 -0.514648 0 0.959961 -0.558594 0 0.942708 -0.538411 0 0.943198 -0.59221 0 0.797491 -0.563037 0 0.805465 -0.569237 0 0.837719 -0.536531 0 0.809119 -0.570016 0 0.808875 -0.570507 0 0.814115 -0.570533 0 0.814123 -0.569924 0 0.828125 -0.535156 0 0.880859 -0.495117 0 0.889648 -0.604492 0 0.958984 -0.401367 0 0.963867 -0.435547 0 0.941406 -0.418945 0 0.969586 -0.416779 0 0.893479 -0.46565 0 0.786558 -0.565164 0 0.789566 -0.564855 0 0.765638 -0.56666 0 0.882813 -0.400391 0 0.924543 -0.475423 0 0.986037 -0.535286 0 0.811677 -0.574806 0 0.799581 -0.601737 0 0.767578 -0.484375 0 0.800353 -0.443809 0 0.773623 -0.534993 0 0.864204 -0.50268 0 0.941719 -0.465531 0 0.921719 -0.405531 0 0.976527 -0.445919 0 1.0029 -0.488321 0 0.787701 -0.574051 0 0.774414 -0.516602 0 0.765625 -0.480469 0 1.00325 -0.462219 0 0.93457 -0.608398 0 0.983014 -0.608488 0 0.951172 -0.452148 0 1.00755 -0.53288 0 0.800325 -0.581202 0 0.986328 -0.429688 0 0.858724 -0.406901 0 0.899219 -0.399219 0 0.907552 -0.408203 0 0.787607 -0.563189 0 0.788587 -0.564022 0 0.940417 -0.502407 0 0.981374 -0.510782 0 0.92773 -0.510782 0 0.956042 -0.600063 0 0.774498 -0.610322 0 0.977075 -0.507308 0 0.982074 -0.418355 0 0.922852 -0.601563 0 0.788086 -0.5 0 0.860457 -0.521962 0 0.928711 -0.609375 0 1.0082 -0.48782 0 1.00448 -0.5144 0 0.996305 -0.535548 0 0.810547 -0.574219 0 0.981445 -0.467773 0 0.963542 -0.414063 0 0.78125 -0.415365 0 0.825521 -0.497396 0 0.836914 -0.424805 0 0.814185 -0.581734 0 0.814185 -0.590158 0 0.810621 -0.590053 0 0.935547 -0.589844 0 0.949219 -0.580078 0 0.970123 -0.60171 0 0.78514 -0.574733 0 0.802083 -0.40625 0 0.856771 -0.428385 0 0.859375 -0.408854 0 0.793528 -0.563946 0 1.00293 -0.415039 0 0.977539 -0.415039 0 0.860719 -0.521531 0 0.806719 -0.442531 0 0.963867 -0.5625 0 0.878125 -0.467969 0 0.940625 -0.498438 0 0.910156 -0.396094 0 0.976563 -0.409375 0 0.889648 -0.492188 0 0.832809 -0.526268 0 0.943918 -0.543122 0 0.860352 -0.399414 0 3.99281e12 0 0 2.79022e29 -1.80132e25 0</float_array>
+          <technique_common>
+            <accessor source="#ma_mdl1-mesh-map-channel1-array" count="836" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="ma_mdl1-mesh-vertices">
+          <input semantic="POSITION" source="#ma_mdl1-mesh-positions"/>
+        </vertices>
+        <triangles material="_mat_head" count="342">
+          <input semantic="VERTEX" source="#ma_mdl1-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ma_mdl1-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#ma_mdl1-mesh-map-channel1" offset="2" set="1"/>
+          <p>614 0 569 589 1 570 619 2 629 589 3 570 614 4 569 586 5 571 618 6 594 586 5 571 614 0 569 586 7 571 618 8 594 587 9 592 599 10 593 587 9 592 618 6 594 587 9 592 599 10 593 588 11 599 598 12 587 588 11 599 599 10 593 616 13 533 615 14 578 560 15 579 615 14 578 616 13 533 598 12 587 590 16 534 598 12 587 616 13 533 598 12 587 590 16 534 588 11 599 599 10 593 615 14 578 598 12 587 615 14 578 599 10 593 617 17 595 618 6 594 617 17 595 599 10 593 589 1 535 616 13 533 619 2 630 616 18 533 589 19 535 590 20 534 617 17 595 582 21 612 597 22 588 582 21 612 617 17 595 618 6 594 581 23 598 597 22 628 582 21 568 618 6 594 614 24 569 582 21 612 573 25 617 575 26 605 596 27 606 575 26 605 573 25 617 574 28 618 570 29 619 574 28 618 573 25 617 574 28 618 570 29 619 533 30 621 580 31 590 533 30 621 570 29 619 583 32 603 571 33 551 537 34 602 571 33 551 583 32 603 600 35 609 572 36 607 600 35 609 583 32 603 600 35 609 572 36 607 602 37 581 615 14 578 596 27 577 560 15 579 596 27 577 615 14 578 597 22 588 617 38 595 597 39 588 615 40 578 574 28 586 534 41 584 576 42 552 534 41 584 574 28 586 535 43 585 576 42 552 571 33 551 601 44 553 571 33 551 576 42 552 537 45 602 600 35 609 560 15 627 601 44 553 560 15 627 600 35 609 619 2 626 614 0 567 564 46 566 582 21 568 564 46 566 614 0 567 619 2 626 619 2 626 602 37 581 564 46 566 602 37 581 619 2 626 600 35 609 603 47 543 604 48 555 607 49 544 604 48 555 603 47 543 544 50 554 575 26 605 576 42 552 601 44 553 576 42 552 575 26 605 574 28 586 597 22 628 573 25 617 596 27 606 573 25 617 597 22 628 581 23 598 573 25 617 580 31 590 570 29 619 580 31 590 573 25 617 581 23 598 619 2 630 616 13 533 560 15 579 601 44 553 596 27 606 575 26 605 596 27 606 601 44 553 560 15 627 601 44 609 571 33 551 600 35 553 533 30 621 535 43 620 574 28 618 685 51 555 546 52 589 544 50 554 546 52 589 685 51 555 661 53 590 662 54 598 661 53 590 685 51 555 661 53 590 662 54 598 654 55 617 678 56 628 654 55 617 662 54 598 654 55 617 678 56 628 677 57 606 655 58 586 534 41 584 535 43 585 534 41 584 655 58 586 657 59 552 656 60 605 657 61 552 655 62 586 657 59 552 656 60 605 682 63 553 677 64 606 682 63 553 656 60 605 682 63 553 677 57 606 641 65 627 657 59 552 537 45 602 534 41 584 537 45 602 657 59 552 652 66 551 682 63 553 652 66 551 657 59 552 652 66 551 682 63 553 681 67 609 641 65 627 681 67 609 682 63 553 681 67 609 641 65 627 700 68 626 546 52 589 604 48 555 544 50 554 604 48 555 546 52 589 580 31 590 542 69 591 580 31 590 546 52 589 580 31 590 542 69 591 533 30 621 533 30 621 655 58 618 535 43 620 655 58 618 533 30 621 651 70 619 661 53 590 651 70 619 533 30 621 651 70 619 661 53 590 654 55 617 564 46 566 581 23 598 582 21 568 581 23 598 564 46 566 563 71 601 577 72 580 563 71 601 564 46 566 563 71 601 577 72 580 607 49 544 645 73 566 644 74 601 658 75 580 644 74 601 645 73 566 662 54 598 663 76 568 662 54 598 645 73 566 662 54 598 663 76 568 678 56 628 641 65 579 697 77 533 700 68 630 697 77 533 641 65 579 696 78 578 677 57 577 696 78 578 641 65 579 696 78 578 677 57 577 678 56 588 654 55 617 655 58 618 651 70 619 655 58 618 654 55 617 656 60 605 677 57 606 656 60 605 654 55 617 583 32 603 540 79 608 572 36 607 540 79 608 583 32 603 538 80 604 537 34 602 538 80 604 583 32 603 664 81 603 681 67 609 653 82 607 681 67 609 664 81 603 652 66 551 537 34 602 652 66 551 664 81 603 645 73 566 700 68 626 695 83 567 700 68 626 645 73 566 683 84 581 607 49 544 581 23 598 563 71 601 581 23 598 607 49 544 604 48 555 683 84 581 681 67 609 700 68 626 681 67 609 683 84 581 653 82 607 542 69 591 661 53 590 533 30 621 661 53 590 542 69 591 546 52 589 699 85 594 663 76 612 695 83 569 663 76 612 699 85 594 698 86 595 540 79 608 664 81 603 653 82 607 664 81 603 540 79 608 538 80 604 645 73 566 695 83 567 663 76 568 604 48 555 580 31 590 581 23 598 678 56 588 698 86 595 696 78 578 696 78 578 679 87 587 697 77 533 534 41 584 537 34 602 576 42 552 663 76 612 698 86 595 678 56 588 537 34 602 664 81 603 538 80 604 562 88 547 585 89 536 579 90 539 585 89 536 562 88 547 608 91 545 566 92 548 608 91 545 562 88 547 608 91 545 566 92 548 567 93 546 627 94 528 567 93 546 566 92 548 567 93 546 627 94 528 545 95 529 608 96 545 559 97 538 585 98 536 559 97 538 608 91 545 603 47 543 567 93 546 603 47 543 608 91 545 603 47 543 567 93 546 545 95 529 558 99 583 602 37 581 572 36 607 602 37 581 558 99 583 565 100 537 585 89 536 565 100 537 558 99 583 565 100 537 585 89 536 559 97 538 584 101 541 585 89 536 558 99 583 585 89 536 584 101 541 561 102 540 568 103 549 566 92 548 562 88 547 566 92 548 568 103 549 627 94 528 607 49 544 565 100 537 559 97 538 565 100 537 607 49 544 577 72 580 561 102 540 579 90 539 585 89 536 603 47 543 545 95 529 544 50 554 602 37 581 565 100 537 577 72 580 607 49 544 559 97 538 603 47 543 543 104 610 569 105 582 536 106 624 569 105 582 543 104 610 605 107 542 539 108 572 605 107 542 543 104 610 605 107 542 539 108 572 606 109 550 578 110 600 606 109 550 539 108 572 606 109 550 578 110 600 622 111 522 605 107 542 558 99 583 569 105 582 558 99 583 605 107 542 584 101 541 561 102 540 584 101 541 605 107 542 621 112 557 562 88 547 579 90 539 562 88 547 621 112 557 568 103 549 624 113 556 568 103 549 621 112 557 606 109 550 625 114 623 620 115 524 625 114 623 606 109 550 622 111 522 578 110 531 623 116 562 622 111 597 623 116 562 578 110 531 627 94 528 606 109 550 561 102 540 605 107 542 561 102 540 606 109 550 620 115 524 623 116 562 568 103 549 624 113 556 568 103 549 623 116 562 627 94 528 620 115 524 579 90 539 561 102 540 579 90 539 620 115 524 621 112 557 543 104 610 650 117 582 686 118 542 650 117 582 543 104 610 536 106 624 539 108 530 541 119 532 578 110 531 541 119 532 627 94 528 578 110 531 639 120 583 650 117 582 653 82 607 650 117 582 639 120 583 686 118 542 665 121 541 686 118 542 639 120 583 540 79 608 650 117 582 536 106 624 650 117 582 540 79 608 653 82 607 540 79 608 569 105 582 572 36 607 569 105 582 540 79 608 536 106 624 666 122 536 639 120 583 646 123 537 639 120 583 666 122 536 665 121 541 572 36 607 569 105 582 558 99 583 708 124 528 627 94 530 541 119 531 627 94 530 708 124 528 545 95 529 648 125 546 545 95 529 708 124 528 545 95 529 648 125 546 684 126 543 689 127 545 684 126 543 648 125 546 684 126 543 689 127 545 640 128 538 646 123 537 640 128 538 666 122 536 640 128 538 646 123 537 688 129 544 658 75 580 688 129 544 646 123 537 688 129 544 658 75 580 644 74 601 688 129 544 684 126 543 640 128 538 684 126 543 688 129 544 685 51 555 662 54 598 685 51 555 688 129 544 658 75 580 683 84 581 645 73 566 683 84 581 658 75 580 646 123 537 639 120 583 683 84 581 646 123 537 683 84 581 639 120 583 653 82 607 684 126 543 544 50 554 545 95 529 544 50 554 684 126 543 685 51 555 577 72 580 564 46 566 602 37 581 662 54 598 688 129 544 644 74 601 689 127 545 666 122 536 640 128 538 666 122 536 689 127 545 643 130 547 647 131 548 643 130 547 689 127 545 643 130 547 647 131 548 649 132 549 708 124 528 649 132 549 647 131 548 649 132 549 708 124 528 704 133 562 659 134 531 704 133 562 708 124 528 701 135 524 660 136 539 702 137 557 660 136 539 701 135 524 642 138 540 687 139 550 642 138 540 701 135 524 642 138 540 687 139 550 686 118 542 539 108 572 686 118 542 687 139 550 686 118 542 539 108 572 543 104 610 659 134 600 687 139 550 703 140 522 687 139 550 659 134 600 539 108 572 665 121 541 642 138 540 686 118 542 642 138 540 665 121 541 666 122 536 706 141 623 687 139 550 701 135 524 687 139 550 706 141 623 703 140 522 705 142 556 649 132 549 704 133 562 649 132 549 705 142 556 702 137 557 702 137 557 643 130 547 649 132 549 643 130 547 702 137 557 660 136 539 648 125 546 647 131 548 689 127 545 647 131 548 648 125 546 708 124 528 659 134 531 541 119 532 539 108 530 659 134 531 708 124 528 541 119 532 666 122 536 660 136 539 642 138 540 643 130 547 660 136 539 666 122 536 659 134 531 703 140 597 704 133 562 553 143 565 547 144 527 548 145 622 547 144 527 553 143 565 550 146 563 555 147 564 550 146 563 553 143 565 550 146 563 555 147 564 549 148 611 556 149 520 549 148 611 555 147 564 549 148 611 556 149 520 557 150 519 626 151 521 557 150 519 556 149 520 557 150 519 626 151 521 554 152 523 622 111 522 554 152 523 626 151 521 635 153 523 638 154 519 632 155 558 638 154 519 635 153 523 707 156 521 703 140 522 707 156 521 635 153 523 707 156 521 703 140 522 706 141 623 553 143 565 623 116 562 624 113 556 623 116 562 553 143 565 552 157 559 548 145 525 552 157 559 553 143 565 552 157 559 548 145 525 551 158 561 702 137 557 636 159 564 701 135 524 636 159 564 702 137 557 634 160 565 705 142 556 634 160 565 702 137 557 634 160 565 705 142 556 704 133 562 626 151 521 625 114 623 622 111 522 625 114 623 626 151 521 620 115 524 556 161 520 620 162 524 626 163 521 636 159 564 637 164 520 701 135 524 637 164 520 636 159 564 630 165 611 631 166 563 630 165 611 636 159 564 554 167 560 552 157 559 551 168 561 552 157 559 554 152 560 623 116 562 622 111 597 623 116 562 554 152 560 633 169 559 634 160 565 704 133 562 634 160 565 633 169 559 629 170 525 632 171 561 629 170 525 633 169 559 701 135 524 707 156 521 706 141 623 707 156 521 701 135 524 637 164 520 637 164 520 638 172 519 707 156 521 638 154 519 637 164 520 630 165 611 629 170 525 631 166 526 628 173 527 631 166 526 629 170 525 632 155 525 628 173 527 634 160 565 629 170 622 634 160 565 628 173 527 631 166 563 555 147 564 620 115 524 556 149 520 620 115 524 555 147 564 621 112 557 621 112 557 553 143 565 624 113 556 553 143 565 621 112 557 555 147 564 550 146 526 548 145 525 547 144 527 548 145 525 550 146 526 549 148 526 635 153 560 633 169 559 704 133 562 633 169 559 635 153 560 632 155 561 551 158 525 548 145 525 549 148 526 630 165 526 631 166 526 632 155 525 704 133 562 703 140 597 635 153 560 632 155 526 638 154 527 630 165 526 631 166 563 636 159 564 634 160 565 554 152 523 551 158 558 557 150 519 549 148 526 557 150 527 551 158 526 674 174 614 668 175 592 667 176 571 668 175 592 674 174 614 676 177 575 694 178 613 676 177 575 674 174 614 676 177 575 694 178 613 692 179 576 676 177 575 669 180 599 668 175 592 669 180 599 676 177 575 675 181 574 692 179 576 675 181 574 676 177 575 675 181 574 692 179 576 690 182 573 671 183 534 672 184 596 670 185 535 672 184 596 671 183 534 673 186 625 669 180 599 673 186 625 671 183 534 673 186 625 669 180 599 675 181 574 591 187 596 590 16 534 589 1 535 590 16 534 591 187 596 592 188 625 612 189 632 592 188 625 591 187 596 592 188 625 612 189 632 610 190 631 592 188 625 588 11 599 590 16 534 588 11 599 592 188 625 594 191 574 610 190 631 594 191 574 592 188 625 594 191 574 610 190 631 609 192 573 591 187 615 613 193 613 612 189 616 613 193 613 591 187 615 593 194 614 589 1 570 593 194 614 591 187 615 593 194 614 589 1 570 586 195 571 587 9 592 593 194 614 586 5 571 593 194 614 587 9 592 595 196 575 588 11 599 595 196 575 587 9 592 595 196 575 588 11 599 594 191 574 672 184 596 691 197 631 693 198 632 691 197 631 672 184 596 673 186 625 674 174 614 693 198 616 694 178 613 693 198 616 674 174 614 672 184 615 670 185 570 674 174 614 667 176 571 674 174 614 670 185 570 672 184 615 690 182 573 673 186 625 675 181 574 673 186 625 690 182 573 691 197 631 593 194 614 611 199 576 613 193 613 611 199 576 593 194 614 595 196 575 595 196 575 609 192 573 611 199 576 609 192 573 595 196 575 594 191 574 697 77 533 670 185 535 700 68 630 670 185 535 697 77 533 671 183 534 679 87 587 671 183 534 697 77 533 671 183 534 679 87 587 669 180 599 680 200 593 679 87 587 696 78 578 679 87 587 680 200 593 669 180 599 668 175 592 669 180 599 680 200 593 667 176 571 699 85 594 695 83 569 699 85 594 667 176 571 668 175 592 670 185 570 695 83 569 700 68 629 695 83 569 670 185 570 667 176 571 698 86 595 680 200 593 696 78 578 680 200 593 698 86 595 699 85 594 668 175 592 680 200 593 699 85 594</p>
+        </triangles>
+        <triangles material="_mat_head_2_" count="176">
+          <input semantic="VERTEX" source="#ma_mdl1-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ma_mdl1-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#ma_mdl1-mesh-map-channel1" offset="2" set="1"/>
+          <p>766 201 642 781 202 644 768 203 744 781 202 644 766 201 642 782 204 643 772 205 695 782 204 643 766 201 642 782 204 643 772 205 695 773 206 694 760 207 671 773 206 694 772 205 695 773 206 694 760 207 671 791 208 707 759 209 740 760 207 741 772 205 739 760 207 741 759 209 740 770 210 674 790 211 665 770 210 674 759 209 740 770 210 674 790 211 665 761 212 656 760 207 671 796 213 703 791 208 707 796 213 703 760 207 671 787 214 670 770 210 672 787 214 670 760 207 671 787 214 670 770 210 672 761 212 714 773 206 681 794 215 682 782 204 693 794 215 682 773 206 681 795 216 683 791 208 781 795 216 683 773 206 681 793 217 650 796 213 649 758 218 669 796 213 649 793 217 650 779 219 648 780 220 654 779 219 648 793 217 650 766 201 642 804 221 760 763 222 759 804 221 760 766 201 642 811 223 820 768 203 744 811 223 820 766 201 642 784 224 636 792 225 638 794 215 735 792 225 638 784 224 636 783 226 637 778 227 736 783 226 637 784 224 636 766 201 757 771 228 727 772 205 738 771 228 727 766 201 757 763 222 758 758 218 746 764 229 666 786 230 831 764 229 666 758 218 746 785 231 667 805 232 789 768 203 744 767 233 788 768 203 744 805 232 789 811 223 820 786 230 745 781 202 644 758 218 702 781 202 644 786 230 745 768 203 744 779 219 709 791 208 708 796 213 783 791 208 708 779 219 709 776 234 710 776 234 710 795 216 734 791 208 708 795 216 734 776 234 710 777 235 732 768 203 768 769 236 679 767 233 723 769 236 679 768 203 768 786 230 680 792 225 638 793 217 724 758 218 762 793 217 724 792 225 638 783 226 637 777 235 732 784 224 733 795 216 734 784 224 733 777 235 732 778 227 761 783 226 637 780 220 737 793 217 724 780 220 737 783 226 637 778 227 736 807 237 678 769 236 679 786 230 680 782 204 754 794 215 755 792 225 756 805 232 828 804 221 827 811 223 829 786 230 745 764 229 746 807 237 747 792 225 713 781 202 635 782 204 693 784 224 813 794 215 814 795 216 815 781 202 635 792 225 713 758 218 633 785 231 701 758 218 702 796 213 703 774 238 711 714 239 673 713 240 786 714 239 673 774 238 711 765 241 663 785 231 706 765 241 663 774 238 711 765 241 663 785 231 706 787 214 705 796 213 704 787 214 705 785 231 706 709 242 721 726 243 796 710 244 722 726 243 796 709 242 721 728 245 795 809 246 832 728 245 795 709 242 721 728 245 795 809 246 832 808 247 803 747 248 653 749 249 652 716 250 800 749 249 652 747 248 653 748 251 651 797 252 804 748 251 651 747 248 653 748 251 651 797 252 804 800 253 731 730 254 730 800 253 731 801 255 833 800 253 731 730 254 730 748 251 651 731 256 784 748 251 651 730 254 730 748 251 651 731 256 784 749 249 652 718 257 685 731 256 687 719 258 771 731 256 687 718 257 685 749 249 686 729 259 688 749 249 686 718 257 685 749 249 686 729 259 688 720 260 752 806 261 799 722 262 797 726 243 798 722 262 797 806 261 799 803 263 825 810 264 830 803 263 825 806 261 799 744 265 690 733 266 677 724 267 658 733 266 677 744 265 690 723 268 675 717 269 769 723 268 675 744 265 690 743 270 639 737 271 699 736 272 700 737 271 699 743 270 639 742 273 712 751 274 641 742 273 712 743 270 639 725 275 642 731 256 695 730 254 775 731 256 695 725 275 642 741 276 643 740 277 644 741 276 643 725 275 642 732 278 681 754 279 683 750 280 781 754 279 683 732 278 681 753 281 682 741 276 693 753 281 682 732 278 681 733 266 677 714 239 787 724 267 658 714 239 787 733 266 677 713 240 785 712 282 676 713 240 785 733 266 677 720 260 752 716 250 767 749 249 686 716 250 767 720 260 752 734 283 751 715 284 753 734 283 751 720 260 752 754 279 715 736 272 700 735 285 790 736 272 700 754 279 715 743 270 639 753 281 640 743 270 639 754 279 715 808 247 747 723 268 748 745 286 745 723 268 748 808 247 747 712 282 749 809 246 750 712 282 749 808 247 747 771 228 727 789 287 726 772 205 738 789 287 726 771 228 727 799 288 725 767 233 723 709 242 721 710 244 722 709 242 721 767 233 723 769 236 679 788 289 664 790 211 665 789 287 684 790 211 665 788 289 664 757 290 657 757 290 657 761 212 656 790 211 665 761 212 656 757 290 657 775 291 655 755 292 646 752 293 645 717 269 633 752 293 645 755 292 646 738 294 647 742 273 698 739 295 697 737 271 766 739 295 697 742 273 698 752 293 696 756 296 661 765 241 663 787 214 705 765 241 663 756 296 661 762 297 662 803 263 760 725 275 642 722 262 759 725 275 642 803 263 760 810 264 820 728 245 795 727 298 801 726 243 796 727 298 801 728 245 795 745 286 802 714 239 673 762 297 662 711 299 782 762 297 662 714 239 673 765 241 663 727 298 744 725 275 642 810 264 820 725 275 642 727 298 744 740 277 644 738 294 780 750 280 781 735 285 779 750 280 781 738 294 780 755 292 805 802 300 770 771 228 727 763 222 758 771 228 727 802 300 770 799 288 725 746 301 689 724 267 658 715 284 660 724 267 658 746 301 689 744 265 690 722 262 759 730 254 775 801 255 816 730 254 775 722 262 759 725 275 642 720 260 752 746 301 764 715 284 753 746 301 764 720 260 752 729 259 763 750 280 772 719 258 771 732 278 778 719 258 771 750 280 772 755 292 773 746 301 764 719 258 716 755 292 774 719 258 716 746 301 764 729 259 763 772 205 739 790 211 665 759 209 740 790 211 665 772 205 739 789 287 684 712 282 742 774 238 668 713 240 743 774 238 668 712 282 742 764 229 666 709 242 721 807 237 678 809 246 832 807 237 678 709 242 721 769 236 679 764 229 748 809 246 750 807 237 747 809 246 750 764 229 748 712 282 749 788 289 718 799 288 720 798 302 717 799 288 720 788 289 718 789 287 719 751 274 776 717 269 777 752 293 696 743 270 639 753 281 640 751 274 641 751 274 691 753 281 692 741 276 693 724 267 658 714 239 787 721 303 659 740 277 644 745 286 745 717 269 702 741 276 693 740 277 635 751 274 809 745 286 745 740 277 644 727 298 744 717 269 633 751 274 634 740 277 635 723 268 675 712 282 676 733 266 677 731 256 821 732 278 822 719 258 771 764 229 666 785 231 667 774 238 668 724 267 658 721 303 659 715 284 660 763 222 826 804 221 827 805 232 828 714 239 810 711 299 811 721 303 812 805 232 789 767 233 788 763 222 759 806 261 799 727 298 824 810 264 830 718 257 685 719 258 716 729 259 688 750 280 791 754 279 792 735 285 793 756 296 806 761 212 807 775 291 808 738 294 647 739 295 794 752 293 645 806 261 823 726 243 798 727 298 824 731 304 695 741 305 643 732 306 694 745 286 802 728 245 795 808 247 803 717 269 702 745 286 701 723 268 748 755 292 765 717 269 769 744 265 690 761 212 817 756 296 818 787 214 819 744 265 690 746 301 689 755 292 765 752 293 696 742 273 728 751 274 729</p>
+        </triangles>
+        <triangles material="_mat_head_3_" count="64">
+          <input semantic="VERTEX" source="#ma_mdl1-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ma_mdl1-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#ma_mdl1-mesh-map-channel1" offset="2" set="1"/>
+          <p>488 307 490 483 308 496 475 309 501 483 308 496 488 307 490 490 310 497 496 311 487 490 310 497 488 307 490 490 310 497 496 311 487 484 312 493 478 313 489 484 312 493 496 311 487 484 312 493 478 313 489 472 314 511 479 315 488 472 314 511 478 313 489 472 314 511 479 315 488 477 316 489 494 317 487 477 316 489 479 315 488 477 316 489 494 317 487 485 318 493 491 319 497 485 318 493 494 317 487 485 318 493 491 319 497 466 320 495 481 321 496 466 320 495 491 319 497 466 320 495 481 321 496 482 322 502 474 323 503 482 322 502 481 321 496 482 322 502 474 323 503 483 308 496 485 318 493 472 314 511 477 316 489 472 314 511 485 318 493 471 324 492 480 325 494 471 324 492 485 318 493 471 324 492 480 325 494 484 312 493 468 326 495 484 312 493 480 325 494 484 312 493 468 326 495 490 310 497 483 308 496 490 310 497 468 326 495 470 327 486 486 328 484 493 329 518 486 328 484 470 327 486 473 330 485 487 331 484 473 330 485 470 327 486 473 330 485 487 331 484 467 332 517 481 321 496 476 333 501 474 323 503 476 333 501 481 321 496 489 334 490 491 319 497 489 334 490 481 321 496 489 334 490 491 319 497 494 317 487 479 315 488 469 335 504 494 317 487 469 335 504 479 315 488 496 311 487 478 313 489 496 311 487 479 315 488 497 336 491 496 311 487 488 307 490 496 311 487 497 336 491 469 335 504 492 337 505 469 335 504 497 336 491 494 317 487 498 338 491 489 334 490 498 338 491 494 317 487 492 337 505 469 335 504 492 337 505 494 317 487 467 332 507 474 323 509 473 330 516 474 323 509 467 332 507 475 309 508 474 323 500 465 339 498 473 330 499 465 339 498 474 323 500 476 333 506 486 328 507 498 338 509 493 329 516 498 338 509 486 328 507 489 334 508 497 336 500 487 331 498 495 340 499 487 331 498 497 336 500 488 307 506 487 331 507 475 309 509 467 332 516 475 309 509 487 331 507 488 307 508 486 328 498 476 333 500 489 334 506 476 333 500 486 328 498 465 339 499 468 326 495 482 322 502 483 308 496 482 322 502 468 326 495 480 325 494 480 325 494 466 320 495 482 322 502 466 320 495 480 325 494 485 318 493 495 340 513 492 337 515 497 336 512 492 337 515 495 340 513 470 327 514 470 327 513 498 338 515 492 337 512 498 338 515 470 327 513 493 329 514 473 330 485 465 339 517 486 328 484 472 314 511 471 324 492 484 312 493 474 323 510 475 309 501 483 308 496 495 340 518 487 331 484 470 327 486</p>
+        </triangles>
+        <triangles material="_mat_head_4_" count="64">
+          <input semantic="VERTEX" source="#ma_mdl1-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ma_mdl1-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#ma_mdl1-mesh-map-channel1" offset="2" set="1"/>
+          <p>528 341 487 523 342 490 532 343 491 523 342 490 528 341 487 525 344 497 519 345 493 525 344 497 528 341 487 525 344 497 519 345 493 500 346 495 514 347 494 500 346 495 519 345 493 500 346 495 514 347 494 516 348 502 502 349 495 516 348 502 514 347 494 516 348 502 502 349 495 517 350 496 524 351 497 517 350 496 502 349 495 517 350 496 524 351 497 522 352 490 530 353 487 522 352 490 524 351 497 522 352 490 530 353 487 531 354 491 526 355 505 531 354 491 530 353 487 530 353 487 503 356 504 526 355 505 503 356 504 530 353 487 513 357 488 512 358 489 513 357 488 530 353 487 513 357 488 512 358 489 506 359 511 518 360 493 506 359 511 512 358 489 506 359 511 518 360 493 505 361 492 514 347 494 505 361 492 518 360 493 505 361 492 514 347 494 519 345 493 513 357 488 528 341 487 503 356 504 528 341 487 513 357 488 511 362 489 506 359 511 511 362 489 513 357 488 511 362 489 506 359 511 519 345 493 505 361 492 519 345 493 506 359 511 508 363 503 516 348 502 517 350 496 516 348 502 508 363 503 515 364 496 510 365 501 515 364 496 508 363 503 515 364 496 510 365 501 523 342 490 515 364 496 500 346 495 516 348 502 500 346 495 515 364 496 525 344 497 523 342 490 525 344 497 515 364 496 504 366 486 521 367 484 529 368 518 521 367 484 504 366 486 507 369 485 509 370 509 521 367 507 501 371 516 521 367 507 509 370 509 522 352 508 521 367 498 531 354 500 529 368 499 531 354 500 521 367 498 522 352 506 517 350 496 509 370 501 508 363 510 509 370 501 517 350 496 522 352 490 510 365 500 520 372 498 523 342 506 520 372 498 510 365 500 499 373 499 508 363 509 501 371 507 507 369 516 501 371 507 508 363 509 509 370 508 499 373 498 508 363 500 507 369 499 508 363 500 499 373 498 510 365 506 504 366 514 531 354 512 526 355 515 531 354 512 504 366 514 529 368 513 527 374 514 526 355 512 532 343 515 526 355 512 527 374 514 504 366 513 532 343 491 503 356 504 528 341 487 503 356 504 532 343 491 526 355 505 532 343 509 520 372 507 527 374 516 520 372 507 532 343 509 523 342 508 520 372 484 504 366 486 527 374 518 504 366 486 520 372 484 507 369 485 530 353 487 518 360 493 512 358 489 518 360 493 530 353 487 524 351 497 502 349 495 518 360 493 524 351 497 518 360 493 502 349 495 514 347 494 507 369 485 501 371 517 521 367 484 520 372 484 499 373 517 507 369 485 519 345 493 528 341 487 511 362 489</p>
+        </triangles>
+        <triangles material="_mat_head_5_" count="169">
+          <input semantic="VERTEX" source="#ma_mdl1-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ma_mdl1-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#ma_mdl1-mesh-map-channel1" offset="2" set="1"/>
+          <p>380 375 384 421 376 385 443 377 383 421 376 385 380 375 384 390 378 386 384 379 413 390 378 386 380 375 384 390 378 386 384 379 413 402 380 407 452 381 408 402 380 407 384 379 413 402 380 407 452 381 408 382 382 406 436 383 353 382 382 406 452 381 408 382 382 406 436 383 353 445 384 355 385 385 354 445 384 355 436 383 353 445 384 355 385 385 354 412 386 361 442 387 415 412 386 361 385 385 354 412 386 361 442 387 415 429 388 414 441 389 474 429 388 414 442 387 415 378 390 389 380 375 478 443 377 387 380 375 478 378 390 389 383 391 436 449 392 364 383 391 436 378 390 389 383 391 436 449 392 364 454 393 405 450 394 404 454 393 405 449 392 364 454 393 405 450 394 404 456 395 429 460 396 426 456 395 429 450 394 404 456 395 429 460 396 426 459 397 427 463 398 431 459 397 427 460 396 426 388 399 366 407 400 448 408 401 443 407 400 448 388 399 366 379 402 365 449 392 364 379 402 365 388 399 366 379 402 365 449 392 364 389 403 382 378 390 389 389 403 382 449 392 364 389 403 382 378 390 389 419 404 388 443 377 387 419 404 388 378 390 389 405 405 375 403 406 469 404 407 470 403 406 469 405 405 375 392 408 374 438 409 373 392 408 374 405 405 375 392 408 374 438 409 373 430 410 416 425 411 420 430 410 416 438 409 373 430 410 416 425 411 420 413 412 421 400 413 402 419 404 388 443 377 387 419 404 388 400 413 402 401 414 401 428 415 400 401 414 401 400 413 402 401 414 401 428 415 400 433 416 378 422 417 376 433 416 378 428 415 400 433 416 378 422 417 376 399 418 377 387 419 392 409 420 453 406 421 455 409 420 453 387 419 392 391 422 372 402 380 407 391 422 372 387 419 392 391 422 372 402 380 407 448 423 422 382 382 406 448 423 422 402 380 407 448 423 422 382 382 406 445 384 355 397 424 396 417 425 393 416 426 393 417 425 393 397 424 396 396 427 395 427 428 394 396 427 395 397 424 396 396 427 395 427 428 394 432 429 398 418 430 399 432 429 398 427 428 394 432 429 398 418 430 399 398 431 397 435 432 424 439 433 403 440 434 459 439 433 403 435 432 424 381 435 425 423 436 409 381 435 425 435 432 424 381 435 425 423 436 409 451 437 456 452 381 411 451 437 456 423 436 409 451 437 456 452 381 411 464 438 430 395 439 419 407 400 448 406 421 447 407 400 448 395 439 419 394 440 418 426 441 417 394 440 418 395 439 419 394 440 418 426 441 417 431 442 444 410 443 476 431 442 444 426 441 417 431 442 444 410 443 476 393 444 446 423 436 409 436 383 410 452 381 411 436 383 410 423 436 409 434 445 358 424 446 356 434 445 358 423 436 409 434 445 358 424 446 356 411 447 357 448 423 462 411 447 357 424 446 356 411 447 357 448 423 462 386 448 457 454 393 405 453 449 482 377 450 483 453 449 482 454 393 405 458 451 466 456 395 429 458 451 466 454 393 405 458 451 466 456 395 429 455 452 428 459 397 427 455 452 428 456 395 429 390 378 380 420 453 381 421 376 379 420 453 381 390 378 380 389 403 382 416 426 393 389 403 382 390 378 380 389 403 382 416 426 393 417 425 393 398 431 434 416 426 390 415 454 391 416 426 390 398 431 434 397 424 433 418 430 432 397 424 433 398 431 434 397 424 433 418 430 432 427 428 467 387 419 475 414 455 463 415 454 464 414 455 463 387 419 475 379 402 365 406 421 447 379 402 365 387 419 475 379 402 365 406 421 447 407 400 448 437 456 423 388 399 366 403 406 469 388 399 366 437 456 423 439 433 403 444 457 468 439 433 403 437 456 423 439 433 403 444 457 468 440 434 459 393 444 454 406 421 455 409 420 453 406 421 455 393 444 454 395 439 440 410 443 441 395 439 440 393 444 454 395 439 440 410 443 441 426 441 442 400 413 367 422 417 369 428 415 477 422 417 369 400 413 367 399 418 368 443 377 383 399 418 368 400 413 367 399 418 368 443 377 383 421 376 385 391 422 471 408 401 443 409 420 445 408 401 443 391 422 471 388 399 366 404 407 470 388 399 366 391 422 471 388 399 366 404 407 470 403 406 469 433 416 378 419 404 388 401 414 401 419 404 388 433 416 378 420 453 381 421 376 379 420 453 381 433 416 378 432 429 398 417 425 393 396 427 395 417 425 393 432 429 398 414 455 463 415 454 464 414 455 463 432 429 398 431 442 444 407 400 448 394 440 418 407 400 448 431 442 444 408 401 443 409 420 445 408 401 443 431 442 444 405 405 437 425 411 439 438 409 479 425 411 439 405 405 437 413 412 438 444 457 371 413 412 438 405 405 437 451 437 456 449 392 364 381 435 425 449 392 364 451 437 456 450 394 404 460 396 426 450 394 404 451 437 456 458 451 466 462 458 481 453 449 482 462 458 481 458 451 466 457 459 465 455 452 428 457 459 465 458 451 466 430 410 416 403 406 469 392 408 374 403 406 469 430 410 416 437 456 423 437 456 423 413 412 421 444 457 468 413 412 421 437 456 423 430 410 416 447 460 359 412 386 361 429 388 414 412 386 361 447 460 359 386 448 360 386 448 360 445 384 355 412 386 361 445 384 355 386 448 360 448 423 422 383 391 436 377 450 483 380 375 478 377 450 483 383 391 436 454 393 405 391 422 372 446 461 461 440 434 370 446 461 461 391 422 372 448 423 422 417 425 393 379 402 365 389 403 382 379 402 365 417 425 393 414 455 463 377 450 412 384 379 413 380 375 384 384 379 413 377 450 412 453 449 435 453 449 435 452 381 408 384 379 413 452 381 408 453 449 435 462 458 449 387 419 392 390 378 386 402 380 407 390 378 386 387 419 392 415 454 391 435 432 424 424 446 356 423 436 409 424 446 356 435 432 424 446 461 460 447 460 458 411 447 357 386 448 457 411 447 357 447 460 458 429 388 363 439 433 403 449 392 364 388 399 366 449 392 364 439 433 403 381 435 425 391 422 372 444 457 371 404 407 472 444 457 371 391 422 372 440 434 370 434 445 473 385 385 354 436 383 353 385 385 354 434 445 473 441 389 474 464 438 430 460 396 426 451 437 456 460 396 426 464 438 430 463 398 431 462 458 449 464 438 452 452 381 408 464 438 452 462 458 449 461 462 450 434 445 358 429 388 363 441 389 362 429 388 363 434 445 358 411 447 357 431 442 444 393 444 446 409 420 445 405 405 437 404 407 472 444 457 371 416 426 390 390 378 386 415 454 391 433 416 378 399 418 377 421 376 379 432 429 398 398 431 397 415 454 464 457 459 465 461 462 480 462 458 481 435 432 424 440 434 459 446 461 460 442 387 415 385 385 354 441 389 474 461 462 450 463 398 451 464 438 452 419 404 388 420 453 381 389 403 382 424 446 356 446 461 460 448 423 462</p>
+        </triangles>
+        <triangles material="_mat_head_6_" count="169">
+          <input semantic="VERTEX" source="#ma_mdl1-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ma_mdl1-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#ma_mdl1-mesh-map-channel1" offset="2" set="1"/>
+          <p>345 463 245 333 464 250 311 465 246 333 464 250 345 463 245 332 466 248 331 467 257 332 466 248 345 463 245 332 466 248 331 467 257 301 468 251 290 469 256 301 468 251 331 467 257 301 468 251 290 469 256 361 470 235 295 471 347 361 470 235 290 469 256 361 470 235 295 471 347 366 472 274 289 473 352 366 472 274 295 471 347 366 472 274 289 473 352 365 474 351 351 475 273 352 476 327 356 477 336 352 476 327 351 475 273 347 478 294 293 479 272 347 478 294 351 475 273 347 478 294 293 479 272 335 480 281 363 481 324 335 480 281 293 479 272 335 480 281 363 481 324 364 482 279 372 483 298 364 482 279 363 481 324 364 482 279 372 483 298 376 484 300 371 485 297 376 484 300 372 483 298 376 484 300 371 485 297 375 486 299 374 487 320 375 486 318 373 488 319 375 486 318 374 487 320 376 484 317 365 474 304 376 484 317 374 487 320 376 484 317 365 474 304 364 482 276 296 489 282 364 482 276 365 474 304 364 482 276 296 489 282 314 490 277 302 491 255 314 490 277 296 489 282 314 490 277 302 491 255 299 492 261 361 470 235 293 479 272 351 475 273 293 479 272 361 470 235 363 481 324 362 493 275 363 481 324 361 470 235 363 481 324 362 493 275 368 494 295 370 495 333 368 494 295 362 493 275 368 494 295 370 495 333 369 496 334 373 488 350 369 496 334 370 495 333 346 497 342 354 498 284 353 499 341 354 498 284 346 497 342 297 500 223 348 501 224 297 500 223 346 497 342 297 500 223 348 501 224 357 502 222 294 503 278 357 502 222 348 501 224 357 502 222 294 503 278 360 504 292 314 490 277 360 504 292 294 503 278 291 505 234 318 506 316 299 492 343 318 506 316 291 505 234 319 507 315 300 508 233 319 507 315 291 505 234 319 507 315 300 508 233 320 509 313 303 510 339 320 509 313 300 508 233 320 509 313 303 510 339 321 511 311 300 508 233 316 512 338 303 510 339 316 512 338 300 508 233 315 513 337 349 514 293 315 513 337 300 508 233 315 513 337 349 514 293 342 515 286 325 516 290 342 515 286 349 514 293 342 515 286 325 516 290 337 517 291 344 518 267 327 519 331 310 520 268 327 519 331 344 518 267 326 521 332 329 522 262 326 521 332 344 518 267 326 521 332 329 522 262 291 505 234 301 468 251 291 505 234 329 522 262 291 505 234 301 468 251 361 470 235 350 523 244 342 515 286 337 517 291 342 515 286 350 523 244 304 524 243 317 525 242 304 524 243 350 523 244 304 524 243 317 525 242 315 513 337 316 512 338 315 513 337 317 525 242 354 498 284 341 526 285 353 499 341 341 526 285 354 498 284 324 527 228 357 502 222 324 527 228 354 498 284 324 527 228 357 502 222 298 528 229 360 504 292 298 528 229 357 502 222 349 514 293 356 477 336 325 516 290 356 477 336 349 514 293 351 475 273 300 508 233 351 475 273 349 514 293 351 475 273 300 508 233 361 470 235 291 505 234 361 470 235 300 508 233 346 497 225 336 529 227 335 480 281 336 529 227 346 497 225 323 530 226 353 499 232 323 530 226 346 497 225 323 530 226 353 499 232 341 526 231 366 472 274 362 493 275 361 470 235 362 493 275 366 472 274 370 495 333 374 487 349 370 495 333 366 472 274 370 495 333 374 487 349 373 488 350 358 531 328 298 528 326 360 504 330 298 528 326 358 531 328 336 529 227 347 478 294 336 529 227 358 531 328 336 529 227 347 478 294 335 480 281 303 510 239 358 531 329 360 504 292 358 531 329 303 510 239 352 476 241 356 477 240 352 476 241 303 510 239 296 489 282 292 532 253 302 491 255 292 532 253 296 489 282 289 473 283 365 474 304 289 473 283 296 489 282 319 507 315 307 533 287 318 506 316 307 533 287 319 507 315 306 534 288 343 535 312 306 534 288 319 507 315 355 536 258 331 467 257 312 537 269 331 467 257 355 536 258 290 469 256 292 532 346 290 469 256 355 536 258 328 538 262 329 522 262 309 539 263 329 522 262 328 538 262 301 468 251 302 491 249 301 468 251 328 538 262 368 494 295 372 483 298 363 481 324 372 483 298 368 494 295 367 540 296 369 496 334 367 540 296 368 494 295 322 541 344 343 535 312 305 542 314 343 535 312 322 541 344 338 543 289 311 465 237 355 536 254 312 537 238 355 536 254 311 465 237 333 464 252 333 464 252 292 532 253 355 536 254 292 532 253 333 464 252 302 491 255 334 544 247 345 463 245 311 465 246 345 463 245 334 544 247 340 545 271 338 543 289 306 534 288 343 535 312 306 534 288 338 543 289 307 533 287 295 471 347 292 532 346 289 473 352 292 532 346 295 471 347 290 469 256 316 512 340 356 477 240 303 510 239 356 477 240 316 512 340 317 525 307 305 542 322 318 506 321 307 533 310 318 506 321 305 542 322 321 511 323 321 511 323 299 492 261 318 506 321 299 492 261 321 511 323 303 510 239 332 466 248 302 491 249 333 464 250 302 491 249 332 466 248 301 468 251 320 509 313 343 535 312 319 507 315 343 535 312 320 509 313 321 511 311 348 501 280 335 480 281 364 482 279 335 480 281 348 501 280 346 497 225 313 546 270 331 467 257 345 463 245 331 467 257 313 546 270 312 537 269 337 517 305 317 525 307 350 523 348 317 525 307 337 517 305 325 516 306 330 547 266 344 518 267 310 520 268 344 518 267 330 547 266 339 548 265 339 548 265 308 549 264 344 518 267 308 549 264 339 548 265 309 539 263 327 519 259 302 491 255 328 538 260 302 491 255 327 519 259 299 492 261 310 520 301 328 538 260 309 539 302 328 538 260 310 520 301 327 519 259 330 547 303 309 539 302 339 548 335 309 539 302 330 547 303 310 520 301 340 545 271 313 546 270 345 463 245 313 546 270 340 545 271 312 537 269 303 510 239 314 490 277 299 492 261 314 490 277 303 510 239 360 504 292 308 549 264 329 522 262 344 518 267 329 522 262 308 549 264 309 539 263 326 521 332 299 492 343 327 519 331 299 492 343 326 521 332 291 505 234 359 550 325 323 530 226 341 526 231 323 530 226 359 550 325 298 528 326 334 544 236 312 537 238 340 545 345 312 537 238 334 544 236 311 465 237 324 527 228 359 550 230 341 526 285 359 550 230 324 527 228 298 528 229 307 533 310 322 541 309 305 542 322 322 541 309 307 533 310 338 543 308 364 482 276 294 503 278 348 501 224 294 503 278 364 482 276 314 490 277 321 511 311 305 542 314 343 535 312 317 525 307 325 516 306 356 477 240 336 529 227 323 530 226 298 528 326 342 515 286 304 524 243 315 513 337 358 531 328 352 476 327 347 478 294 367 540 296 371 485 297 372 483 298 366 472 274 365 474 351 374 487 349 354 498 284 297 500 223 357 502 222</p>
+        </triangles>
+        <triangles material="_mat_head_7_" count="159">
+          <input semantic="VERTEX" source="#ma_mdl1-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ma_mdl1-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#ma_mdl1-mesh-map-channel1" offset="2" set="1"/>
+          <p>255 551 203 284 552 200 282 553 204 284 552 200 255 551 203 267 554 197 259 555 195 267 554 197 255 551 203 267 554 197 259 555 195 266 556 196 264 557 193 266 556 196 259 555 195 266 556 196 264 557 193 260 558 201 261 559 176 260 558 201 264 557 193 260 558 201 261 559 176 262 560 187 272 561 188 262 560 187 261 559 176 262 560 187 272 561 188 288 562 186 252 563 203 242 564 184 246 565 178 242 564 184 252 563 203 253 566 194 254 567 195 253 566 194 252 563 203 253 566 194 254 567 195 243 568 172 250 569 175 243 568 172 254 567 195 243 568 172 250 569 175 245 570 173 251 571 176 245 570 173 250 569 175 245 570 173 251 571 176 240 572 177 249 573 188 240 572 177 251 571 176 205 574 208 211 575 216 207 576 212 211 575 216 205 574 208 212 577 174 206 578 210 212 577 174 205 574 208 212 577 174 206 578 210 214 579 182 213 580 217 214 579 182 206 578 210 214 579 182 213 580 217 215 581 185 275 582 218 215 581 185 213 580 217 215 581 185 275 582 218 276 583 191 267 554 197 283 584 199 284 552 200 283 584 199 267 554 197 287 585 198 266 556 196 287 585 198 267 554 197 287 585 198 266 556 196 286 586 202 260 558 201 286 586 202 266 556 196 286 586 202 260 558 201 285 587 189 262 560 187 285 587 189 260 558 201 285 587 189 262 560 187 288 562 186 261 559 176 274 588 177 272 561 188 274 588 177 261 559 176 271 589 173 263 590 175 271 589 173 261 559 176 271 589 173 263 590 175 209 591 172 259 592 195 209 593 172 263 594 175 209 591 172 259 555 195 258 595 194 255 551 203 258 595 194 259 555 195 258 595 194 255 551 203 210 596 184 226 597 212 237 598 219 235 599 216 237 598 219 226 597 212 238 600 215 228 601 214 238 600 215 226 597 212 238 600 215 228 601 214 241 602 211 234 603 170 241 602 211 228 601 214 241 602 211 234 603 170 248 604 169 277 605 168 248 604 169 234 603 170 248 604 169 277 605 168 279 606 171 243 568 172 242 564 184 253 566 194 242 564 184 243 568 172 235 599 216 236 607 174 235 599 216 243 568 172 235 599 216 236 607 174 227 608 208 224 609 210 227 608 208 236 607 174 227 608 208 224 609 210 218 610 207 219 611 209 218 610 207 224 609 210 274 588 177 215 581 185 273 612 190 215 581 185 274 588 177 214 579 182 271 589 173 214 579 182 274 588 177 214 579 182 271 589 173 212 577 174 209 591 172 212 577 174 271 589 173 212 577 174 209 591 172 211 575 216 210 596 184 211 575 216 209 591 172 282 553 204 246 565 178 281 613 205 246 565 178 282 553 204 252 563 203 284 552 200 252 563 203 282 553 204 252 563 203 284 552 200 270 614 197 283 584 199 270 614 197 284 552 200 270 614 197 283 584 199 287 585 198 217 615 215 208 616 214 207 576 212 208 616 214 217 615 215 229 617 211 230 618 183 229 617 211 217 615 215 229 617 211 230 618 183 232 619 179 265 620 178 232 619 179 230 618 183 232 619 179 265 620 178 281 613 180 224 609 210 222 621 217 219 611 209 222 621 217 224 609 210 223 622 182 236 607 174 223 622 182 224 609 210 223 622 182 236 607 174 245 570 173 243 568 172 245 570 173 236 607 174 229 617 211 231 623 170 208 616 214 231 623 170 229 617 211 233 624 169 232 619 179 233 624 169 229 617 211 233 624 169 232 619 179 278 625 181 281 613 180 278 625 181 232 619 179 251 571 176 256 626 187 249 573 188 256 626 187 251 571 176 257 627 201 269 628 193 257 627 201 251 571 176 257 627 201 269 628 193 268 629 196 254 567 195 268 629 196 269 628 193 237 598 219 242 564 184 235 599 216 242 564 184 237 598 219 244 630 183 238 600 215 244 630 183 237 598 219 244 630 183 238 600 215 241 602 211 244 630 183 246 565 178 242 564 184 246 565 178 244 630 183 247 631 179 241 602 211 247 631 179 244 630 183 247 631 179 241 602 211 248 604 169 278 625 181 248 604 169 279 606 171 248 604 169 278 625 181 247 631 179 281 613 180 247 631 179 278 625 181 247 631 179 281 613 180 246 565 178 270 614 197 254 567 195 252 563 203 254 567 195 270 614 197 268 629 196 287 585 198 268 629 196 270 614 197 268 629 196 287 585 198 286 586 202 265 620 178 282 553 204 281 613 205 282 553 204 265 620 178 255 551 203 210 596 184 255 551 203 265 620 178 272 561 188 280 632 192 288 562 186 280 632 192 272 561 188 273 612 190 274 588 177 273 612 190 272 561 188 223 622 182 221 633 185 222 621 217 221 633 185 223 622 182 240 572 177 245 570 173 240 572 177 223 622 182 204 634 209 213 580 217 206 578 210 213 580 217 204 634 209 275 582 218 201 635 213 205 574 208 207 576 212 205 574 208 201 635 213 202 636 206 279 606 171 233 624 169 278 625 181 233 624 169 279 606 171 277 605 168 239 637 190 280 632 192 276 583 191 280 632 192 239 637 190 249 573 188 239 637 190 240 572 177 249 573 188 240 572 177 239 637 190 221 633 185 273 612 190 276 583 191 280 632 192 276 583 191 273 612 190 215 581 185 222 621 217 275 582 218 219 611 209 275 582 218 222 621 217 221 633 185 221 633 185 276 583 191 275 582 218 276 583 191 221 633 185 239 637 190 263 590 175 264 557 193 259 555 195 264 557 193 263 590 175 261 559 176 216 638 219 230 618 183 217 615 215 230 618 183 216 638 219 210 596 184 211 575 216 216 638 219 207 576 212 216 638 219 211 575 216 210 596 184 203 639 207 206 578 210 205 574 208 206 578 210 203 639 207 204 634 209 220 640 206 227 608 208 218 610 207 227 608 208 220 640 206 225 641 213 226 597 212 227 608 208 225 641 213 227 608 208 226 597 212 235 599 216 269 628 193 250 569 175 254 567 195 250 569 175 269 628 193 251 571 176 286 586 202 257 627 201 268 629 196 257 627 201 286 586 202 285 587 189 285 587 189 256 626 187 257 627 201 256 626 187 285 587 189 288 562 186 280 632 192 249 573 188 288 562 186 202 636 206 203 639 207 205 574 208 219 611 220 275 582 218 204 634 221 217 615 215 207 576 212 216 638 219 258 595 194 210 596 184 209 591 172 230 618 183 210 596 184 265 620 178 231 623 170 233 624 169 277 605 168 249 573 188 256 626 187 288 562 186</p>
+        </triangles>
+        <triangles material="_mat_eye_L" count="26">
+          <input semantic="VERTEX" source="#ma_mdl1-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ma_mdl1-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#ma_mdl1-mesh-map-channel1" offset="2" set="1"/>
+          <p>166 642 89 193 643 160 130 644 161 193 643 160 166 642 89 162 645 159 167 646 90 162 645 159 166 642 89 162 645 159 167 646 90 169 647 87 55 648 73 169 647 87 167 646 90 169 647 87 55 648 73 58 649 78 54 650 74 58 649 78 55 648 73 58 649 78 54 650 74 57 651 77 190 652 86 159 653 85 191 654 88 159 653 85 190 652 86 169 647 87 168 655 91 169 647 87 190 652 86 169 647 87 168 655 91 162 645 159 190 652 86 162 645 159 168 655 91 162 645 159 190 652 86 189 656 163 47 657 56 166 642 89 130 644 161 166 642 89 47 657 56 46 658 55 24 659 57 46 658 55 47 657 56 46 658 55 24 659 57 48 660 58 184 661 162 162 645 159 189 656 163 162 645 159 184 661 162 193 643 160 166 642 89 55 648 73 167 646 90 55 648 73 166 642 89 46 658 55 58 649 78 159 653 85 169 647 87 159 653 85 58 649 78 57 651 77 55 648 73 48 660 58 54 650 74 48 660 58 55 648 73 46 658 55</p>
+        </triangles>
+        <triangles material="_mat_eye_R" count="26">
+          <input semantic="VERTEX" source="#ma_mdl1-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ma_mdl1-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#ma_mdl1-mesh-map-channel1" offset="2" set="1"/>
+          <p>164 662 165 190 652 80 163 663 79 190 652 80 164 662 165 150 664 150 163 663 79 150 664 150 164 662 165 150 664 150 163 663 79 153 665 153 152 666 152 153 665 153 163 663 79 153 665 153 152 666 152 136 667 140 151 668 151 136 667 140 152 666 152 136 667 140 151 668 151 137 669 141 157 670 156 137 669 141 151 668 151 165 671 81 190 652 80 191 654 82 190 652 80 165 671 81 163 663 79 155 672 83 163 663 79 165 671 81 163 663 79 155 672 83 152 666 152 154 673 154 152 666 152 155 672 83 152 666 152 154 673 154 156 674 155 150 664 150 189 656 164 190 652 80 189 656 164 150 664 150 184 661 149 192 675 142 184 661 149 150 664 150 136 667 140 150 664 150 153 665 153 150 664 150 136 667 140 192 675 142 95 676 139 192 675 142 136 667 140 151 668 151 156 674 155 157 670 156 156 674 155 151 668 151 152 666 152 155 672 83 146 677 84 154 673 154 146 677 84 155 672 83 165 671 81 95 676 139 136 667 140 137 669 141</p>
+        </triangles>
+        <triangles material="_mat_head_8_" count="304">
+          <input semantic="VERTEX" source="#ma_mdl1-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ma_mdl1-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#ma_mdl1-mesh-map-channel1" offset="2" set="1"/>
+          <p>172 678 46 83 679 66 52 680 66 83 679 66 172 678 46 62 681 34 63 682 45 62 681 34 172 678 46 62 681 34 63 682 45 59 683 44 61 684 47 59 683 44 63 682 45 59 683 44 61 684 47 60 685 48 171 686 43 60 685 48 61 684 47 60 685 48 171 686 43 59 683 44 64 687 31 59 683 44 171 686 43 59 683 44 64 687 31 62 681 34 69 688 37 62 681 34 64 687 31 62 681 34 69 688 37 68 689 40 67 690 39 68 689 40 69 688 37 68 689 40 67 690 39 70 691 38 66 692 36 70 691 38 67 690 39 70 691 38 66 692 36 62 681 34 82 693 35 62 681 34 66 692 36 62 681 34 82 693 35 83 679 66 170 694 41 51 695 29 188 696 42 51 695 29 170 694 41 197 697 25 22 698 30 197 697 25 170 694 41 197 697 25 22 698 30 23 699 23 28 700 31 23 699 23 22 698 30 23 699 23 28 700 31 29 701 32 34 702 39 29 701 32 28 700 31 29 701 32 34 702 39 2 703 36 33 704 38 2 703 36 34 702 39 2 703 36 33 704 38 30 705 34 35 706 40 30 705 34 33 704 38 30 705 34 35 706 40 32 707 37 34 702 39 32 707 37 35 706 40 32 707 37 34 702 39 28 700 31 54 650 72 56 708 75 57 651 76 56 708 75 54 650 72 53 709 71 8 710 6 53 709 71 54 650 72 53 709 71 8 710 6 7 711 5 6 712 4 7 711 5 8 710 6 7 711 5 6 712 4 5 713 3 4 714 2 5 713 3 6 712 4 5 713 3 4 714 2 21 715 20 13 716 9 21 715 20 4 714 2 21 715 20 13 716 9 194 717 22 16 718 13 194 717 22 13 716 9 194 717 22 16 718 13 20 719 21 15 720 12 20 719 21 16 718 13 140 721 15 139 722 3 87 723 19 139 722 3 140 721 15 85 724 20 86 725 19 85 724 20 140 721 15 85 724 20 86 725 19 195 726 22 80 727 21 195 726 22 86 725 19 195 726 22 80 727 21 79 728 13 73 729 12 79 728 13 80 727 21 79 728 13 73 729 12 76 730 8 74 731 10 76 730 8 73 729 12 76 730 8 74 731 10 72 732 11 111 733 95 177 734 116 176 735 115 177 734 116 111 733 95 115 736 122 116 737 118 115 736 122 111 733 95 115 736 122 116 737 118 117 738 123 118 739 124 117 738 123 116 737 118 117 738 123 118 739 124 120 740 125 119 741 121 120 740 125 118 739 124 120 740 125 119 741 121 180 742 127 179 743 126 180 742 127 119 741 121 139 722 3 141 744 5 87 723 19 141 744 5 139 722 3 144 745 4 88 746 2 144 745 4 139 722 3 144 745 4 88 746 2 90 747 7 78 748 14 90 747 7 88 746 2 90 747 7 78 748 14 89 749 28 91 750 24 89 749 28 78 748 14 89 749 28 91 750 24 147 751 27 149 752 29 147 751 27 91 750 24 177 734 116 96 753 95 176 735 115 96 753 95 177 734 116 124 754 122 123 755 123 124 754 122 177 734 116 124 754 122 123 755 123 112 756 118 121 757 124 112 756 118 123 755 123 112 756 118 121 757 124 114 758 121 122 759 125 114 758 121 121 757 124 114 758 121 122 759 125 180 742 127 182 760 129 180 742 127 122 759 125 127 761 136 125 762 134 126 763 135 125 762 134 127 761 136 132 764 98 135 765 96 132 764 98 127 761 136 132 764 98 135 765 96 133 766 99 158 767 109 133 766 99 135 765 96 133 766 99 158 767 109 134 768 110 42 769 51 134 768 110 158 767 109 119 741 121 178 770 119 179 743 126 178 770 119 119 741 121 161 771 120 116 737 118 161 771 120 119 741 121 161 771 120 116 737 118 160 772 93 131 773 92 160 772 93 116 737 118 160 772 93 131 773 92 130 644 94 111 733 95 130 644 94 131 773 92 171 686 43 22 698 30 170 694 41 22 698 30 171 686 43 28 700 31 36 774 44 28 700 31 171 686 43 28 700 31 36 774 44 30 705 34 37 775 45 30 705 34 36 774 44 30 705 34 37 775 45 172 678 46 38 776 47 172 678 46 37 775 45 26 777 28 8 710 6 24 659 26 8 710 6 26 777 28 9 778 7 10 779 14 9 778 7 26 777 28 9 778 7 10 779 14 4 714 2 12 780 8 4 714 2 10 779 14 4 714 2 12 780 8 13 716 9 16 718 13 13 716 9 12 780 8 91 750 24 198 781 25 149 752 29 198 781 25 91 750 24 92 782 23 78 748 14 92 782 23 91 750 24 92 782 23 78 748 14 65 783 32 77 784 33 65 783 32 78 748 14 65 783 32 77 784 33 66 692 36 19 785 19 194 717 22 20 719 21 194 717 22 19 785 19 21 715 20 18 786 15 21 715 20 19 785 19 21 715 20 18 786 15 5 713 3 17 787 19 5 713 3 18 786 15 92 782 23 71 788 30 198 781 25 71 788 30 92 782 23 64 687 31 65 783 32 64 687 31 92 782 23 64 687 31 65 783 32 67 690 39 66 692 36 67 690 39 65 783 32 173 789 101 128 790 138 186 791 137 128 790 138 173 789 101 101 792 100 102 793 102 101 792 100 173 789 101 101 792 100 102 793 102 99 794 98 100 795 99 99 794 98 102 793 102 10 779 14 23 699 23 29 701 32 23 699 23 10 779 14 27 796 24 26 777 28 27 796 24 10 779 14 27 796 24 26 777 28 25 797 27 24 659 26 25 797 27 26 777 28 112 756 118 96 753 95 124 754 122 96 753 95 112 756 118 93 798 92 94 799 93 93 798 92 112 756 118 93 798 92 94 799 93 95 676 94 192 675 132 95 676 94 94 799 93 85 724 20 88 746 2 139 722 3 88 746 2 85 724 20 84 800 9 195 726 22 84 800 9 85 724 20 84 800 9 195 726 22 79 728 13 128 790 138 175 801 114 186 791 137 175 801 114 128 790 138 98 802 97 101 792 100 98 802 97 128 790 138 98 802 97 101 792 100 99 794 98 143 803 75 154 673 72 146 677 76 154 673 72 143 803 75 142 804 71 141 744 5 142 804 71 143 803 75 142 804 71 141 744 5 145 805 6 157 670 26 89 749 28 147 751 27 89 749 28 157 670 26 145 805 6 156 674 64 145 805 6 157 670 26 145 805 6 156 674 64 154 673 72 36 774 44 38 776 47 37 775 45 38 776 47 36 774 44 39 806 48 171 686 43 39 806 48 36 774 44 39 806 48 171 686 43 38 776 47 3 807 0 2 703 1 17 787 0 2 703 1 3 807 0 0 808 0 15 720 0 0 808 0 3 807 0 0 808 0 15 720 0 14 809 0 102 793 102 110 810 110 100 795 99 110 810 110 102 793 102 104 811 104 97 812 96 104 811 104 102 793 102 104 811 104 97 812 96 109 813 109 75 814 0 66 692 1 77 784 17 66 692 1 75 814 0 81 815 17 73 729 17 81 815 17 75 814 0 81 815 17 73 729 17 80 727 17 41 816 50 134 768 110 42 769 51 134 768 110 41 816 50 129 817 102 135 765 96 129 817 102 41 816 50 129 817 102 135 765 96 127 761 136 76 730 8 84 800 9 79 728 13 84 800 9 76 730 8 88 746 2 78 748 14 88 746 2 76 730 8 145 805 6 90 747 7 89 749 28 90 747 7 145 805 6 144 745 4 141 744 5 144 745 4 145 805 6 172 678 46 61 684 47 63 682 45 61 684 47 172 678 46 171 686 43 38 776 47 171 686 43 172 678 46 43 818 52 42 769 51 158 767 109 42 769 51 43 818 52 40 819 49 45 820 54 40 819 49 43 818 52 160 772 93 178 770 119 161 771 120 178 770 119 160 772 93 185 821 133 184 661 131 185 821 133 160 772 93 117 738 123 177 734 116 115 736 122 177 734 116 117 738 123 183 822 130 181 823 128 183 822 130 117 738 123 120 740 125 181 823 128 117 738 123 181 823 128 120 740 125 182 760 129 180 742 127 182 760 129 120 740 125 94 799 93 184 661 131 192 675 132 184 661 131 94 799 93 185 821 133 178 770 119 185 821 133 94 799 93 104 811 104 108 824 108 110 810 110 108 824 108 104 811 104 103 825 103 105 826 105 103 825 103 104 811 104 106 827 106 105 826 105 107 828 107 105 826 105 106 827 106 103 825 103 108 824 108 103 825 103 106 827 106 109 813 109 108 824 108 106 827 106 108 824 108 109 813 109 110 810 110 100 795 99 110 810 110 109 813 109 11 829 0 0 808 0 14 809 0 0 808 0 11 829 0 1 830 0 10 779 0 1 830 0 11 829 0 97 812 96 100 795 99 109 813 109 100 795 99 97 812 96 99 794 98 98 802 97 99 794 98 97 812 96 41 816 50 158 767 109 135 765 96 158 767 109 41 816 50 43 818 52 44 831 53 43 818 52 41 816 50 129 817 102 133 766 99 134 768 110 133 766 99 129 817 102 132 764 98 125 762 134 132 764 98 129 817 102 41 816 50 45 820 54 44 831 53 45 820 54 41 816 50 40 819 49 42 769 51 40 819 49 41 816 50 113 832 120 114 758 121 178 770 119 114 758 121 113 832 120 112 756 118 94 799 93 112 756 118 113 832 120 123 755 123 122 759 125 121 757 124 122 759 125 123 755 123 181 823 128 175 801 114 102 793 102 173 789 101 102 793 102 175 801 114 98 802 97 48 660 64 8 710 6 54 650 72 8 710 6 48 660 64 24 659 26 198 781 25 170 694 41 149 752 29 170 694 41 198 781 25 71 788 30 106 827 106 104 811 104 109 813 109 104 811 104 106 827 106 107 828 107 52 680 66 30 705 34 172 678 46 30 705 34 52 680 66 31 833 35 200 834 42 170 694 41 188 696 42 170 694 41 200 834 42 149 752 29 1 830 33 29 701 32 2 703 36 29 701 32 1 830 33 10 779 14 175 801 114 126 763 135 186 791 137 126 763 135 175 801 114 127 761 136 193 643 132 160 772 93 130 644 94 160 772 93 193 643 132 184 661 131 51 695 29 27 796 24 25 797 27 27 796 24 51 695 29 197 697 25 179 743 126 114 758 121 180 742 127 114 758 121 179 743 126 178 770 119 3 807 0 20 719 0 15 720 0 20 719 0 3 807 0 19 785 19 11 829 11 12 780 8 10 779 14 12 780 8 11 829 11 14 809 10 12 780 8 15 720 12 16 718 13 15 720 12 12 780 8 14 809 10 87 723 17 81 815 17 86 725 18 81 815 17 87 723 17 66 692 1 9 778 7 6 712 4 8 710 6 6 712 4 9 778 7 4 714 2 75 814 17 74 731 17 73 729 17 74 731 17 75 814 17 72 732 17 72 732 17 77 784 17 78 748 17 77 784 17 72 732 17 75 814 0 175 801 114 129 817 102 127 761 136 129 817 102 175 801 114 173 789 101 183 822 130 123 755 123 177 734 116 123 755 123 183 822 130 181 823 128 71 788 30 171 686 43 170 694 41 171 686 43 71 788 30 64 687 31 126 763 135 173 789 101 186 791 137 173 789 101 126 763 135 125 762 134 111 733 111 176 735 113 174 835 117 93 798 92 95 676 94 96 753 95 66 692 36 87 723 19 82 693 35 96 753 111 174 835 117 176 735 113 87 723 19 86 725 16 140 721 18 33 704 38 34 702 39 35 706 40 28 700 31 30 705 34 32 707 37 2 703 1 31 833 35 17 787 19 30 705 34 31 833 35 2 703 36 70 691 38 62 681 34 68 689 40 154 673 72 142 804 71 145 805 6 72 732 11 78 748 14 76 730 8 98 802 97 97 812 96 102 793 102 23 699 23 27 796 24 197 697 25 96 753 111 95 676 112 174 835 113 17 787 17 19 785 18 3 807 17 17 787 0 18 786 15 19 785 16 111 733 111 174 835 113 130 644 112 64 687 31 67 690 39 69 688 37 182 760 129 122 759 125 181 823 128 86 725 17 81 815 17 80 727 17 0 808 0 1 830 0 2 703 1 104 811 104 107 828 107 105 826 105 119 741 121 118 739 124 116 737 118 56 708 75 53 709 71 7 711 5 111 733 95 131 773 92 116 737 118 173 789 101 125 762 134 129 817 102 5 713 3 17 787 19 7 711 5 45 820 54 43 818 52 44 831 53 178 770 119 94 799 93 113 832 120</p>
+        </triangles>
+        <triangles material="_mat_mouse" count="25">
+          <input semantic="VERTEX" source="#ma_mdl1-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ma_mdl1-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#ma_mdl1-mesh-map-channel1" offset="2" set="1"/>
+          <p>199 836 148 149 752 147 200 834 167 149 752 147 199 836 148 148 837 69 187 838 70 148 837 69 199 836 148 148 837 69 187 838 70 196 839 68 174 835 67 148 837 69 196 839 68 148 837 69 174 835 67 138 840 145 95 676 143 138 840 145 174 835 67 138 840 145 95 676 143 137 669 144 50 841 60 174 835 67 196 839 68 174 835 67 50 841 60 49 842 59 25 797 61 49 842 59 50 841 60 49 842 59 25 797 61 24 659 62 50 841 60 199 836 148 51 695 65 199 836 148 50 841 60 187 838 70 196 839 68 187 838 70 50 841 60 49 842 59 130 644 157 174 835 67 130 644 157 49 842 59 47 657 63 24 659 62 47 657 63 49 842 59 188 696 166 199 836 148 200 834 167 199 836 148 188 696 166 51 695 65 157 670 158 138 840 145 137 669 144 138 840 145 157 670 158 147 751 146 148 837 69 147 751 146 149 752 147 147 751 146 148 837 69 138 840 145 25 797 61 50 841 60 51 695 65</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers>
+    <controller id="ma_mdl1-mesh-skin">
+      <skin source="#ma_mdl1-mesh">
+        <bind_shape_matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</bind_shape_matrix>
+        <source id="ma_mdl1-mesh-skin-joints">
+          <Name_array id="ma_mdl1-mesh-skin-joints-array" count="29">Bone1 Bone2 Bone3 Bone4 Bone5 Bone6 Bone7 Bone8 Bone9 Bone10 Bone11 Bone12 Bone13 Bone14 Bone15 Bone16 Bone17 Bone18 Bone19 Bone20 Bone21 Bone22 Bone23 Bone24 Bone25 Bone26 Bone27 Bone28 Bone29</Name_array>
+          <technique_common>
+            <accessor source="#ma_mdl1-mesh-skin-joints-array" count="29" stride="1">
+              <param name="JOINT" type="Name"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ma_mdl1-mesh-skin-bind_poses">
+          <float_array id="ma_mdl1-mesh-skin-bind_poses-array" count="464">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 -58 0 0 1 0 0 0 0 1 0.000096 -1 0 58 0.000096 0 -1 -0.000000 1 0.000096 0.000096 -0.005577 0 0 0 1 0.000092 -0.999401 0.034603 50.0304 0.000099 -0.034603 -0.999401 -0.507891 1 0.000096 0.000096 11.2745 0 0 0 1 0.000102 -0.997312 -0.073277 29.0013 0.000088 0.073277 -0.997312 -3.65387 1 0.000095 0.000096 11.2745 0 0 0 1 0.000108 -0.140279 -0.990112 -1.71026 -0.000081 0.990112 -0.140279 -9.33219 1 0.000095 0.000095 11.2745 0 0 0 1 -0.000108 0.140183 0.990125 1.71116 0.000082 -0.990125 0.140183 9.33203 1 0.000096 0.000095 11.2745 0 0 0 1 -0.000108 0.140183 0.990126 1.71116 0.000082 -0.990126 0.140183 9.33203 1 0.000096 0.000095 11.2745 0 0 0 1 0.000092 -0.999401 0.034603 50.0304 0.000099 -0.034603 -0.999401 -0.507895 1 0.000096 0.000096 -11.2857 0 0 0 1 0.000102 -0.997312 -0.073277 29.0013 0.000088 0.073277 -0.997312 -3.65388 1 0.000095 0.000096 -11.2856 0 0 0 1 0.000108 -0.140279 -0.990112 -1.71025 -0.000081 0.990112 -0.140279 -9.33219 1 0.000095 0.000095 -11.2857 0 0 0 1 -0.000108 0.140183 0.990126 1.71116 0.000082 -0.990126 0.140183 9.33201 1 0.000096 0.000095 -11.2857 0 0 0 1 -0.000108 0.140183 0.990125 1.71116 0.000081 -0.990125 0.140183 9.33202 1 0.000096 0.000095 -11.2857 0 0 0 1 0.000095 0 -1 0 0 1 0 -58 1 0 0.000095 0 0 0 0 1 0 1 -0.000095 -58 -0.000095 0.000095 1 -0.005556 1 0 0.000095 -0.000003 0 0 0 1 -0.909128 -0.416517 -0.000047 36.6545 -0.416517 0.909128 -0.000031 -79.8893 0.000056 -0.000008 -1 -0.002088 0 0 0 1 -0.98749 0.000093 -0.157683 -16.2834 0.157683 0.000072 -0.98749 -0.84975 -0.00008 -1 -0.000086 80.1042 0 0 0 1 -0.967453 -0.000039 0.253049 -27.0589 -0.253049 0.000199 -0.967453 -12.8345 -0.000012 -1 -0.000203 80.1055 0 0 0 1 -0.999837 0.000008 0.018063 -40.9819 -0.018063 0.000203 -0.999837 -3.27955 -0.000012 -1 -0.000203 80.1056 0 0 0 1 -0.999837 0.000008 0.018063 -40.9819 -0.018063 0.000203 -0.999837 -3.27951 -0.000012 -1 -0.000203 80.1055 0 0 0 1 0.909128 -0.416517 0.000127 36.6545 0.416517 0.909128 0.000049 -79.8892 -0.000136 0.000008 1 0.002129 0 0 0 1 0.909128 -0.416517 0.000127 18.9539 0.416517 0.909128 0.000048 -79.8893 -0.000135 0.000008 1 0.002088 0 0 0 1 0.98752 0.000093 -0.157493 -16.2834 -0.157493 0.000072 -0.98752 -0.849737 -0.00008 1 0.000086 -80.1042 0 0 0 1 0.967453 0.000056 0.25305 -27.069 0.253049 0.000103 -0.967453 -12.8216 -0.00008 1 0.000086 -80.1042 0 0 0 1 0.999837 0.000079 0.018063 -40.9887 0.018063 0.000087 -0.999837 -3.26464 -0.00008 1 0.000086 -80.1042 0 0 0 1 0.999837 0.000078 0.018063 -40.9886 0.018063 0.000087 -0.999837 -3.26464 -0.00008 1 0.000086 -80.1042 0 0 0 1 0 0.000214 1 2.98296 0.000497 -1 0.000214 97.0003 1 0.000497 -0.000000 -0.048515 0 0 0 1 -0.000069 -0.000065 1 3.01011 0.000621 -1 -0.000065 96.9995 1 0.000621 0.000069 -0.060378 0 0 0 1 -0.000156 -0.000146 1 3.01798 0.000497 -1 -0.000146 96.9993 1 0.000497 0.000156 -0.048043 0 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#ma_mdl1-mesh-skin-bind_poses-array" count="29" stride="16">
+              <param name="TRANSFORM" type="float4x4"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ma_mdl1-mesh-skin-weights">
+          <float_array id="ma_mdl1-mesh-skin-weights-array" count="258">1 0.4 0.6 0.7 0.3 0.7 0.3 0.3 0.7 0.3 0.7 0.3 0.7 0.3 0.7 0.3 0.7 0.3 0.7 0.3 0.5 0.2 0.8 0.2 0.7 0.3 0.2 0.8 0.4 0.6 0.8 0.2 0.4 0.6 0.3 0.7 0.7 0.3 0.7 0.3 0.5 0.5 0.5 0.5 0.7 0.3 0.7 0.3 0.7 0.3 0.7 0.3 0.7 0.3 0.9 0.1 0.5 0.5 0.3 0.7 0.5 0.5 0.7 0.3 0.3 0.5 0.2 0.7 0.3 0.3 0.7 0.7 0.3 0.8 0.2 0.5 0.5 0.2 0.8 0.5 0.5 0.7 0.3 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.3 0.7 0.3 0.7 0.3 0.7 0.3 0.7 0.3 0.7 0.3 0.7 0.7 0.3 0.3 0.7 0.3 0.5 0.2 0.8 0.2 0.7 0.3 0.16 0.64 0.2 0.4 0.6 0.8 0.2 0.4 0.6 0.3 0.7 0.7 0.3 0.7 0.3 0.5 0.5 0.5 0.5 0.7 0.3 0.7 0.3 0.7 0.3 0.7 0.3 0.7 0.3 0.9 0.1 0.5 0.5 0.3 0.7 0.5 0.5 0.7 0.3 0.3 0.5 0.2 0.7 0.3 0.7 0.2125 0.0875 0.8 0.2 0.5 0.5 0.2 0.8 0.5 0.5 0.7 0.3 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.3 0.7 0.3 0.7 0.8 0.2 0.8 0.2 0.3 0.7 0.3 0.7 0.7 0.3 0.7 0.3 0.3 0.7 0.7 0.3 0.8 0.2 0.2 0.8 0.2 0.8 0.3 0.7 0.5 0.5 0.2 0.8 0.7 0.3 0.8 0.2 0.8 0.2 0.15 0.7 0.15 0.3 0.7 0.7 0.3 0.7 0.3 0.3 0.7 0.7 0.3 0.8 0.2 0.2 0.8 0.2 0.8 0.7 0.3 0.5 0.5 0.2 0.8 0.8 0.2 0.8 0.2</float_array>
+          <technique_common>
+            <accessor source="#ma_mdl1-mesh-skin-weights-array" count="258" stride="1">
+              <param name="WEIGHT" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <joints>
+          <input semantic="JOINT" source="#ma_mdl1-mesh-skin-joints"/>
+          <input semantic="INV_BIND_MATRIX" source="#ma_mdl1-mesh-skin-bind_poses"/>
+        </joints>
+        <vertex_weights count="812">
+          <input semantic="JOINT" source="#ma_mdl1-mesh-skin-joints" offset="0"/>
+          <input semantic="WEIGHT" source="#ma_mdl1-mesh-skin-weights" offset="1"/>
+          <vcount>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 1 1 1 2 1 1 1 2 1 1 2 2 1 2 1 2 2 1 2 1 1 3 2 1 1 1 1 2 2 2 2 1 2 1 2 2 1 1 1 1 2 2 1 1 1 1 1 1 2 2 2 2 2 2 1 1 1 1 1 2 2 1 2 2 1 2 3 1 2 2 2 2 1 1 1 1 1 2 2 1 2 2 2 2 2 2 2 2 2 2 1 2 2 1 2 1 2 2 2 2 1 1 3 2 1 1 1 1 2 3 2 2 1 2 1 2 2 1 1 1 1 2 2 1 1 1 1 1 1 2 2 2 2 2 2 1 1 1 1 1 2 2 1 2 2 1 2 3 1 2 1 3 2 1 1 1 1 1 2 2 1 2 2 2 2 2 2 2 2 2 2 1 1 1 1 1 1 1 1 1 1 1 2 1 1 1 1 1 2 1 2 1 2 1 1 1 1 1 2 2 2 2 2 2 1 2 2 1 1 1 1 1 1 2 2 2 1 1 1 1 1 1 1 2 1 1 1 1 1 2 1 2 1 3 1 1 1 1 1 2 2 2 2 2 2 1 2 2 1 1 1 1 1 1 2 2 2 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 2 2 </vcount>
+          <v>28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 28 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 27 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 25 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 19 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 7 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 12 0 14 0 14 0 14 0 14 1 2 2 14 0 14 0 2 0 14 3 2 4 2 0 14 0 2 0 14 5 2 6 2 0 14 0 4 7 6 8 4 9 6 10 6 0 4 11 6 12 6 0 4 13 6 14 4 15 6 16 6 0 4 17 6 18 6 0 6 0 14 19 2 20 3 21 2 22 3 23 16 0 3 0 3 0 14 0 14 24 2 25 14 26 2 27 2 28 3 29 2 30 3 31 3 0 14 32 2 33 15 0 14 34 15 35 14 36 2 37 15 0 15 0 15 0 14 0 14 38 2 39 2 40 3 41 3 0 14 0 14 0 14 0 14 0 3 0 2 42 3 43 16 44 17 45 16 46 17 47 16 48 17 49 16 50 17 51 16 52 17 53 17 0 17 0 17 0 17 0 17 0 15 54 16 55 15 56 16 57 16 0 15 58 16 59 14 60 15 61 15 0 14 62 2 63 14 64 2 65 3 66 14 0 2 67 3 68 2 69 3 70 14 71 2 72 2 73 3 74 18 0 18 0 18 0 18 0 18 0 15 75 16 76 15 77 16 78 16 0 15 79 16 80 15 81 16 82 15 83 16 84 3 85 4 86 3 87 4 88 3 89 4 90 3 91 4 92 3 93 4 94 3 95 4 96 3 97 4 98 2 0 9 99 11 100 9 101 11 102 11 0 9 103 11 104 11 0 9 105 11 106 9 107 11 108 9 109 11 110 9 111 11 112 11 0 11 0 14 113 2 114 8 115 2 116 8 117 22 0 8 0 8 0 14 0 14 118 2 119 14 120 2 121 8 122 2 123 8 124 2 125 8 126 8 0 14 127 2 128 20 0 14 129 20 130 14 131 2 132 20 0 20 0 20 0 14 0 14 133 2 134 2 135 8 136 8 0 14 0 14 0 14 0 14 0 8 0 2 137 8 138 22 139 23 140 22 141 23 142 22 143 23 144 22 145 23 146 22 147 23 148 23 0 23 0 23 0 23 0 23 0 20 149 22 150 20 151 22 152 22 0 20 153 22 154 14 155 21 156 20 0 14 157 2 158 14 159 2 160 8 161 14 0 2 162 8 163 8 0 14 164 2 165 8 166 2 167 8 168 24 0 24 0 24 0 24 0 24 0 20 169 22 170 20 171 22 172 22 0 20 173 22 174 20 175 22 176 20 177 22 178 8 179 9 180 8 181 9 182 8 183 9 184 8 185 9 186 8 187 9 188 8 189 9 190 8 191 9 192 2 0 14 0 14 0 14 0 14 0 14 0 14 0 14 0 14 0 15 0 14 0 22 193 15 194 14 0 14 0 14 0 14 0 14 0 15 195 16 196 14 0 15 197 16 198 14 0 22 199 15 200 14 0 14 0 14 0 14 0 14 0 15 201 16 202 16 203 17 204 16 205 17 206 15 207 16 208 16 209 17 210 15 211 16 212 15 0 15 213 16 214 15 215 16 216 14 0 15 0 14 0 14 0 14 0 14 0 22 217 15 218 15 219 16 220 15 221 16 222 15 0 14 0 14 0 14 0 14 0 20 0 14 0 20 223 22 224 14 0 14 0 14 0 14 0 14 0 20 225 22 226 14 0 20 227 22 228 14 0 14 229 20 230 22 231 14 0 14 0 14 0 14 0 14 0 20 232 22 233 22 234 23 235 22 236 23 237 20 238 22 239 22 240 23 241 20 242 22 243 20 0 20 244 22 245 20 246 22 247 14 0 20 0 14 0 14 0 14 0 14 0 20 248 22 249 20 250 22 251 20 252 22 253 20 0 14 0 14 0 14 0 14 0 14 0 14 0 14 0 14 0 14 0 14 0 14 0 14 0 14 0 14 0 14 0 15 254 16 255 20 256 22 257</v>
+        </vertex_weights>
+      </skin>
+    </controller>
+  </library_controllers>
+  <library_visual_scenes>
+    <visual_scene id="ma_mdl1.max" name="ma_mdl1_max">
+      <node id="ma_mdl1_Character-node" name="ma_mdl1_Character" type="NODE">
+        <translate>0 0 0</translate>
+        <rotate>-1 0 0 -90</rotate>
+        <node id="ma_mdl1_Character-node_PIVOT" name="ma_mdl1_Character_PIVOT" type="NODE">
+          <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+          <extra>
+            <technique profile="MAX3D">
+              <helper>
+                <bounding_min>-98.4451 -101.561 0</bounding_min>
+                <bounding_max>96.0873 92.9718 0.0001</bounding_max>
+              </helper>
+            </technique>
+          </extra>
+        </node>
+        <node id="ma_mdl1_mdl1-node" name="ma_mdl1_mdl1" sid="Bone1" type="JOINT">
+          <translate>0 0 0</translate>
+          <node id="ma_mdl1_center-node" name="ma_mdl1_center" sid="Bone2" type="JOINT">
+            <translate>0 58 0</translate>
+            <node id="ma_mdl1_jnt_waist-node" name="ma_mdl1_jnt_waist" sid="Bone3" type="JOINT">
+              <translate>0 0 0</translate>
+              <rotate>0.577369 -0.577313 0.577369 -119.994</rotate>
+              <node id="ma_mdl1_jnt_leg_R1-node" name="ma_mdl1_jnt_leg_R1" sid="Bone4" type="JOINT">
+                <translate>8.01709 2.23881 -11.2801</translate>
+                <rotate>0 0 1 -1.98302</rotate>
+                <node id="ma_mdl1_jnt_leg_R2-node" name="ma_mdl1_jnt_leg_R2" sid="Bone5" type="JOINT">
+                  <translate>20.8043 -0.000007 -0.000003</translate>
+                  <rotate>0.000000 -0.000003 -1 -6.18528</rotate>
+                  <node id="ma_mdl1_chn_foot_R-node" name="ma_mdl1_chn_foot_R" sid="Bone6" type="JOINT">
+                    <translate>20.2455 0.000007 0.000001</translate>
+                    <rotate>0.000000 0 -1 -77.7337</rotate>
+                    <node id="ma_mdl1_jnt_foot_R-node" name="ma_mdl1_jnt_foot_R" sid="Bone7" type="JOINT">
+                      <translate>0 -0.000001 0</translate>
+                      <rotate>0 0.000000 1 -179.994</rotate>
+                      <node id="ma_mdl1_M_foot_R-node" name="ma_mdl1_M_foot_R" sid="Bone8" type="JOINT">
+                        <translate>0.000000 -0.000001 0</translate>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node id="ma_mdl1_jnt_leg_L1-node" name="ma_mdl1_jnt_leg_L1" sid="Bone9" type="JOINT">
+                <translate>8.01709 2.23881 11.2801</translate>
+                <rotate>0 0 1 -1.98302</rotate>
+                <node id="ma_mdl1_jnt_leg_L2-node" name="ma_mdl1_jnt_leg_L2" sid="Bone10" type="JOINT">
+                  <translate>20.8043 -0.000007 -0.000003</translate>
+                  <rotate>0.000000 -0.000003 -1 -6.18528</rotate>
+                  <node id="ma_mdl1_chn_foot_L-node" name="ma_mdl1_chn_foot_L" sid="Bone11" type="JOINT">
+                    <translate>20.2455 0.000005 0.000000</translate>
+                    <rotate>0.000000 0 -1 -77.7337</rotate>
+                    <node id="ma_mdl1_jnt_foot_L-node" name="ma_mdl1_jnt_foot_L" sid="Bone12" type="JOINT">
+                      <translate>-0.000000 0 0.000001</translate>
+                      <rotate>0 0.000000 1 -179.994</rotate>
+                      <node id="ma_mdl1_M_foot_L-node" name="ma_mdl1_M_foot_L" sid="Bone13" type="JOINT">
+                        <translate>-0.000001 -0.000000 -0.000000</translate>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node id="ma_mdl1_chn_chest-node" name="ma_mdl1_chn_chest" sid="Bone14" type="JOINT">
+              <translate>0 0 0</translate>
+              <rotate>0 -1 0 -89.9945</rotate>
+              <node id="ma_mdl1_jnt_chest-node" name="ma_mdl1_jnt_chest" sid="Bone15" type="JOINT">
+                <translate>0 0 0</translate>
+                <rotate>0 0 -1 -89.9945</rotate>
+                <node id="ma_mdl1_jnt_sldr_R-node" name="ma_mdl1_jnt_sldr_R" sid="Bone16" type="JOINT">
+                  <translate>29.8967 0 0.048412</translate>
+                  <rotate>0.413243 0.643937 -0.643875 -224.909</rotate>
+                  <node id="ma_mdl1_jnt_arm_R1-node" name="ma_mdl1_jnt_arm_R1" sid="Bone17" type="JOINT">
+                    <translate>17.78 -0.423782 3.39614</translate>
+                    <rotate>-0.95165 -0.129939 -0.278347 -94.8117</rotate>
+                    <node id="ma_mdl1_jnt_arm_R2-node" name="ma_mdl1_jnt_arm_R2" sid="Bone18" type="JOINT">
+                      <translate>13.6566 0.000007 0.000015</translate>
+                      <rotate>0.000276 0.00018 1 -23.7305</rotate>
+                      <node id="ma_mdl1_jnt_hand_R-node" name="ma_mdl1_jnt_hand_R" sid="Bone19" type="JOINT">
+                        <translate>11.9976 0.005379 -0.000015</translate>
+                        <rotate>0 0 -1 -13.623</rotate>
+                        <node id="ma_mdl1_M_hand1_R-node" name="ma_mdl1_M_hand1_R" sid="Bone20" type="JOINT">
+                          <translate>0.000003 -0.000015 0.000007</translate>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node id="ma_mdl1_jnt_sldr_L-node" name="ma_mdl1_jnt_sldr_L" sid="Bone21" type="JOINT">
+                  <translate>29.8967 -0.000007 -0.048409</translate>
+                  <rotate>0.413243 0.643937 0.643875 -135.091</rotate>
+                  <node id="ma_mdl1_eff_sldr_L-node" name="ma_mdl1_eff_sldr_L" sid="Bone22" type="JOINT">
+                    <translate>17.7006 0.000015 0.000002</translate>
+                  </node>
+                  <node id="ma_mdl1_jnt_arm_L1-node" name="ma_mdl1_jnt_arm_L1" sid="Bone23" type="JOINT">
+                    <translate>17.78 -0.423752 -3.39613</translate>
+                    <rotate>0.95165 0.129939 -0.278347 -94.8117</rotate>
+                    <node id="ma_mdl1_jnt_arm_L2-node" name="ma_mdl1_jnt_arm_L2" sid="Bone24" type="JOINT">
+                      <translate>13.6566 -0.000000 -0.00003</translate>
+                      <rotate>0 0 1 -23.7195</rotate>
+                      <node id="ma_mdl1_jnt_hand_L-node" name="ma_mdl1_jnt_hand_L" sid="Bone25" type="JOINT">
+                        <translate>11.9976 0.005394 0</translate>
+                        <rotate>0 0 -1 -13.623</rotate>
+                        <node id="ma_mdl1_M_hand1_L-node" name="ma_mdl1_M_hand1_L" sid="Bone26" type="JOINT">
+                          <translate>-0.000019 -0.000000 0</translate>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node id="ma_mdl1_jnt_head-node" name="ma_mdl1_jnt_head" sid="Bone27" type="JOINT">
+                  <translate>39 -3.00001 0.000002</translate>
+                  <rotate>-0.000296 -0.0002 -1 -89.9932</rotate>
+                  <node id="ma_mdl1_M_head_cap1-node" name="ma_mdl1_M_head_cap1" sid="Bone28" type="JOINT">
+                    <translate>0.000001 0.000007 0</translate>
+                  </node>
+                  <node id="ma_mdl1_M_head-node" name="ma_mdl1_M_head" sid="Bone29" type="JOINT">
+                    <translate>0.000001 0.000007 0</translate>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node id="ma_mdl1-node" name="ma_mdl1" type="NODE">
+        <instance_controller url="#ma_mdl1-mesh-skin">
+          <skeleton>#ma_mdl1_mdl1-node</skeleton>
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="_mat_head" target="#_mat_head">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+              </instance_material>
+              <instance_material symbol="_mat_head_2_" target="#_mat_head_2_">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+              </instance_material>
+              <instance_material symbol="_mat_head_3_" target="#_mat_head_3_">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+              </instance_material>
+              <instance_material symbol="_mat_head_4_" target="#_mat_head_4_">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+              </instance_material>
+              <instance_material symbol="_mat_head_5_" target="#_mat_head_5_">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+              </instance_material>
+              <instance_material symbol="_mat_head_6_" target="#_mat_head_6_">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+              </instance_material>
+              <instance_material symbol="_mat_head_7_" target="#_mat_head_7_">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+              </instance_material>
+              <instance_material symbol="_mat_eye_L" target="#_mat_eye_L">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+              </instance_material>
+              <instance_material symbol="_mat_eye_R" target="#_mat_eye_R">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+              </instance_material>
+              <instance_material symbol="_mat_head_8_" target="#_mat_head_8_">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+              </instance_material>
+              <instance_material symbol="_mat_mouse" target="#_mat_mouse">
+                <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="1"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_controller>
+      </node>
+      <extra>
+        <technique profile="FCOLLADA">
+          <start_time>0</start_time>
+          <end_time>3.33333</end_time>
+        </technique>
+      </extra>
+      <extra>
+        <technique profile="MAX3D">
+          <frame_rate>30</frame_rate>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#ma_mdl1.max"/>
+  </scene>
+</COLLADA>
